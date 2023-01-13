@@ -1,0 +1,184 @@
+
+# Rust
+
+[[language]]
+name = "rust"
+scope = "source.rust"
+injection-regex = "rust"
+file-types = ["rs"]
+roots = ["Cargo.toml", "Cargo.lock"]
+auto-format = true
+comment-token = "//"
+language-server = { command = "rust-analyzer" }
+indent = { tab-width = 4, unit = "    " }
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+
+[language.debugger]
+name = "lldb-vscode"
+transport = "stdio"
+command = "lldb-vscode"
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+completion = [ { name = "binary", completion = "filename" } ]
+args = { program = "{0}" }
+
+[[language.debugger.templates]]
+name = "binary (terminal)"
+request = "launch"
+completion = [ { name = "binary", completion = "filename" } ]
+args = { program = "{0}", runInTerminal = true }
+
+[[language.debugger.templates]]
+name = "attach"
+request = "attach"
+completion = [ "pid" ]
+args = { pid = "{0}" }
+
+[[language.debugger.templates]]
+name = "gdbserver attach"
+request = "attach"
+completion = [ { name = "lldb connect url", default = "connect://localhost:3333" }, { name = "file", completion = "filename" }, "pid" ]
+args = { attachCommands = [ "platform select remote-gdb-server", "platform connect {0}", "file {1}", "attach {2}" ] }
+
+[[grammar]]
+name = "rust"
+source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "0431a2c60828731f27491ee9fdefe25e250ce9c9" }
+
+[[language]]
+name = "toml"
+scope = "source.toml"
+injection-regex = "toml"
+file-types = ["toml"]
+roots = []
+comment-token = "#"
+language-server = { command = "taplo", args = ["lsp", "stdio"] }
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "toml"
+source = { git = "https://github.com/ikatyang/tree-sitter-toml", rev = "7cff70bbcbbc62001b465603ca1ea88edd668704" }
+
+# JS
+[[language]]
+name = "javascript"
+scope = "source.js"
+injection-regex = "(js|javascript)"
+file-types = ["js", "mjs", "cjs"]
+shebangs = ["node"]
+roots = []
+comment-token = "//"
+# TODO: highlights-params
+language-server = { command = "typescript-language-server", args = ["--stdio"], language-id = "javascript" }
+indent = { tab-width = 2, unit = "  " }
+
+[language.debugger]
+name = "node-debug2"
+transport = "stdio"
+# args consisting of cmd (node) and path to adapter should be added to user's configuration
+quirks = { absolute-paths = true }
+
+[[language.debugger.templates]]
+name = "source"
+request = "launch"
+completion = [ { name = "main", completion = "filename", default = "index.js" } ]
+args = { program = "{0}" }
+
+[[grammar]]
+name = "javascript"
+source = { git = "https://github.com/tree-sitter/tree-sitter-javascript", rev = "4a95461c4761c624f2263725aca79eeaefd36cad" }
+
+[[language]]
+name = "jsx"
+scope = "source.jsx"
+injection-regex = "jsx"
+file-types = ["jsx"]
+roots = []
+comment-token = "//"
+language-server = { command = "typescript-language-server", args = ["--stdio"], language-id = "javascriptreact" }
+indent = { tab-width = 2, unit = "  " }
+grammar = "javascript"
+
+# Typescript
+
+[[language]]
+name = "typescript"
+scope = "source.ts"
+injection-regex = "(ts|typescript)"
+file-types = ["ts"]
+shebangs = []
+roots = []
+# TODO: highlights-params
+language-server = { command = "typescript-language-server", args = ["--stdio"], language-id = "typescript"}
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "typescript"
+source = { git = "https://github.com/tree-sitter/tree-sitter-typescript", rev = "6aac031ad88dd6317f02ac0bb27d099a553a7d8c", subpath = "typescript" }
+
+[[language]]
+name = "tsx"
+scope = "source.tsx"
+injection-regex = "(tsx)" # |typescript
+file-types = ["tsx"]
+roots = []
+# TODO: highlights-params
+language-server = { command = "typescript-language-server", args = ["--stdio"], language-id = "typescriptreact" }
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "tsx"
+source = { git = "https://github.com/tree-sitter/tree-sitter-typescript", rev = "6aac031ad88dd6317f02ac0bb27d099a553a7d8c", subpath = "tsx" }
+
+# CSS
+
+[[language]]
+name = "css"
+scope = "source.css"
+injection-regex = "css"
+file-types = ["css", "scss"]
+roots = []
+language-server = { command = "vscode-css-language-server", args = ["--stdio"] }
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "css"
+source = { git = "https://github.com/tree-sitter/tree-sitter-css", rev = "94e10230939e702b4fa3fa2cb5c3bc7173b95d07" }
+
+[[language]]
+name = "scss"
+scope = "source.scss"
+injection-regex = "scss"
+file-types = ["scss"]
+roots = []
+language-server = { command = "vscode-css-language-server", args = ["--stdio"] }
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "scss"
+source = { git = "https://github.com/serenadeai/tree-sitter-scss", rev = "c478c6868648eff49eb04a4df90d703dc45b312a" }
+
+# HTML
+
+[[language]]
+name = "html"
+scope = "text.html.basic"
+injection-regex = "html"
+file-types = ["html"]
+roots = []
+language-server = { command = "vscode-html-language-server", args = ["--stdio"] }
+auto-format = true
+config = { "provideFormatter" = true }
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "html"
+source = { git = "https://github.com/tree-sitter/tree-sitter-html", rev = "d93af487cc75120c89257195e6be46c999c6ba18" }
+
