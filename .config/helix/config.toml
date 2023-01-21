@@ -28,7 +28,7 @@ select = "underline"
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 "=" = { "=" = ":format"}
-"space" = { x = ":buffer-close" } # buffer close
+"space" = { x = ":buffer-close" , "." = "code_action"} # buffer close
 "X" = "extend_line_above"
 "D" = "kill_to_line_end"
 

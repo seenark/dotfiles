@@ -131,13 +131,13 @@
 		<Setting name="Local filelist sortorder">0 0</Setting>
 		<Setting name="Remote filelist sortorder">0 0</Setting>
 		<Setting name="Show message log">1</Setting>
-		<Setting name="Last automatic update check">2023-01-12 06:15:40</Setting>
-		<Setting name="Update Check New Version" platform="mac">nightly 2023-01-10 https://filezilla-project.org/nightlies/2023-01-10/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15429292 sha512 394daa2980a985542056a49b4ff8815c068135b401550df616fcacd0ca364edaea13755e08a3eb02647ba0816d64902c2a4913c59fcb119bc4c5aa131944f993 sig:dxA90GwC3o3b6lGScjTBJjXn2hHskXwoe5AFRHRv/kqPfRLIUlEz5m8OWQkBc3vSaEhjvn01HSnCAUCSNT6uAg
-release 3.60.2 https://dl3.cdn.filezilla-project.org/FileZilla_3.60.2_macosx-x86.app.tar.bz2 14723530 sha512 f0e178539068378d503a570faa7ec8283251687ec2744d5eb247c55183eb8e88c541dd82cdb9ea0138389ba98ee27251ba2db4fec2a77bfd75e5a8b6cba13570 sig:zpVWcZM/8jeMwr/hQMdarnsSFNJ16EV7S6If+mhHhqfw+/rq2MEeTcLk5hSMXvTq6CreGG+7hs2cXBC3XoTcAg
-</Setting>
 		<Setting name="Sitemanager last selected">0/ukho</Setting>
-		<Setting name="Site Manager position">0 1468 472 1056 439 </Setting>
-		<Setting name="Window position and size">0 1204 132 1585 1053 </Setting>
+		<Setting name="Last automatic update check">2023-01-21 14:44:49</Setting>
+		<Setting name="Update Check New Version" platform="mac">nightly 2023-01-21 https://filezilla-project.org/nightlies/2023-01-21/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15482690 sha512 ffbf83eb2878de1d2e714735d3f94405c025854610233da87ef66b73777a7b83c9017e57a63e85e5b6ae68289470dfd10d22910529f32187099b55898c870959 sig:AxudxDAnOuJRoBLJM5SC6EHPddtpiJYz8JCcYB8+/laOTMQIPdyfmnou+6Us808TuHQu8S+vSw9oU5y6hXnXAA
+release 3.60.2 https://dl2.cdn.filezilla-project.org/FileZilla_3.60.2_macosx-x86.app.tar.bz2 14723530 sha512 f0e178539068378d503a570faa7ec8283251687ec2744d5eb247c55183eb8e88c541dd82cdb9ea0138389ba98ee27251ba2db4fec2a77bfd75e5a8b6cba13570 sig:zpVWcZM/8jeMwr/hQMdarnsSFNJ16EV7S6If+mhHhqfw+/rq2MEeTcLk5hSMXvTq6CreGG+7hs2cXBC3XoTcAg
+</Setting>
+		<Setting name="Site Manager position">0 704 467 1056 439 </Setting>
+		<Setting name="Window position and size">0 440 127 1585 1053 </Setting>
 		<Setting name="Tab data" sensitive="1">
 			<Tabs>
 				<Tab connected="1" selected="1">
