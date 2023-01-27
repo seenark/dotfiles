@@ -89,6 +89,7 @@ local M = {
         hide_by_pattern = { -- uses glob style patterns
           --"*.meta",
           --"*/src/*/tsconfig.json",
+          ".git",
         },
         always_show = { -- remains visible even if other settings would normally hide it
           --".gitignored",
