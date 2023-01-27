@@ -1,4 +1,5 @@
 .config/.DS_Store
+.config/nvim-nvchad
 .git
 .DS_Store
 README.md
