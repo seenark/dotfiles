@@ -16,7 +16,7 @@ local M = {
       popup = { -- settings that apply to float position only
         size = {
           height = "80%",
-          width = "20%",
+          width = "50",
         },
         position = "5%", -- 50% means center it
         -- you can also specify border here, if you want a different setting from
