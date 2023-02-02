@@ -7,8 +7,10 @@ return {
       end,
     },
     mappings = {
-      comment = "<leader>/",
-      comment_line = "<leader>/",
+      -- comment = "<leader>/",
+      -- comment_line = "<leader>/",
+      comment = "÷",
+      comment_line = "÷",
     },
   },
 }
