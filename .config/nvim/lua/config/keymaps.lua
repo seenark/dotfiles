@@ -14,8 +14,11 @@ local function map(mode, lhs, rhs, opts)
 end
 
 map("n", "gl", "$", { desc = "go to end of line" })
+map("v", "gl", "$", { desc = "go to end of line" })
 map("n", "gh", "_", { desc = "go to begin of line" })
+map("v", "gh", "_", { desc = "go to begin of line" })
 map("n", "ge", "G", { desc = "go to last line" })
+map("x", "ge", "G", { desc = "go to last line" })
 
 -- redo
 map("n", "U", "<C-r>", { desc = "redo" })
