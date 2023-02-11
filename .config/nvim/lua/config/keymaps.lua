@@ -30,6 +30,9 @@ map("n", "<leader>p", '"+p', { desc = "Paste from clipboard" })
 map("x", "<leader>y", '"+y', { desc = "Copy to clipboard" })
 map("x", "<leader>p", '"+p', { desc = "Paste from clipboard" })
 
+-- when highlight text and paste the yanked text this will not yank the replaced text
+map("x", "p", '"_dP')
+
 -- buffers
 if Util.has("bufferline.nvim") then
   map("n", "gp", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
