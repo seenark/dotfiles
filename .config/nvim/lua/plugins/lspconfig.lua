@@ -17,19 +17,19 @@ return {
           },
         },
       },
-      sumneko_lua = {
-        -- mason = false, -- set to false if you don't want this server to be installed with mason
-        settings = {
-          Lua = {
-            workspace = {
-              checkThirdParty = false,
-            },
-            completion = {
-              callSnippet = "Replace",
-            },
-          },
-        },
-      },
+      -- sumneko_lua = {
+      --   -- mason = false, -- set to false if you don't want this server to be installed with mason
+      --   settings = {
+      --     Lua = {
+      --       workspace = {
+      --         checkThirdParty = false,
+      --       },
+      --       completion = {
+      --         callSnippet = "Replace",
+      --       },
+      --     },
+      --   },
+      -- },
       html = {},
       cssls = {},
       tsserver = {},

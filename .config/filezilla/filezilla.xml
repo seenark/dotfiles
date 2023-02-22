@@ -132,23 +132,12 @@
 		<Setting name="Remote filelist sortorder">0 0</Setting>
 		<Setting name="Show message log">1</Setting>
 		<Setting name="Sitemanager last selected">0/ukho</Setting>
-		<Setting name="Last automatic update check">2023-02-05 04:29:42</Setting>
-		<Setting name="Update Check New Version" platform="mac">nightly 2023-02-04 https://filezilla-project.org/nightlies/2023-02-04/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15496911 sha512 d4bcf1ef12ecb7a73cdac32b356dd875cd63cbbce915b3683ea3b85e4f78288aac67fc86497c9309bf739a058ca9d4b5a26f46fd6395d3d5de37256372b0d664 sig:Cuu4IRfBOiFE1gTd/xRN0Ez8pQ21WKY73MwTfollvEWcYqFL09sd0KIw82PKP6+lxAzfDad8TcW7TE9UIvR8DA
-release 3.63.1 https://dl4.cdn.filezilla-project.org/FileZilla_3.63.1_macosx-x86.app.tar.bz2 15491265 sha512 f91bbc93f938b8ead360617121e9913aebeadb94585be1ce19e6932feac19a9d05b261e69c59cd1bdfe9d2077ea23a0c9b6a4394f7a25ea07934af01052d84b1 sig:2H9u8R53qltGwSPE1S03Q4YnPkuL4rYXkaKFxieeNdm05BFCPlGGY1jMi2MavqUhK/55jO5ixjP4wmYvlZJ6Aw
-
-3.63.1 (2023-01-26)
-
-- MSW: Fixed icon sizing issue on high DPI scale factors
-
-3.63.0 (2023-01-24)
-
-- All official FileZilla binares now link against wxWidgets 3.2.1
-- Fixed a potential crash when closing FileZilla
-- macOS: Fixed tree control scroll position not following the foucsed item
-- macOS: Fixed an issue preventing translations into some languages to be loaded
-</Setting>
 		<Setting name="Site Manager position">0 1671 558 1056 439 </Setting>
-		<Setting name="Window position and size">0 1407 218 1585 1053 </Setting>
+		<Setting name="Last automatic update check">2023-02-16 13:18:17</Setting>
+		<Setting name="Update Check New Version" platform="mac">nightly 2023-02-16 https://filezilla-project.org/nightlies/2023-02-16/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15498332 sha512 099c7c148dbd4bebbacbd925f2d3cf1514c81b25a5d182eff5fb28479d9279f82d5e263c3215f6e91ae01e15e795b10878583df60ac21e45393501578d28751e sig:DkQVNOdHbiTLpiGvKBAeip+K1sa8OuwkscdfIyhTGlVBH4LQgSz/+Jj4jT6wxi4kGxfb9ZDyAboFeK3aZpaqDQ
+release 3.62.2 https://dl3.cdn.filezilla-project.org/FileZilla_3.62.2_macosx-x86.app.tar.bz2 15435216 sha512 eeaff6f04842e9bced7ca86917ff855ab19b04fe2552d7d972fa14f0b7e91dd334f1fc925c1c028e6b60c1d7808c7eefb9e783bb0d714f24fa396a63140bd43e sig:xdFp6ENt9yunz1XV8ypblGFrTZr9NWKGCKqXoIYnOFtZRju8qUSAEmifXqjg0KIOtmyWuOB8djWYCLVjeQdEBQ
+</Setting>
+		<Setting name="Window position and size">0 642 152 1585 1053 </Setting>
 		<Setting name="Tab data" sensitive="1">
 			<Tabs>
 				<Tab connected="1" selected="1">
