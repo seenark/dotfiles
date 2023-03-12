@@ -1,0 +1,8 @@
+ui {
+    pane_frames {
+        rounded_corners true
+      }
+  }
+
+layout_dir "./layouts"
+scrollback_editor "/opt/homebrew/bin/hx"
