@@ -131,13 +131,33 @@
 		<Setting name="Show message log">1</Setting>
 		<Setting name="Sitemanager last selected">0/ukho</Setting>
 		<Setting name="Remote filelist colwidths">335 75 80 100 80 85</Setting>
-		<Setting name="Last automatic update check">2023-03-09 10:12:12</Setting>
-		<Setting name="Update Check New Version" platform="mac">nightly 2023-03-09 https://filezilla-project.org/nightlies/2023-03-09/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15474661 sha512 6efa91e8782cc31c8064d94966e19732978a6e0c7646a3bce0baad6cf539992b403137abaf33f61bac4c81c9115f377330cd68c86104e70537eaa7d21b86e99b sig:Y02EO0B/w0lpByJUv95Gs5u94RXR6Lok2IlQL7cvDRcgBT5ckYiqQ5AIfpIaytaBT3hn6nSZkEZgg/z7gaRfBA
-release 3.62.2 https://dl1.cdn.filezilla-project.org/FileZilla_3.62.2_macosx-x86.app.tar.bz2 15435216 sha512 eeaff6f04842e9bced7ca86917ff855ab19b04fe2552d7d972fa14f0b7e91dd334f1fc925c1c028e6b60c1d7808c7eefb9e783bb0d714f24fa396a63140bd43e sig:xdFp6ENt9yunz1XV8ypblGFrTZr9NWKGCKqXoIYnOFtZRju8qUSAEmifXqjg0KIOtmyWuOB8djWYCLVjeQdEBQ
-</Setting>
-		<Setting name="Site Manager position">0 990 692 1056 439 </Setting>
 		<Setting name="Queue column widths">608 60 180 80 60 100</Setting>
-		<Setting name="Window position and size">0 726 351 1585 1053 </Setting>
+		<Setting name="Last automatic update check">2023-04-02 23:30:09</Setting>
+		<Setting name="Update Check New Version" platform="mac">nightly 2023-04-02 https://filezilla-project.org/nightlies/2023-04-02/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15442199 sha512 7e22477098f2e046609c804b1942a07dddaf6d4ae322a809f3303ca19f21871d649928ca7868516d8b50fe44ef02207daa54020b6ada96a90c9acf1eb4d2e125 sig:ejVpaj1yio2N3cQcMzTRsiVc0g6mcB7U3p8GcNvBg+cBkRV9SlTJrdXjZyJB0C4mDOiWBXN+VAgRGbIUY5mmDA
+release 3.63.2.1 https://dl1.cdn.filezilla-project.org/FileZilla_3.63.2.1_macosx-x86.app.tar.bz2 15468449 sha512 c754333a409afc01372bb19c74e49fb19ca250d6e2e8c7047fe90baf8b1192a8bd4571476621cc57ec9c16ff052cfe73cc7551e3ae9bdb25f882718a7966902a sig:EvVphGp9yuY/zlt/iEoogP5j4W1l/OPWQ9nXXbbOo/mbzMHN15wL6m8sH0cYWoWGlgrFQqaGWKx2vbh+BtEGDg
+
+3.63.2.1 (2023-03-03)
+
+- macOS: Several rendering fixes in dark mode
+- macOS: Disable automatic quote/dash substitution in text input fields
+- MSW: Fixed an issue with Drag&amp;Drop to Explorer on systems that use shortened 8.3 pathnames in environment variables
+- MSW: If FileZilla was installed for current user only, updating with the installer now skips the UAC prompt
+- Updated to libfilezilla 0.41.1 to fix a rare crash
+- Official binaries are now built againt GnuTLS 3.8.0
+
+3.63.1 (2023-01-26)
+
+- MSW: Fixed icon sizing issue on high DPI scale factors
+
+3.63.0 (2023-01-24)
+
+- All official FileZilla binares now link against wxWidgets 3.2.1
+- Fixed a potential crash when closing FileZilla
+- macOS: Fixed tree control scroll position not following the foucsed item
+- macOS: Fixed an issue preventing translations into some languages to be loaded
+</Setting>
+		<Setting name="Site Manager position">0 990 691 1056 439 </Setting>
+		<Setting name="Window position and size">0 810 504 1585 1053 </Setting>
 		<Setting name="Tab data" sensitive="1">
 			<Tabs>
 				<Tab connected="1" selected="1">

@@ -1,5 +1,6 @@
 local M = {
   "rcarriga/nvim-notify",
+  enabled = true,
   keys = {
     {
       "<leader>un",
@@ -10,13 +11,17 @@ local M = {
     },
   },
   opts = {
-    timeout = 5000,
+    timeout = 3000,
     max_height = function()
       return math.floor(vim.o.lines * 0.75)
     end,
     max_width = function()
       return math.floor(vim.o.columns * 0.75)
     end,
+    render = "default",
+    stages = "slide",
+    top_down = false,
+    fps = 25,
   },
   init = function()
     -- when noice is not enabled, install notify on VeryLazy

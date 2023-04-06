@@ -6,3 +6,4 @@ ui {
 
 layout_dir "./layouts"
 scrollback_editor "/opt/homebrew/bin/hx"
+simplified_ui false
