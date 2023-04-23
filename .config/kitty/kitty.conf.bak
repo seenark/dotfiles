@@ -819,7 +819,7 @@ focus_follows_mouse no
 #: Fade the text in inactive windows by the specified amount (a number
 #: between zero and one, with zero being fully faded).
 
-# hide_window_decorations no
+hide_window_decorations titlebar-only 
 
 #: Hide the window decorations (title-bar and window borders) with
 #: yes. On macOS, titlebar-only can be used to only hide the titlebar.
@@ -879,7 +879,7 @@ focus_follows_mouse no
 #: insensitive, from the set [0-9A-Z]. Specify your preference as a
 #: string of characters.
 
-# confirm_os_window_close -1
+confirm_os_window_close 0
 
 #: Ask for confirmation when closing an OS window or a tab with at
 #: least this number of kitty windows in it by window manager (e.g.
@@ -1108,7 +1108,7 @@ background_image_layout scaled
 #: decrease_background_opacity) or the remote control facility.
 #: Changing this option by reloading the config is not supported.
 
-# background_tint 0.0
+background_tint 0.65
 
 #: How much to tint the background image by the background color. This
 #: option makes it easier to read the text. Tinting is done using the
@@ -1116,7 +1116,7 @@ background_image_layout scaled
 #: if background_opacity is set and transparent windows are supported
 #: or background_image is set.
 
-# background_tint_gaps 1.0
+# background_tint_gaps 1
 
 #: How much to tint the background image at the window gaps by the
 #: background color, after applying background_tint. Since this is
@@ -2029,6 +2029,11 @@ editor /opt/homebrew/bin/nvim
 
 #:     map ctrl+alt+1 goto_tab 1
 #:     map ctrl+alt+2 goto_tab 2
+map cmd+1 goto_tab 1
+map cmd+2 goto_tab 2
+map cmd+3 goto_tab 3
+map cmd+4 goto_tab 4
+map cmd+5 goto_tab 5
 
 #: Just as with new_window above, you can also pass the name of
 #: arbitrary commands to run when using new_tab and new_tab_with_cwd.
@@ -2344,6 +2349,6 @@ editor /opt/homebrew/bin/nvim
 
 
 # BEGIN_KITTY_THEME
-# 3024 Day
+# Ayu Mirage
 include current-theme.conf
 # END_KITTY_THEME
