@@ -89,6 +89,24 @@ M.Lsp = {
   }
 }
 
+M.Comment = {
+  n = {
+    ["÷"] = {
+      function()
+        require("Comment.api").toggle.linewise.current()
+      end,
+      "toggle comment",
+    },
+  },
+
+  v = {
+    ["÷"] = {
+      "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
+      "toggle comment",
+    },
+  },
+}
+
 -- more keybinds!
 
 return M

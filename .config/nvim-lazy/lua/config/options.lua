@@ -9,3 +9,10 @@ opt.clipboard = ""
 opt.scrolloff = 8
 opt.iskeyword:append("-")
 -- opt.formatoptions:remove("cro")
+
+-- lsp
+vim.diagnostic.config({
+  float = {
+    border = "rounded",
+  },
+})

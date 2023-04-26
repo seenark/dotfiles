@@ -24,11 +24,12 @@ return {
   },
 
   -- code mapping
-  {
-    "simrat39/symbols-outline.nvim",
-    keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
-    config = true,
-  },
+  -- symbols outline change to use from LspSaga it's better looking
+  -- {
+  --   "simrat39/symbols-outline.nvim",
+  --   keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
+  --   config = true,
+  -- },
 
   -- cmp
   {

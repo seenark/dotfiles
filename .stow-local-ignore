@@ -1,5 +1,5 @@
 .config/.DS_Store
-.config/nvim-nvchad
+.config/nvim-nvchad(old)
 .git
 .DS_Store
 .gitignore

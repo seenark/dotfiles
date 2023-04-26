@@ -28,152 +28,163 @@ return {
       },
     },
   },
-  -- lsp servers
-  "neovim/nvim-lspconfig",
-  opts = {
-    servers = {
-      astro = {},
-      ansiblels = {},
-      bashls = {},
-      clangd = {},
-      denols = {},
-      jsonls = {
-        -- lazy-load schemastore when needed
-        on_new_config = function(new_config)
-          new_config.settings.json.schemas = new_config.settings.json.schemas or {}
-          vim.list_extend(new_config.settings.json.schemas, require("schemastore").json.schemas())
-        end,
-        settings = {
-          json = {
-            format = {
-              enable = true,
-            },
-            validate = { enable = true },
-          },
-        },
-      },
-      html = {},
-      cssls = {},
-      dockerls = {},
-      tsserver = {
-        settings = {
-          typescript = {
-            inlayHints = {
-              includeInlayParameterNameHints = "all", -- "none" | "literals" | "all"
-              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-              includeInlayFunctionParameterTypeHints = true,
-              includeInlayVariableTypeHints = true,
-              includeInlayPropertyDeclarationTypeHints = true,
-              includeInlayFunctionLikeReturnTypeHints = true,
-              includeInlayEnumMemberValueHints = true,
-            },
-          },
-          javascript = {
-            inlayHints = {
-              includeInlayParameterNameHints = "all",
-              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-              includeInlayFunctionParameterTypeHints = true,
-              includeInlayVariableTypeHints = true,
-              includeInlayPropertyDeclarationTypeHints = true,
-              includeInlayFunctionLikeReturnTypeHints = true,
-              includeInlayEnumMemberValueHints = true,
-            },
-          },
-        },
-      },
-      svelte = {},
-      gopls = {},
-      marksman = {},
-      -- pyright = {},
-      rust_analyzer = {
-        settings = {
-          ["rust-analyzer"] = {
-            procMacro = { enable = true },
-            cargo = { allFeatures = true },
-            checkOnSave = {
-              command = "clippy",
-              extraArgs = { "--no-deps" },
-            },
-          },
-        },
-      },
-      yamlls = {
-        settings = {
-          yaml = {
-            keyOrdering = false,
-          },
-        },
-      },
-      lua_ls = {
-        -- cmd = { "/home/folke/projects/lua-language-server/bin/lua-language-server" },
-        single_file_support = true,
-        settings = {
-          Lua = {
-            workspace = {
-              checkThirdParty = false,
-            },
-            completion = {
-              workspaceWord = true,
-              callSnippet = "Both",
-            },
-            misc = {
-              parameters = {
-                "--log-level=trace",
-              },
-            },
-            diagnostics = {
-              -- enable = false,
-              groupSeverity = {
-                strong = "Warning",
-                strict = "Warning",
-              },
-              groupFileStatus = {
-                ["ambiguity"] = "Opened",
-                ["await"] = "Opened",
-                ["codestyle"] = "None",
-                ["duplicate"] = "Opened",
-                ["global"] = "Opened",
-                ["luadoc"] = "Opened",
-                ["redefined"] = "Opened",
-                ["strict"] = "Opened",
-                ["strong"] = "Opened",
-                ["type-check"] = "Opened",
-                ["unbalanced"] = "Opened",
-                ["unused"] = "Opened",
-              },
-              unusedLocalExclude = { "_*" },
-            },
-            format = {
-              enable = false,
-              defaultConfig = {
-                indent_style = "space",
-                indent_size = "2",
-                continuation_indent_size = "2",
-              },
-            },
-          },
-        },
-      },
-      teal_ls = {},
-      vimls = {},
-      tailwindcss = {},
-    },
-    setup = {},
-    -- setup = {
-    --   tsserver = function(_, opts)
-    --     require("lazyvim.util").on_attach(function(client, buffer)
-    --       if client.name == "tsserver" then
-    --         -- stylua: ignore
-    --         vim.keymap.set("n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
-    --         vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
-    --       end
-    --     end)
-    --     require("typescript").setup({ server = opts })
-    --     return true
-    --   end,
-    -- },
-  },
 
+  -- lsp servers
+  {
+    "neovim/nvim-lspconfig",
+    init = function()
+      local keys = require("lazyvim.plugins.lsp.keymaps").get()
+      -- disable a keymap
+      keys[#keys + 1] = { "K", false }
+      keys[#keys + 1] = { "[d", false }
+      keys[#keys + 1] = { "]d", false }
+      keys[#keys + 1] = { "[e", false }
+      keys[#keys + 1] = { "]e", false }
+    end,
+    opts = {
+      servers = {
+        -- astro = {},
+        -- ansiblels = {},
+        -- bashls = {},
+        -- clangd = {},
+        -- denols = {},
+        jsonls = {
+          -- lazy-load schemastore when needed
+          on_new_config = function(new_config)
+            new_config.settings.json.schemas = new_config.settings.json.schemas or {}
+            vim.list_extend(new_config.settings.json.schemas, require("schemastore").json.schemas())
+          end,
+          settings = {
+            json = {
+              format = {
+                enable = true,
+              },
+              validate = { enable = true },
+            },
+          },
+        },
+        html = {},
+        cssls = {},
+        dockerls = {},
+        tsserver = {
+          settings = {
+            typescript = {
+              inlayHints = {
+                includeInlayParameterNameHints = "all", -- "none" | "literals" | "all"
+                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                includeInlayFunctionParameterTypeHints = true,
+                includeInlayVariableTypeHints = true,
+                includeInlayPropertyDeclarationTypeHints = true,
+                includeInlayFunctionLikeReturnTypeHints = true,
+                includeInlayEnumMemberValueHints = true,
+              },
+            },
+            javascript = {
+              inlayHints = {
+                includeInlayParameterNameHints = "all",
+                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                includeInlayFunctionParameterTypeHints = true,
+                includeInlayVariableTypeHints = true,
+                includeInlayPropertyDeclarationTypeHints = true,
+                includeInlayFunctionLikeReturnTypeHints = true,
+                includeInlayEnumMemberValueHints = true,
+              },
+            },
+          },
+        },
+        -- svelte = {},
+        -- gopls = {},
+        marksman = {}, -- for Markdown
+        -- pyright = {},
+        rust_analyzer = {
+          settings = {
+            ["rust-analyzer"] = {
+              procMacro = { enable = true },
+              cargo = { allFeatures = true },
+              checkOnSave = {
+                command = "clippy",
+                extraArgs = { "--no-deps" },
+              },
+            },
+          },
+        },
+        yamlls = {
+          settings = {
+            yaml = {
+              keyOrdering = false,
+            },
+          },
+        },
+        lua_ls = {
+          -- cmd = { "/home/folke/projects/lua-language-server/bin/lua-language-server" },
+          single_file_support = true,
+          settings = {
+            Lua = {
+              workspace = {
+                checkThirdParty = false,
+              },
+              completion = {
+                workspaceWord = true,
+                callSnippet = "Both",
+              },
+              misc = {
+                parameters = {
+                  "--log-level=trace",
+                },
+              },
+              diagnostics = {
+                -- enable = false,
+                groupSeverity = {
+                  strong = "Warning",
+                  strict = "Warning",
+                },
+                groupFileStatus = {
+                  ["ambiguity"] = "Opened",
+                  ["await"] = "Opened",
+                  ["codestyle"] = "None",
+                  ["duplicate"] = "Opened",
+                  ["global"] = "Opened",
+                  ["luadoc"] = "Opened",
+                  ["redefined"] = "Opened",
+                  ["strict"] = "Opened",
+                  ["strong"] = "Opened",
+                  ["type-check"] = "Opened",
+                  ["unbalanced"] = "Opened",
+                  ["unused"] = "Opened",
+                },
+                unusedLocalExclude = { "_*" },
+              },
+              format = {
+                enable = false,
+                defaultConfig = {
+                  indent_style = "space",
+                  indent_size = "2",
+                  continuation_indent_size = "2",
+                },
+              },
+            },
+          },
+        },
+        teal_ls = {},
+        vimls = {},
+        tailwindcss = {},
+      },
+      setup = {},
+      -- setup = {
+      --   tsserver = function(_, opts)
+      --     require("lazyvim.util").on_attach(function(client, buffer)
+      --       if client.name == "tsserver" then
+      --         -- stylua: ignore
+      --         vim.keymap.set("n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
+      --         vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
+      --       end
+      --     end)
+      --     require("typescript").setup({ server = opts })
+      --     return true
+      --   end,
+      -- },
+    },
+  },
   -- null-ls
   {
     "jose-elias-alvarez/null-ls.nvim",
@@ -229,7 +240,6 @@ return {
       }
     end,
   },
-
   -- inlay hints
   {
     "lvimuser/lsp-inlayhints.nvim",
@@ -248,5 +258,33 @@ return {
         end,
       })
     end,
+  },
+  -- lsp saga
+  {
+    "glepnir/lspsaga.nvim",
+    event = "LspAttach",
+    config = function()
+      require("lspsaga").setup({
+        ui = {
+          -- This option only works in Neovim 0.9
+          title = true,
+          -- Border type can be single, double, rounded, solid, shadow.
+          border = "rounded",
+          winblend = 0,
+          expand = "",
+          collapse = "",
+          code_action = "💡",
+          incoming = " ",
+          outgoing = " ",
+          hover = "  ",
+          kind = {},
+        },
+      })
+    end,
+    dependencies = {
+      { "nvim-tree/nvim-web-devicons" },
+      --Please make sure you install markdown and markdown_inline parser
+      { "nvim-treesitter/nvim-treesitter" },
+    },
   },
 }

@@ -118,6 +118,23 @@ source $(brew --prefix nvm)/nvm.sh
 
 # export PATH=/opt/homebrew/opt/llvm/bin:$PATH
 
+alias nl="NVIM_APPNAME=nvim-lazy nvim"
+alias nc="NVIM_APPNAME=chad-lazy nvim"
+
+function nvims() {
+  items=("default" "nvim-lazy" "chad-lazy")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "default" ]]; then
+    config=""
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+
+bindkey -s ^n "nvims\n"
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 

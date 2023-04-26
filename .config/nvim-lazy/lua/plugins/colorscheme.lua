@@ -12,7 +12,8 @@ local M = {
     opts = function()
       require("catppuccin").setup({
         flavour = "mocha", -- latte, frappe, macchiato, mocha
-        background = { -- :h background
+        background = {
+          -- :h background
           light = "latte",
           dark = "mocha",
         },
@@ -33,12 +34,23 @@ local M = {
   {
     "Shatur/neovim-ayu",
     lazy = true,
+    name = "ayu",
+    opts = {
+      colorscheme = "ayu",
+    },
+    config = function()
+      require("ayu").setup({
+        mirage = false,
+        overrides = {},
+      })
+    end,
   },
   {
     "LazyVim/LazyVim",
     opts = function()
       return {
         colorscheme = "catppuccin",
+        -- colorscheme = "ayu",
       }
     end,
   },
