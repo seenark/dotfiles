@@ -102,3 +102,8 @@ end, { desc = "Open Vertical Terminal" })
 map("t", "<A-i>", function()
   require("nvterm.terminal").toggle("float")
 end, { desc = "Open Float Terminal" })
+
+-- crates
+map("n", "<leader>rcu", function()
+  require("crates").upgrade_all_crates()
+end, { desc = "Upgrate all crates version" })
