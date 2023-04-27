@@ -46,9 +46,29 @@ return {
     opts = function(_, opts)
       local cmp = require("cmp")
       opts.sources = cmp.config.sources(
-        vim.list_extend(opts.sources, { { name = "emoji" }, { name = "copilot" }, { name = "crates" } })
+        vim.list_extend(opts.sources, { { name = "emoji" }, { name = "copilot" }, { name = "crates", priority = 750 } })
       )
     end,
+  },
+
+  -- Rust crates assist
+  {
+    "saecki/crates.nvim",
+    ft = { "rust", "toml" },
+    dependencies = {
+      {
+        "hrsh7th/nvim-cmp",
+        "nvim-lua/plenary.nvim",
+      },
+    },
+    config = function(_, opts)
+      local crates = require("crates")
+      crates.setup(opts)
+    end,
+  },
+  -- DAP
+  {
+    "mfussenegger/nvim-dap",
   },
 
   -- github copilot

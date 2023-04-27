@@ -27,6 +27,8 @@ return {
         "yamlfmt",
         "rust-analyzer",
         "rustfmt",
+        "codelldb",
+        "taplo",
       },
     },
   },
@@ -312,21 +314,6 @@ return {
     end,
     config = function(_, opts)
       require("rust-tools").setup(opts)
-    end,
-  },
-
-  -- DAP
-  {
-    "mfussenegger/nvim-dap",
-  },
-  -- Cargo Assist
-  {
-    "saecki/crates.nvim",
-    ft = { "rust", "toml" },
-    config = function(_, opts)
-      local crates = require("crates")
-      crates.setup(opts)
-      crates.show()
     end,
   },
 }
