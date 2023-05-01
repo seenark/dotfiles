@@ -41,6 +41,15 @@ return {
         "zbirenbaum/copilot-cmp",
         opts = {},
       },
+      {
+        "roobert/tailwindcss-colorizer-cmp.nvim",
+        -- optionally, override the default options:
+        config = function()
+          require("tailwindcss-colorizer-cmp").setup({
+            color_square_width = 3,
+          })
+        end,
+      },
     },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
@@ -48,6 +57,12 @@ return {
       opts.sources = cmp.config.sources(
         vim.list_extend(opts.sources, { { name = "emoji" }, { name = "copilot" }, { name = "crates", priority = 750 } })
       )
+
+      local format_kinds = opts.formatting.format
+      opts.formatting.format = function(entry, item)
+        format_kinds(entry, item) -- add icon
+        return require("tailwindcss-colorizer-cmp").formatter(entry, item)
+      end
     end,
   },
 
