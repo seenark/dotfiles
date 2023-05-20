@@ -55,7 +55,10 @@ return {
     opts = function(_, opts)
       local cmp = require("cmp")
       opts.sources = cmp.config.sources(
-        vim.list_extend(opts.sources, { { name = "emoji" }, { name = "copilot" }, { name = "crates", priority = 750 } })
+        vim.list_extend(
+          opts.sources,
+          { { name = "emoji" }, { name = "copilot" }, { name = "codeium" }, { name = "crates", priority = 750 } }
+        )
       )
 
       local format_kinds = opts.formatting.format
@@ -89,7 +92,7 @@ return {
   -- github copilot
   {
     "zbirenbaum/copilot-cmp",
-    enable = true,
+    enabled = false,
     after = { "copilot.lua" },
     config = function()
       require("copilot_cmp").setup()
@@ -98,7 +101,7 @@ return {
   {
 
     "zbirenbaum/copilot.lua",
-    enabled = true,
+    enabled = false,
     cmd = "Copilot",
     -- event = "InsertEnter",
     -- setup = function()
@@ -174,6 +177,26 @@ return {
         elixir = false,
         ["."] = true,
       },
+    },
+  },
+  -- END github copilot
+
+  -- Codeium
+  {
+    {
+      "jcdickinson/http.nvim",
+      build = "cargo build --workspace --release",
+    },
+    {
+      "jcdickinson/codeium.nvim",
+      dependencies = {
+        "jcdickinson/http.nvim",
+        "nvim-lua/plenary.nvim",
+        "hrsh7th/nvim-cmp",
+      },
+      config = function()
+        require("codeium").setup({})
+      end,
     },
   },
 }

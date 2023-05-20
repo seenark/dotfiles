@@ -49,6 +49,12 @@ return {
         -- bashls = {},
         -- clangd = {},
         -- denols = {},
+        eslint = {
+          settings = {
+            -- helps eslint find the eslintrc when it's placed in a subfolder instead of the cwd root
+            workingDirectory = { mode = "auto" },
+          },
+        },
         jsonls = {
           -- lazy-load schemastore when needed
           on_new_config = function(new_config)
@@ -174,7 +180,17 @@ return {
         vimls = {},
         tailwindcss = {},
       },
-      setup = {},
+      setup = {
+        eslint = function()
+          vim.api.nvim_create_autocmd("BufWritePre", {
+            callback = function(event)
+              if require("lspconfig.util").get_active_client_by_name(event.buf, "eslint") then
+                vim.cmd("EslintFixAll")
+              end
+            end,
+          })
+        end,
+      },
       -- setup = {
       --   tsserver = function(_, opts)
       --     require("lazyvim.util").on_attach(function(client, buffer)
@@ -207,7 +223,7 @@ return {
           -- formatting.prettierd.with({extra_args = {"--no-semi", "--single-qoute", "--jsx-single-qoute"}}),
           formatting.prettierd,
           diagnostics.eslint_d.with({
-            diagnostics_format = "[eslintd] #{m}\n(#{c})",
+            diagnostics_format = "[eslint_d] #{m}\n(#{c})",
           }),
           code_actions.eslint_d,
 

@@ -1,5 +1,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  dependencies = {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+  },
   keys = {
     { "<c-space>", desc = "Increment selection" },
     { "<bs>", desc = "Schrink selection", mode = "x" },
@@ -44,6 +47,10 @@ return {
         scope_incremental = "<nop>",
         node_decremental = "<bs>",
       },
+    },
+    context_commentstring = {
+      enable = true,
+      enable_autocmd = false,
     },
   },
   ---@param opts TSConfig
