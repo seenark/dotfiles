@@ -43,13 +43,6 @@ local M = {
       overrides = {},
     },
   },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-      -- colorscheme = "ayu",
-    },
-  },
 }
 
 return M
