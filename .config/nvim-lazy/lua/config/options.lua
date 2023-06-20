@@ -8,6 +8,7 @@ local opt = vim.opt
 opt.clipboard = ""
 opt.scrolloff = 8
 opt.iskeyword:append("-")
+opt.iskeyword:append("$")
 -- opt.formatoptions:remove("cro")
 
 -- lsp

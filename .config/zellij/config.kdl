@@ -13,3 +13,7 @@ simplified_ui false
 //        bind "Ctrl l" { SwitchToMode "locked"; }
 //      }
 //  }
+
+//env {
+//    NVIM_APPNAME=nvim-lazy
+//}

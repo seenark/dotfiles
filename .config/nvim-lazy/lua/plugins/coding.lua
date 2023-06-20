@@ -85,9 +85,9 @@ return {
     end,
   },
   -- DAP
-  {
-    "mfussenegger/nvim-dap",
-  },
+  -- {
+  --   "mfussenegger/nvim-dap",
+  -- },
 
   -- github copilot
   {
