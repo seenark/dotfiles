@@ -126,6 +126,9 @@ source $(brew --prefix nvm)/nvm.sh
 alias nl="NVIM_APPNAME=nvim-lazy nvim"
 alias nc="NVIM_APPNAME=chad-lazy nvim"
 
+alias z1="zellij -l ~/.config/zellij/layouts/z1.kdl"
+alias z2="zellij -l ~/.config/zellij/layouts/z2.kdl"
+
 function nvims() {
   items=("nvim-lazy" "chad-lazy" "default")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)

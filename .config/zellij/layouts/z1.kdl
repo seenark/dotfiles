@@ -9,7 +9,7 @@ layout {
           plugin location="zellij:status-bar"
       }
   }
-  tab name="i-service" focus=true {
+  tab name="tab1" focus=true {
     pane split_direction="horizontal" {
         pane size="80%" focus=true 
         pane size="20%"
