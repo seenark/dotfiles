@@ -8,11 +8,11 @@ layout_dir "./layouts"
 scrollback_editor "/opt/homebrew/bin/hx"
 simplified_ui false
 
-// keybinds {
-//    normal {
-//        bind "Ctrl l" { SwitchToMode "locked"; }
-//      }
-//  }
+ keybinds {
+    normal {
+        bind "Ctrl f" { ToggleFocusFullscreen; }
+      }
+  }
 
 //env {
 //    NVIM_APPNAME=nvim-lazy
