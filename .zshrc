@@ -123,14 +123,16 @@ source $(brew --prefix nvm)/nvm.sh
 
 # export PATH=/opt/homebrew/opt/llvm/bin:$PATH
 
-alias nl="NVIM_APPNAME=nvim-lazy nvim"
+alias nl1="NVIM_APPNAME=nvim-lazy nvim"
+# default nvim use nl
+alias nl="NVIM_APPNAME=nvim-lazy2 nvim"
 alias nc="NVIM_APPNAME=chad-lazy nvim"
 
 alias z1="zellij -l ~/.config/zellij/layouts/z1.kdl"
 alias z2="zellij -l ~/.config/zellij/layouts/z2.kdl"
 
 function nvims() {
-  items=("nvim-lazy" "chad-lazy" "default")
+  items=("nvim-lazy2" "nvim-lazy" "chad-lazy" "default")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
