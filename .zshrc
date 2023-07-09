@@ -115,6 +115,20 @@ plugins=(you-should-use $plugins)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+#################### ALIASES ####################
+
+## Git
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gpl="git pull"
+alias gca="git commit --amend"
+alias glp="git log --oneline --graph --decorate --all"
+
+
+#################### ALIASES ####################
+
 autoload -U compinit; compinit
 alias k="kubectl"
 

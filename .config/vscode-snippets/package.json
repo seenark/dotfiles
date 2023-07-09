@@ -1,0 +1,26 @@
+{
+  "name": "qwik",
+  "description": "qwik snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ],
+        "path": "./qwik/qwik.code-snippets"
+      },
+      {
+        "language": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ],
+        "path": "./qwik/qwik-city.code-snippets"
+      }
+    ]
+  }
+}
