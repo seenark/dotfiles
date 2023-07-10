@@ -126,6 +126,9 @@ alias gpl="git pull"
 alias gca="git commit --amend"
 alias glp="git log --oneline --graph --decorate --all"
 
+## EXA
+alias ls="exa -al --icons --group-directories-first --git"
+alias tree="exa -T -L 2 -I 'node_modules|*.pyc'"
 
 #################### ALIASES ####################
 
