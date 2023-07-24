@@ -64,8 +64,8 @@ local buildin_color_scheme = wezterm.color.get_builtin_schemes()[color_scheme]
 -- background
 -- config.window_background_opacity = 1
 config.window_background_gradient = {
-	-- colors = { buildin_color_scheme.background },
-	colors = { "Black" },
+	colors = { buildin_color_scheme.background },
+	-- colors = { "Black" },
 	-- preset = "Black",
 	-- orientation = {
 	-- 	Radial = {
@@ -81,17 +81,17 @@ config.background = {
 	-- 	opacity = 0.6,
 	-- },
 	{
-		source = { File = wezterm.config_dir .. "/sunset.gif" },
+		source = { File = wezterm.config_dir .. "/gifs/sunset.gif" },
 		horizontal_align = "Center",
 		vertical_align = "Middle",
-		-- vertical_offset = "10cell",
+		vertical_offset = "2cell",
 		-- horizontal_offset = "Center",
 		height = "Cover", -- Cover, Contain
 		width = "Cover",
 		hsb = {
 			hue = 1.0,
 			saturation = 1.0,
-			brightness = 1.0,
+			brightness = 3.0,
 		},
 		repeat_x = "NoRepeat",
 		repeat_y = "NoRepeat",
