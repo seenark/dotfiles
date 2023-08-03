@@ -167,3 +167,10 @@ bindkey -s ^n "nvims\n"
 
 
 
+
+# bun completions
+[ -s "/Users/atiwatseenark/.bun/_bun" ] && source "/Users/atiwatseenark/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
