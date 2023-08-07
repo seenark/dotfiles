@@ -10,6 +10,11 @@ fish_add_path /usr/local/bin
 fish_add_path ~/.bun/bin
 ###################### paths ######################
 
+###################### fnm fast node manager ######################
+fnm env --use-on-cd | source
+###################### fnm fast node manager ######################
+
+
 ###################### starship ######################
 source (/opt/homebrew/bin/starship init fish --print-full-init | psub)
 ###################### starship ######################
