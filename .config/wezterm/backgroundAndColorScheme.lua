@@ -6,7 +6,7 @@ return function(config, wezterm)
 	local buildin_color_scheme = wezterm.color.get_builtin_schemes()[color_scheme]
 
 	-- background
-	-- config.window_background_opacity = 1
+	config.window_background_opacity = 0.75
 	config.window_background_gradient = {
 		colors = { buildin_color_scheme.background },
 		-- colors = { "Black" },
@@ -24,22 +24,23 @@ return function(config, wezterm)
 		-- 	source = { File = "/Users/atiwatseenark/aum.png" },
 		-- 	opacity = 0.6,
 		-- },
-		{
-			source = { File = wezterm.config_dir .. "/gifs/sunset.gif" },
-			horizontal_align = "Center",
-			vertical_align = "Middle",
-			vertical_offset = "2cell",
-			-- horizontal_offset = "Center",
-			height = "Cover", -- Cover, Contain
-			width = "Cover",
-			hsb = {
-				hue = 1.0,
-				saturation = 1.0,
-				brightness = 3.0,
-			},
-			repeat_x = "NoRepeat",
-			repeat_y = "NoRepeat",
-			opacity = 0.2,
-		},
+		--------- add background image ----------
+		-- {
+		-- 	source = { File = wezterm.config_dir .. "/gifs/sunset.gif" },
+		-- 	horizontal_align = "Center",
+		-- 	vertical_align = "Middle",
+		-- 	vertical_offset = "2cell",
+		-- 	-- horizontal_offset = "Center",
+		-- 	height = "Cover", -- Cover, Contain
+		-- 	width = "Cover",
+		-- 	hsb = {
+		-- 		hue = 1.0,
+		-- 		saturation = 1.0,
+		-- 		brightness = 3.0,
+		-- 	},
+		-- 	repeat_x = "NoRepeat",
+		-- 	repeat_y = "NoRepeat",
+		-- 	opacity = 0.2,
+		-- },
 	}
 end

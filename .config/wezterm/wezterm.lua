@@ -30,4 +30,8 @@ config.window_close_confirmation = "NeverPrompt" -- 'AlwaysPrompt', NeverPrompt
 
 config.show_update_window = true
 
+-- window
+-- -- hide title bar but keep resizable
+config.window_decorations = "RESIZE"
+
 return config

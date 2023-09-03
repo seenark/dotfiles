@@ -7,8 +7,8 @@ alt - h : yabai -m window --focus west
 alt - l : yabai -m window --focus east
 
 # change focus between external display (left and right)
-cmd + shift - h: yabai -m display --focus west
-cmd + shift - l: yabai -m display --focus east
+cmd - h: yabai -m display --focus west
+cmd - l: yabai -m display --focus east
 
 # rotate layout clockwise
 shift + alt - r : yabai -m space --rotate 270
