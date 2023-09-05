@@ -75,6 +75,7 @@ return {
         html = {},
         cssls = {},
         dockerls = {},
+        docker_compose_language_service = {},
         tsserver = {
           settings = {
             typescript = {
@@ -269,6 +270,9 @@ return {
               return utils.root_has_file("selene.toml")
             end,
           }),
+
+          -- docker
+          diagnostics.hadolint,
         },
       }
     end,

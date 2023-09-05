@@ -6,17 +6,17 @@ return function(config, wezterm)
 	local buildin_color_scheme = wezterm.color.get_builtin_schemes()[color_scheme]
 
 	-- background
-	config.window_background_opacity = 0.60
-	config.macos_window_background_blur = 20
+	config.window_background_opacity = 0.75
+	config.macos_window_background_blur = 30
 	config.window_background_gradient = {
 		colors = { buildin_color_scheme.background },
-		-- colors = { "Black" },
+		-- colors = { "#161616ff" },
 		-- preset = "Black",
 		-- orientation = {
 		-- 	Radial = {
-		-- 		cx = 0.5,
-		-- 		cy = 0.5,
-		-- 		radius = 1.25,
+		-- 		cx = 0.0,
+		-- 		cy = 0.0,
+		-- 		radius = 1.50,
 		-- 	},
 		-- },
 	}
