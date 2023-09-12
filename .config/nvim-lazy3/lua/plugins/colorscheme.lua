@@ -146,12 +146,12 @@ local M = {
       })
     end,
   },
-  -- { -- use the core.lua
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "monokai-pro",
-  --   },
-  -- },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "monokai-pro",
+    },
+  },
 }
 
 return M

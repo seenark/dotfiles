@@ -4,6 +4,9 @@ return {
   {
     "williamboman/mason.nvim",
     opts = {
+      ui = {
+        border = "rounded",
+      },
       ensure_installed = {
         "stylua",
         "shellcheck",
@@ -17,15 +20,16 @@ return {
         "prettierd",
         "prisma-language-server",
         "js-debug-adapter",
+        -- "typescript-language-server", this install by predifined typescript plugins from Folke
         -- "prosemd-lsp", --[[ for markdown ]]
-        -- "rome",
         -- "solang",
         -- "svelte-language-server",
+        -- "biome",
         "tailwindcss-language-server",
         "yaml-language-server",
         "yamlfmt",
         "rust-analyzer",
-        "rustfmt",
+        -- "rustfmt",
         "codelldb",
         "taplo",
         "codelldb",
@@ -51,6 +55,7 @@ return {
         -- bashls = {},
         -- clangd = {},
         -- denols = {},
+
         eslint = {
           settings = {
             -- helps eslint find the eslintrc when it's placed in a subfolder instead of the cwd root
@@ -77,6 +82,10 @@ return {
         dockerls = {},
         docker_compose_language_service = {},
         tsserver = {
+          keys = {
+            { "<leader>co", "<cmd>TypescriptOrganizeImports<CR>", desc = "Organize Imports" },
+            { "<leader>cR", "<cmd>TypescriptRenameFile<CR>", desc = "Rename File" },
+          },
           settings = {
             typescript = {
               inlayHints = {
@@ -102,6 +111,7 @@ return {
             },
           },
         },
+        -- biome = {},
         -- svelte = {},
         -- gopls = {},
         marksman = {}, -- for Markdown
@@ -183,40 +193,63 @@ return {
         vimls = {},
         tailwindcss = {},
       },
-      setup = {
-        eslint = function()
-          vim.api.nvim_create_autocmd("BufWritePre", {
-            callback = function(event)
-              if not require("lazyvim.plugins.lsp.format").enabled() then
-                -- exit early if autoformat is not enabled
-                return
-              end
-
-              local client = vim.lsp.get_active_clients({ bufnr = event.buf, name = "eslint" })[1]
-              if client then
-                local diag = vim.diagnostic.get(event.buf, { namespace = vim.lsp.diagnostic.get_namespace(client.id) })
-                if #diag > 0 then
-                  vim.cmd("EslintFixAll")
-                end
-              end
-            end,
-          })
-        end,
-      },
+      -- setup = {
+      --   eslint = function()
+      --     vim.api.nvim_create_autocmd("BufWritePre", {
+      --       callback = function(event)
+      --         if not require("lazyvim.plugins.lsp.format").enabled() then
+      --           -- exit early if autoformat is not enabled
+      --           return
+      --         end
+      --
+      --         local client = vim.lsp.get_active_clients({ bufnr = event.buf, name = "eslint" })[1]
+      --         if client then
+      --           local diag = vim.diagnostic.get(event.buf, { namespace = vim.lsp.diagnostic.get_namespace(client.id) })
+      --           if #diag > 0 then
+      --             vim.cmd("EslintFixAll")
+      --           end
+      --         end
+      --       end,
+      --     })
+      --   end,
+      -- },
       -- setup = {
       --   tsserver = function(_, opts)
-      --     require("lazyvim.util").on_attach(function(client, buffer)
-      --       if client.name == "tsserver" then
-      --         -- stylua: ignore
-      --         vim.keymap.set("n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
-      --         vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
-      --       end
-      --     end)
       --     require("typescript").setup({ server = opts })
       --     return true
       --   end,
       -- },
     },
+    config = function(opts)
+      local on_attach = opts.on_attach
+      local capabilities = opts.capabilities
+
+      local lspconfig = require("lspconfig")
+
+      local function organize_imports()
+        local params = {
+          command = "_typescript.organizeImports",
+          arguments = { vim.api.nvim_buf_get_name(0) },
+        }
+        vim.lsp.buf.execute_command(params)
+      end
+
+      lspconfig.tsserver.setup({
+        on_attach = on_attach,
+        capabilities = capabilities,
+        init_options = {
+          preferences = {
+            disableSuggestions = true,
+          },
+        },
+        commands = {
+          OrganizeImports = {
+            organize_imports,
+            description = "Organize Imports",
+          },
+        },
+      })
+    end,
   },
   -- null-ls
   {
@@ -227,18 +260,19 @@ return {
       local formatting = nls.builtins.formatting
       local diagnostics = nls.builtins.diagnostics
       local code_actions = nls.builtins.code_actions
+      local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
       table.insert(opts.sources, require("typescript.extensions.null-ls.code-actions"))
       return {
         sources = {
 
           -- webdev stuff
-          -- formatting.prettierd.with({extra_args = {"--no-semi", "--single-qoute", "--jsx-single-qoute"}}),
+          -- formatting.prettierd.with({ extra_args = { "--no-semi", "--single-qoute", "--jsx-single-qoute" } }),
           formatting.prettierd,
           diagnostics.eslint_d.with({
             diagnostics_format = "[eslint_d] #{m}\n(#{c})",
           }),
-          code_actions.eslint_d,
+          -- code_actions.eslint_d,
 
           -- lua
           formatting.stylua,
@@ -274,6 +308,21 @@ return {
           -- docker
           diagnostics.hadolint,
         },
+        on_attach = function(client, bufnr)
+          if client.supports_method("textDocument/formatting") then
+            vim.api.nvim_clear_autocmds({
+              group = augroup,
+              buffer = bufnr,
+            })
+            vim.api.nvim_create_autocmd("BufWritePre", {
+              group = augroup,
+              buffer = bufnr,
+              callback = function()
+                vim.lsp.buf.format({ bufnr = bufnr })
+              end,
+            })
+          end
+        end,
       }
     end,
   },

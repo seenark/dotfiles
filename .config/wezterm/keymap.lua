@@ -27,6 +27,28 @@ function SetKeyMaps(config, act)
 			mods = "CTRL",
 			action = act.SendString(" un"),
 		},
+		-- codeium mapping to nvim
+		-- {
+		-- 	key = "a",
+		-- 	mods = "CTRL",
+		-- 	action = act.SendKey({ key = "æ", mods = "SHIFT" }), -- if don't specify SHIFT it's not working
+		-- },
+		-- {
+		-- 	key = "a",
+		-- 	mods = "CTRL|SHIFT",
+		-- 	action = act.SendKey({ key = "Æ", mods = "SHIFT" }), -- if don't specify SHIFT it's not working
+		-- },
+		-- {
+		-- 	key = "s",
+		-- 	mods = "CTRL",
+		-- 	action = act.SendKey({ key = "…", mods = "SHIFT" }), -- if don't specify SHIFT it's not working
+		-- },
+		-- {
+		-- 	key = "s",
+		-- 	mods = "CTRL|SHIFT",
+		-- 	action = act.SendKey({ key = "Ú", mods = "CTRL|SHIFT" }), -- if don't specify SHIFT it's not working
+		-- },
+		---------- wezterm walk around ----------
 		{
 			key = "h",
 			action = act.ActivatePaneDirection("Left"),

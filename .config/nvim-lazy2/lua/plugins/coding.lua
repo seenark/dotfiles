@@ -61,7 +61,7 @@ return {
   -- Codeium
   {
     {
-      "jcdickinson/http.nvim",
+      -- "jcdickinson/http.nvim",
       build = "cargo build --workspace --release",
     },
     {
