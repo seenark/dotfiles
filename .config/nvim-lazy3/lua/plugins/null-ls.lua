@@ -15,9 +15,9 @@ return {
           ------- docker --------
           ------- typescript --------
           -- nls.builtins.formatting.prettierd, -- as per lazyvim docs prettierd should not enabled in null-ls
-          nls.builtins.diagnostics.eslint_d.with({
-            diagnostics_format = "[eslint_d] #{m}\n(#{c})",
-          }),
+          -- nls.builtins.diagnostics.eslint_d.with({
+          --   diagnostics_format = "[eslint_d] #{m}\n(#{c})",
+          -- }),
 
           ------- typescript --------
         },

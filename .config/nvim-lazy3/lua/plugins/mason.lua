@@ -11,7 +11,7 @@ return {
         "html-lsp",
         "css-lsp",
         "cssmodules-language-server",
-        "eslint_d",
+        -- "eslint_d",
         "jsonlint",
         "prettierd",
         "prisma-language-server",

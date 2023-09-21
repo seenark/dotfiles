@@ -128,3 +128,12 @@ function k
     command kubectl $argv
 end
 ###################### KUBECTL ######################
+
+###################### BUN ######################
+function bunadd
+    command bun add --backend copyfile $argv
+end
+function buni
+    command bun i --backend copyfile $argv
+end
+###################### BUN ######################

@@ -25,6 +25,13 @@ return {
         jsonls = {},
         dockerls = {},
         docker_compose_language_service = {},
+        lua_ls = {
+          settings = {
+            Lua = {
+              hint = { enabled = true },
+            },
+          },
+        },
         tsserver = {
           settings = {
             typescript = {
