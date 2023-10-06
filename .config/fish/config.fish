@@ -137,3 +137,15 @@ function buni
     command bun i --backend copyfile $argv
 end
 ###################### BUN ######################
+
+
+###################### PROLAB SSH ######################
+function plcp
+    env PROLAB_SERVER_PASSWORD=prolab@30451
+    command scp -r prolab@161.82.188.163:$argv
+end
+function plpass
+    env PROLAB_SERVER_PASSWORD=prolab@30451
+    echo $PROLAB_SERVER_PASSWORD
+end
+###################### PROLAB SSH ######################

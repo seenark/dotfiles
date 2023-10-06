@@ -1,5 +1,6 @@
 function SetKeyMaps(config, act)
 	config.native_macos_fullscreen_mode = true
+	config.leader = { key = "a", mods = "CTRL" }
 	config.keys = {
 		{
 			key = "n",
@@ -86,6 +87,26 @@ function SetKeyMaps(config, act)
 			action = act.SplitPane({ direction = "Right", size = { Percent = 30 } }),
 		},
 		{
+			key = "h",
+			mods = "ALT|CTRL",
+			action = act.AdjustPaneSize({ "Left", 5 }),
+		},
+		{
+			key = "j",
+			mods = "ALT|CTRL",
+			action = act.AdjustPaneSize({ "Down", 5 }),
+		},
+		{
+			key = "k",
+			mods = "ALT|CTRL",
+			action = act.AdjustPaneSize({ "Up", 5 }),
+		},
+		{
+			key = "l",
+			mods = "ALT|CTRL",
+			action = act.AdjustPaneSize({ "Right", 5 }),
+		},
+		{
 			key = "w",
 			mods = "SHIFT|CTRL",
 			action = act.CloseCurrentPane({ confirm = true }),
@@ -120,7 +141,7 @@ function SetKeyMaps(config, act)
 				flags = "FUZZY|WORKSPACES",
 			}),
 		},
-		{ key = "l", mods = "SHIFT|ALT", action = act.ShowLauncher },
+		{ key = "p", mods = "SHIFT|ALT", action = act.ShowLauncher },
 		-- activate pane selection mode with the default alphabet (labels are "a", "s", "d", "f" and so on)
 		-- { key = "8", mods = "CTRL", action = act.PaneSelect },
 		-- activate pane selection mode with numeric labels
