@@ -1,0 +1,38 @@
+local keys = require("keys")
+local helpers = require("helpers")
+
+local r = helpers.bindHotKey(keys.cmd, "r", function()
+	helpers.keystroke("c")
+	helpers.keystroke("r")
+	helpers.keystroke("r")
+end)
+
+local b = helpers.bindHotKey(keys.cmd, "b", function()
+	helpers.keystroke("v")
+	helpers.keystroke("b")
+	helpers.keystroke("b")
+end)
+
+local e = helpers.bindHotKey(keys.cmd, "e", function()
+	helpers.keystroke("e")
+	helpers.keystroke("e")
+	helpers.keystroke("e")
+end)
+
+helpers.bindHotKey(keys.cmdAltShift, "t", function()
+	helpers.notification("disable", "tinker")
+	r:disable()
+	b:disable()
+	e:disable()
+end)
+helpers.bindHotKey(keys.cmdShift, "t", function()
+	helpers.notification("enabled", "tinker")
+	r:enable()
+	b:enable()
+	e:enable()
+end)
+
+-- disable by default
+r:disable()
+b:disable()
+e:disable()

@@ -4,6 +4,7 @@ local key = helpers.bindHotKey
 local keys = require("keys")
 local ps = require("ps")
 local window = require("window")
+local dotaTinker = require("dota2.tinker")
 
 helpers.reloadConfig()
 

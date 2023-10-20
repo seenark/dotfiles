@@ -8,6 +8,7 @@ fish_add_path /opt/homebrew/bin
 fish_add_path ~/.cargo/bin
 fish_add_path /usr/local/bin
 fish_add_path ~/.bun/bin
+fish_add_path ~/.emacs.d/bin
 ###################### paths ######################
 
 ###################### fnm fast node manager ######################
@@ -137,6 +138,12 @@ function buni
     command bun i --backend copyfile $argv
 end
 ###################### BUN ######################
+
+###################### Home brew ######################
+function brewfont
+    command brew install --cask $argv
+end
+###################### Home brew ######################
 
 
 ###################### PROLAB SSH ######################

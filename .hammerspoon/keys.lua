@@ -4,6 +4,7 @@ M.cmd = "cmd"
 M.ctrl = "ctrl"
 M.alt = "alt"
 M.shift = "shift"
+M.none = {}
 
 -- combo 2 key
 -- cmd

@@ -131,4 +131,39 @@ M.loop = function(func)
 	end
 end
 
+-- this is good example but have no time to follow
+-- local function keyCode(modifiers, key)
+--   return function() hs.eventtap.keyStroke(modifiers, key, 0) end
+-- end
+--
+-- -- Create a modal hotkey object with an absurd triggering hotkey,
+-- -- since it will never be triggered from the keyboard
+-- hotkeys = hs.hotkey.modal.new({"cmd", "shift", "alt"}, "F19")
+-- -- Bind all your normal hotkeys to the modal state object
+-- hotkeys:bind({'ctrl'}, ',', keyCode({'alt'}, 'left'))
+-- hotkeys:bind({'ctrl'}, '.', keyCode({'alt'}, 'down'))
+-- hotkeys:bind({'ctrl'}, "'", keyCode({'alt'}, 'forwarddelete'))
+-- hotkeys:bind({'ctrl'}, ';', keyCode({'alt'}, 'delete'))
+-- hotkeys:bind({'ctrl'}, 'u', keyCode({'cmd'}, 'delete'))
+--
+-- -- Define a callback function to be called when application events happen
+-- function applicationWatcherCallback(appName, eventType, appObject)
+--   if (appName == "Emacs") then
+--     if (eventType == hs.application.watcher.activated) then
+--       -- Emacs just got focus, disable our hotkeys
+--       hotkeys:exit()
+--     elseif (eventType == hs.application.watcher.deactivated) then
+--       -- Emacs just lost focus, enable our hotkeys
+--       hotkeys:enter()
+--     end
+--   end
+-- end
+--
+-- -- Create and start the application event watcher
+-- watcher = hs.application.watcher.new(applicationWatcherCallback)
+-- watcher:start()
+--
+-- -- Activate the modal state
+-- hotkeys:enter()
+
 return M
