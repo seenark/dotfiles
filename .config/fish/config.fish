@@ -111,6 +111,11 @@ end
 function glp
     command git log --oneline --graph --decorate --all
 end
+
+# delete branch remote
+function git-del-remote
+    git push --delete origin $argv
+end
 ###################### Git ######################
 
 ###################### EXA ######################
