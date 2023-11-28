@@ -22,8 +22,8 @@ end
 function openAndFocusFileExplorer() 
   vsaction("workbench.files.action.focusFilesExplorer")
 end
-local isOpen = false
 
+local isOpen = false
 function toggleFileExplorer() 
   if isOpen == true then
     isOpen = false
@@ -53,7 +53,7 @@ map("n", "<leader>e", function()
   -- end
   -- vsaction("workbench.view.explorer")
   openAndFocusFileExplorer()
-  -- isOpen = true
+  isOpen = true
 end, { desc = "vscode file explorer" })
 
 -- vsnotify("workbench.view.explorer")
