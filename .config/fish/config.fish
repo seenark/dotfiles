@@ -15,6 +15,9 @@ fish_add_path ~/.emacs.d/bin
 fnm env --use-on-cd | source
 ###################### fnm fast node manager ######################
 
+###################### atuin shell history ######################
+atuin init fish | source
+###################### atuin shell history ######################
 
 ###################### starship ######################
 source (/opt/homebrew/bin/starship init fish --print-full-init | psub)
@@ -121,11 +124,11 @@ end
 ###################### EXA ######################
 # alias ls="exa -al --icons --group-directories-first --git"
 function ls
-    command exa -al --icons --group-directories-first --git $argv
+    command eza -al --icons --group-directories-first --git $argv
 end
 # alias tree="exa -T -L 2 -I 'node_modules|*.pyc'"
 function tree
-    command exa -T -L 2 -I 'node_modules|*.pyc' $argv
+    command eza -T -L 2 -I 'node_modules|*.pyc' $argv
 end
 ###################### EXA ######################
 
