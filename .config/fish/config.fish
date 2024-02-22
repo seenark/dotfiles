@@ -19,6 +19,10 @@ fnm env --use-on-cd | source
 atuin init fish | source
 ###################### atuin shell history ######################
 
+###################### zoxide ######################
+zoxide init fish | source
+###################### zoxide ######################
+
 ###################### starship ######################
 source (/opt/homebrew/bin/starship init fish --print-full-init | psub)
 ###################### starship ######################
@@ -31,7 +35,7 @@ source (/opt/homebrew/bin/starship init fish --print-full-init | psub)
 ###################### NVIM ######################
 # alias z1="zellij -l ~/.config/zellij/layouts/z1.kdl"
 function nl
-    env NVIM_APPNAME=nvim-lazy3 nvim
+    env NVIM_APPNAME=nvim-lazy4 nvim
 end
 
 function z1

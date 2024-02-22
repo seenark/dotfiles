@@ -1,7 +1,7 @@
 
 function iipm
     #!/usr/bin/env fish
-    set -l server_ip "34.126.78.42"
+    set -l server_ip "34.87.62.32"
     # set -l server_pass ""
     set -l private_key_path "$HOME/.ssh/iipm-deployer"
     set -l user deployer
