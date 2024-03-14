@@ -157,6 +157,11 @@ function brewfont
 end
 ###################### Home brew ######################
 
+###################### HOSTFILE ######################
+function hostsfile
+    sudo NVIM_APPNAME=nvim-lazy4 nvim /etc/hosts
+end
+###################### HOSTFILE ######################
 
 ###################### PROLAB SSH ######################
 function plcp

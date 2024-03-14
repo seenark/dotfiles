@@ -8,3 +8,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 vim.cmd("set numberwidth=4")
+
+-- Disable autoformat for lua files
+-- vim.api.nvim_create_autocmd({ "FileType" }, {
+--   pattern = { "tsx", "ts" },
+--   callback = function()
+--     vim.b.autoformat = false
+--   end,
+-- })
