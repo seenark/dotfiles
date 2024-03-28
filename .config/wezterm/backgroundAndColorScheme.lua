@@ -7,7 +7,7 @@ return function(config, wezterm)
 
 	-- background
 	config.window_background_opacity = 0.65
-	config.macos_window_background_blur = 30
+	config.macos_window_background_blur = 50
 	config.window_background_gradient = {
 		colors = { buildin_color_scheme.background },
 		-- colors = { "#161616ff" },
