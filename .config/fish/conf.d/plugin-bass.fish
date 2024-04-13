@@ -1,0 +1,1 @@
+/nix/store/avva6di4sy7bb3fdbyxfwj3h6pqa9nnw-home-manager-files/.config/fish/conf.d/plugin-bass.fish

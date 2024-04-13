@@ -1,188 +1,34 @@
 
-# -----------RUST-------------------
+############ LSP ############ 
+[language-server]
+bash-language-server = { command = "bash-language-server", args = ["start"] }
+docker-langserver = { command = "docker-langserver", args = ["--stdio"] }
+docker-compose-langserver = { command = "docker-compose-langserver", args = ["--stdio"]}
+marksman = { command = "marksman", args = ["server"] }
+prisma-language-server = { command = "prisma-language-server", args = ["--stdio"] }
+tailwindcss-ls = { command = "tailwindcss-language-server", args = ["--stdio"] }
+taplo = { command = "taplo", args = ["lsp", "stdio"] }
+vscode-css-language-server = { command = "vscode-css-language-server", args = ["--stdio"], config = { provideFormatter = true, css = { validate = { enable = true } } } }
+vscode-html-language-server = { command = "vscode-html-language-server", args = ["--stdio"], config = { provideFormatter = true } }
+vscode-json-language-server = { command = "vscode-json-language-server", args = ["--stdio"], config = { provideFormatter = true, json = { validate = { enable = true } } } }
+yaml-language-server = { command = "yaml-language-server", args = ["--stdio"] }
+helm_ls = { command = "helm_ls", args = ["serve"] }
+
+############ LSP ############ 
+############ RUST ############ 
 [[language]]
 name = "rust"
+############ RUST ############ 
 
-[language.config]
-checkOnSave = { command = "clippy" }
+############ LUA ############ 
+[language-server.lua-language-server]
+command = "lua-language-server"
 
-[language.auto-pairs]
-'(' = ')'
-'{' = '}'
-'[' = ']'
-'"' = '"'
-'`' = '`'
-'<' = '>'
-
-# -----------TOML-------------------
-[[language]]
-name = "toml"
-scope = "source.toml"
-injection-regex = "toml"
-file-types = ["toml"]
-roots = []
-comment-token = "#"
-language-server = { command = "taplo", args = ["lsp", "stdio"] }
-indent = { tab-width = 2, unit = "  " }
-
-[[grammar]]
-name = "toml"
-source = { git = "https://github.com/ikatyang/tree-sitter-toml", rev = "7cff70bbcbbc62001b465603ca1ea88edd668704" }
-
-# -----------Javascript-------------------
-[[language]]
-name = "javascript"
-scope = "source.js"
-injection-regex = "(js|javascript)"
-file-types = ["js", "mjs", "cjs"]
-shebangs = ["node"]
-roots = []
-comment-token = "//"
-# TODO: highlights-params
-language-server = { command = "typescript-language-server", args = ["--stdio"], language-id = "javascript" }
-indent = { tab-width = 2, unit = "  " }
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
-auto-format = true
-
-[language.debugger]
-name = "node-debug2"
-transport = "stdio"
-# args consisting of cmd (node) and path to adapter should be added to user's configuration
-quirks = { absolute-paths = true }
-
-[[language.debugger.templates]]
-name = "source"
-request = "launch"
-completion = [ { name = "main", completion = "filename", default = "index.js" } ]
-args = { program = "{0}" }
-
-[[grammar]]
-name = "javascript"
-source = { git = "https://github.com/tree-sitter/tree-sitter-javascript", rev = "4a95461c4761c624f2263725aca79eeaefd36cad" }
-
-
-# -----------JSX-------------------
-[[language]]
-name = "jsx"
-scope = "source.jsx"
-injection-regex = "jsx"
-file-types = ["jsx"]
-roots = []
-comment-token = "//"
-language-server = { command = "typescript-language-server", args = ["--stdio"], language-id = "javascriptreact" }
-indent = { tab-width = 2, unit = "  " }
-grammar = "javascript"
-
-# -----------Typescript-------------------
-[[language]]
-name = "typescript"
-scope = "source.ts"
-injection-regex = "(ts|typescript)"
-file-types = ["ts"]
-shebangs = []
-roots = []
-# TODO: highlights-params
-language-server = { command = "typescript-language-server", args = ["--stdio"], language-id = "typescript"}
-indent = { tab-width = 2, unit = "  " }
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
-auto-format = true
-
-[[grammar]]
-name = "typescript"
-source = { git = "https://github.com/tree-sitter/tree-sitter-typescript", rev = "6aac031ad88dd6317f02ac0bb27d099a553a7d8c", subpath = "typescript" }
-
-# -----------TSX-------------------
-[[language]]
-name = "tsx"
-scope = "source.tsx"
-injection-regex = "(tsx)" # |typescript
-file-types = ["tsx"]
-roots = []
-# TODO: highlights-params
-language-server = { command = "typescript-language-server", args = ["--stdio"], language-id = "typescriptreact" }
-indent = { tab-width = 2, unit = "  " }
-
-[[grammar]]
-name = "tsx"
-source = { git = "https://github.com/tree-sitter/tree-sitter-typescript", rev = "6aac031ad88dd6317f02ac0bb27d099a553a7d8c", subpath = "tsx" }
-
-# -----------CSS-------------------
-[[language]]
-name = "css"
-scope = "source.css"
-injection-regex = "css"
-file-types = ["css", "scss"]
-roots = []
-language-server = { command = "vscode-css-language-server", args = ["--stdio"] }
-auto-format = true
-config = { "provideFormatter" = true }
-indent = { tab-width = 2, unit = "  " }
-formatter = { command = 'prettier', args = ["--parser", "css"] }
-
-[[grammar]]
-name = "css"
-source = { git = "https://github.com/tree-sitter/tree-sitter-css", rev = "769203d0f9abe1a9a691ac2b9fe4bb4397a73c51" }
-
-# -----------SCSS-------------------
-[[language]]
-name = "scss"
-scope = "source.scss"
-injection-regex = "scss"
-file-types = ["scss"]
-roots = []
-language-server = { command = "vscode-css-language-server", args = ["--stdio"] }
-auto-format = true
-config = { "provideFormatter" = true }
-indent = { tab-width = 2, unit = "  " }
-
-[[grammar]]
-name = "scss"
-source = { git = "https://github.com/serenadeai/tree-sitter-scss", rev = "c478c6868648eff49eb04a4df90d703dc45b312a" }
-
-# -----------HTML-------------------
-[[language]]
-name = "html"
-scope = "text.html.basic"
-injection-regex = "html"
-file-types = ["html"]
-roots = []
-language-server = { command = "vscode-html-language-server", args = ["--stdio"] }
-auto-format = true
-config = { "provideFormatter" = true }
-indent = { tab-width = 2, unit = "  " }
-formatter = { command = 'prettier', args = ["--parser", "html"] }
-
-[[grammar]]
-name = "html"
-source = { git = "https://github.com/tree-sitter/tree-sitter-html", rev = "29f53d8f4f2335e61bf6418ab8958dac3282077a" }
-
-# -----------JSON-------------------
-[[language]]
-name = "json"
-scope = "source.json"
-injection-regex = "json"
-file-types = ["json", "jsonc"]
-roots = []
-language-server = { command = "vscode-json-language-server", args = ["--stdio"] }
-auto-format = true
-config = { "provideFormatter" = true }
-indent = { tab-width = 2, unit = "  " }
-
-[[grammar]]
-name = "json"
-source = { git = "https://github.com/tree-sitter/tree-sitter-json", rev = "73076754005a460947cafe8e03a8cf5fa4fa2938" }
-
-# -----------DOCKERFILE-------------------
-[[language]]
-name = "dockerfile"
-scope = "source.dockerfile"
-injection-regex = "docker|dockerfile"
-roots = ["Dockerfile"]
-file-types = ["Dockerfile", "dockerfile"]
-comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
-language-server = { command = "docker-langserver", args = ["--stdio"] }
-
-[[grammar]]
-name = "dockerfile"
-source = { git = "https://github.com/camdencheek/tree-sitter-dockerfile", rev = "7af32bc04a66ab196f5b9f92ac471f29372ae2ce" }
+[language-server.lua-language-server.config.Lua.hint]
+enable = true
+arrayIndex = "Enable"
+setType = true
+paramName = "All"
+paramType = true
+await = true
+############ LUA ############ 

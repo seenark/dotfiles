@@ -2,9 +2,14 @@ theme = "base16_transparent_custom"
 
 [editor]
 line-number = "relative"
+mouse = true
 bufferline = "multiple"
 true-color = true
 completion-trigger-len = 1
+scrolloff = 8
+shell = ["fish", "-c"]
+cursorline = true
+
 
 [editor.indent-guides]
 render = true
@@ -14,11 +19,18 @@ skip-levels = 1
 [editor.statusline]
 left = ["mode", "spinner"]
 center = ["file-name"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+right = [
+  "diagnostics",
+  "selections",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+]
 separator = "│"
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+mode.normal = "󰩐 NORMAL"
+mode.insert = "󰲶 INSERT"
+mode.select = "󰝱 SELECT"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -29,17 +41,19 @@ select = "underline"
 display-messages = true
 
 [editor.file-picker]
-hidden = true
-ignore = true
-git-ignore = false
+hidden = false
+ignore = false
+git-ignore = true
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
-"=" = { "=" = ":format"}
-"space" = { x = ":buffer-close" , "." = "code_action"} # buffer close
+"=" = { "=" = ":format" }
+"space" = { x = ":buffer-close", "." = "code_action" } # buffer close
 "X" = "extend_line_above"
 "D" = "kill_to_line_end"
+"L" = ":buffer-next"
+"H" = ":buffer-previous"
+"C-x" = ":buffer-close"
 
 # [keys.insert]
 # "space" = { "." = "completion"}
-

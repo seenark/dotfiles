@@ -1,0 +1,20 @@
+#! /nix/store/bsa1v1mr7c42a0yd90ncnchcs18ylm4b-bash-5.2p26/bin/bash -e
+PATH=${PATH:+':'$PATH':'}
+PATH=${PATH/':''/nix/store/cq4grjrf4ijc166wjys82b0dj1qg87dv-zstd-1.5.5-bin/bin'':'/':'}
+PATH='/nix/store/cq4grjrf4ijc166wjys82b0dj1qg87dv-zstd-1.5.5-bin/bin'$PATH
+PATH=${PATH#':'}
+PATH=${PATH%':'}
+export PATH
+PATH=${PATH:+':'$PATH':'}
+PATH=${PATH/':''/nix/store/vzxgdh6r14h41n86nscgagwmri8n0zb2-gzip-1.13/bin'':'/':'}
+PATH='/nix/store/vzxgdh6r14h41n86nscgagwmri8n0zb2-gzip-1.13/bin'$PATH
+PATH=${PATH#':'}
+PATH=${PATH%':'}
+export PATH
+PATH=${PATH:+':'$PATH':'}
+PATH=${PATH/':''/nix/store/l6y9khvcajm5r94176abhymfq10s5432-groff-1.23.0/bin'':'/':'}
+PATH='/nix/store/l6y9khvcajm5r94176abhymfq10s5432-groff-1.23.0/bin'$PATH
+PATH=${PATH#':'}
+PATH=${PATH%':'}
+export PATH
+exec -a "$0" "/nix/store/86v0n0vmxyfgrpidi0g4w1zipclxl5nl-man-db-2.12.0/bin/.whatis-wrapped"  "$@" 

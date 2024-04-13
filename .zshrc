@@ -125,16 +125,16 @@ alias gca="git commit --amend"
 alias glp="git log --oneline --graph --decorate --all"
 
 ## EXA
-alias ls="eza -al --icons --group-directories-first --git"
-alias tree="eza -T -L 2 -I 'node_modules|*.pyc'"
+# alias ls="eza -al --icons --group-directories-first --git"
+# alias tree="eza -T -L 2 -I 'node_modules|*.pyc'"
 
 #################### ALIASES ####################
 
 autoload -U compinit; compinit
 alias k="kubectl"
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
 
 # export PATH=/opt/homebrew/opt/llvm/bin:$PATH
 

@@ -18,7 +18,7 @@ function hkh
 
         if test -z "$forwarded_port" -a -z "$db_port"
             echo "Host's Port and Server's DB Port cannot be empty. Exiting."
-            exit 1
+            return 1
         end
 
         echo "Forwarding DB Port $db_port to Host $forwarded_port"
@@ -28,20 +28,72 @@ function hkh
     end
 
     # Prompt for server name
-    echo "Enter server name (dev/uat/prod):"
-    read server_name
-    if test -z "$server_name"
-        echo "Server name cannot be empty. Exiting."
-        exit 1
+    function select_server
+        set -l items dev uat prod cd
+
+        echo "Enter server name (dev/uat/prod):"
+
+        set server_name (printf "%s\n" $items | fzf --prompt="  Select Your Server = " --height=~50% --layout=reverse --border --exit-0)
+        if test -z "$server_name"
+            echo "Server name cannot be empty. Exiting."
+            return 0
+        end
+        echo $server_name
     end
 
-    # Prompt for service name
-    echo "Enter service name (api/web/db):"
-    read service_name
-    if test -z "$service_name"
-        echo "Service name cannot be empty. Exiting."
-        exit 1
+    function select_service
+        set -l items api web db
+
+        echo "Enter service name (api/web/db):"
+
+        set service_name (printf "%s\n" $items | fzf --prompt="  Select Your Service = " --height=~50% --layout=reverse --border --exit-0)
+        if test -z "$service_name"
+            echo "Service name cannot be empty. Exiting."
+            return 0
+        end
+        echo $service_name
     end
+
+    function select_folder
+        set -l items frontend backend
+
+        echo "Enter service name (api/web/db):"
+
+        set folder (printf "%s\n" $items | fzf --prompt="  Select Your folder = " --height=~50% --layout=reverse --border --exit-0)
+        if test -z "$folder"
+            echo "Service name cannot be empty. Exiting."
+            return 0
+        end
+        echo $folder
+
+    end
+
+    set -l server_selected (select_server)
+    set -l server_name $server_selected[2]
+    echo "The server you was select: $server_name"
+
+    # if test $status -eq 0
+    #     echo "Exited without selecting a server."
+    #     kill -INT $fish_pid
+    #     exit 0
+    # end
+
+
+    if test $server_name = cd
+        set -l folder (select_folder)
+        switch $folder[2]
+            case backend
+                cd /Volumes/HadesGodBlue/Jobs/HKH/HKH-backend-WebApplication
+                return 1
+            case frontend
+                cd /Volumes/HadesGodBlue/Jobs/HKH/HKH-WebApplication
+                return 1
+        end
+    end
+
+    set -l service_selected (select_service)
+    set -l service_name $service_selected[2]
+    echo "The service you was select: $service_name"
 
 
     switch $server_name
@@ -69,7 +121,7 @@ function hkh
                     set cmd sshpass -p $server_pass ssh -o StrictHostKeyChecking=no -L $forwarded_port:127.0.0.1:$db_port $server_ip -l $user
                 case '*'
                     echo "Invalid service name. Exiting."
-                    exit 1
+                    return 1
             end
         case uat
             switch $service_name
@@ -96,7 +148,7 @@ function hkh
                     set cmd sshpass -p $server_pass ssh -o StrictHostKeyChecking=no -L $forwarded_port:127.0.0.1:$db_port $server_ip -l $user
                 case '*'
                     echo "Invalid service name. Exiting."
-                    exit 1
+                    return 1
             end
         case prod
             switch $service_name
@@ -126,11 +178,11 @@ function hkh
                     set cmd sshpass -p $server_pass ssh -o StrictHostKeyChecking=no -L $forwarded_port:127.0.0.1:$db_port $server_ip $ssh_port -l $user
                 case '*'
                     echo "Invalid service name. Exiting."
-                    exit 1
+                    return 1
             end
         case '*'
             echo "Invalid server name. Exiting."
-            exit 1
+            return 1
     end
 
     # read -P "are you want to forward port (y/n): " want_forward_port
