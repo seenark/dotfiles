@@ -72,6 +72,20 @@
             }
           ];
         };
+        "Atiwats-MacBook-Air" = darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          modules = [
+            configuration
+            ./darwin
+            home-manager.darwinModules.home-manager
+            {
+              home-manager = {
+                users.atiwatseenark = import ./home-manager/home.nix;
+              };
+              users.users.atiwatseenark.home = "/Users/atiwatseenark";
+            }
+          ];
+        };
       };
 
       # Expose the package set, including overlays, for convenience.
