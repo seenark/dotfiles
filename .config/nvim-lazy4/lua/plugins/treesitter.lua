@@ -27,6 +27,7 @@ return {
         -- "gomod", -- for go.mod file
         "gitignore",
         "gleam",
+        "nix",
       },
       highlight = {
         enable = true,
