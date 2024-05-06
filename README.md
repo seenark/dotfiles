@@ -28,3 +28,12 @@
 | --------------   | -------------- | -------------- | ------------------------        |
 | CTRL+SHIFT+a          | Send       |  Æ          | nvim codeium clear |
 | --------------   | -------------- | -------------- | ------------------------        |
+
+
+## Wezterm + Yazi Config
+
+> [!info] Thank you sources from
+1. https://github.com/quantonganh/dotfiles/blob/main/.local/bin/hx-fzf.sh
+2. https://gitlab.com/obxhdx/dotfiles/-/blob/main/config/bin/open_file_explorer?ref_type=heads
+
+

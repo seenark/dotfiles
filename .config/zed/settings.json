@@ -1,0 +1,21 @@
+{
+  "vim_mode": true,
+  "theme": "Catppuccin Mocha",
+  "buffer_font_family": "MonaspiceNe Nerd Font",
+  "ui_font_family": "MonaspiceRn Nerd Font",
+  "ui_font_features": null,
+  "ui_font_size": 20,
+  "buffer_font_size": 20,
+  "enable_language_server": true,
+  "relative_line_numbers": true,
+  "vim": {
+    "use_system_clipboard": "never"
+  },
+  "terminal": {
+    "shell": {
+      "program": "/Users/atiwatseenark/.nix-profile/bin/fish"
+    },
+    "font_family": "MonaspiceKr Nerd Font",
+    "font_size": 18
+  }
+}

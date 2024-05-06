@@ -35,10 +35,16 @@ return {
       wk.register(opts.defaults)
       wk.register({
         ["<leader>"] = {
-          m = "join/split code block",
+          m = {
+            name = "+join/split code block / Graddle",
+          },
           r = {
             name = "+Rust",
             c = { "+Crates" },
+          },
+          t = {
+            name = "+TFM File Manager",
+            m = { "Sub command" },
           },
         },
       })

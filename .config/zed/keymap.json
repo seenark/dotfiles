@@ -1,0 +1,67 @@
+[
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "ctrl-x": "pane::CloseActiveItem"
+    }
+  },
+
+  {
+    "bindings": {}
+  },
+
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "g l": "vim::EndOfLine",
+      "g h": "vim::StartOfLine",
+      "g e": "vim::EndOfDocument",
+      "L": "pane::ActivateNextItem",
+      "H": "pane::ActivatePrevItem",
+      "down": ["workspace::SendKeystrokes", "4 j"],
+      "up": ["workspace::SendKeystrokes", "4 k"],
+      "space e": "pane::RevealInProjectPanel",
+      "cmd-s": "workspace::Save",
+      "= =": "editor::Format",
+      "u": "editor::Undo",
+      "U": "editor::Redo",
+      "K": "editor::Hover",
+      "space k": "editor::Hover",
+      "space y": ["workspace::SendKeystrokes", "cmd-c"]
+    }
+  },
+
+  {
+    "context": "ProjectPanel",
+    "bindings": {}
+  },
+
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "r": "project_panel::Rename",
+      "y": "project_panel::Copy",
+      "d": "project_panel::Delete",
+      "space e": "workspace::ToggleLeftDock",
+      "space y": "project_panel::CopyRelativePath",
+      "ø": "project_panel::Open",
+      "enter": ["workspace::SendKeystrokes", "ø space e"]
+    }
+  },
+
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {}
+  },
+
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // "ß": "workspace::Save",
+      // "®": ["vim::SwitchMode", "Normal"],
+      // "cmd-s": ["workspace::SedKeystrokes", "® ß"],
+      "shift-space": "editor::ShowCompletions"
+    }
+  }
+]

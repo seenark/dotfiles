@@ -26,6 +26,7 @@ return {
         jsonls = {},
         dockerls = {},
         docker_compose_language_service = {},
+        gleam = {},
         lua_ls = {
           settings = {
             Lua = {

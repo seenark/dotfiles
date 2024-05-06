@@ -21,21 +21,31 @@ SetKeyMaps(config, act)
 
 -- font
 config.font = wezterm.font_with_fallback({
-	"Monaspace Neon Var",
-	"Monaspace Argon Var",
-	"Monaspace Krypton Var",
+	"Monaspace Neon",
+	"Monaspace Radon",
+	"Monaspace Krypton",
 	"Monaspace Xenon Var",
+	"Monaspace Argon",
 	"JetBrains Mono",
 	"Fira Code",
 	"DengXian",
 })
 config.font_size = 20
 config.font_rules = {
+	-- Normal
+	{
+		italic = false,
+		intensity = "Normal", -- Normal, Bold, Half
+		font = wezterm.font({
+			family = "Monaspace Neon",
+			weight = "Light", -- "Thin" "ExtraLight" "Light" "DemiLight" "Book" "Regular" "Medium" "DemiBold" "Bold" "ExtraBold" "Black" "ExtraBlack"
+		}),
+	},
 	{
 		intensity = "Bold",
 		italic = true,
 		font = wezterm.font({
-			family = "Monaspace Xenon Var",
+			family = "Monaspace Xenon",
 			weight = "Bold",
 			style = "Italic",
 		}),
@@ -44,7 +54,7 @@ config.font_rules = {
 		italic = true,
 		intensity = "Half",
 		font = wezterm.font({
-			family = "Monaspace Xenon Var",
+			family = "Monaspace Xenon",
 			weight = "DemiBold",
 			style = "Italic",
 		}),
@@ -53,17 +63,25 @@ config.font_rules = {
 		italic = true,
 		intensity = "Normal",
 		font = wezterm.font({
-			family = "Monaspace Radon Var",
+			family = "Monaspace Radon",
 			style = "Italic",
+		}),
+	},
+	{
+		italic = false,
+		intensity = "Half",
+		font = wezterm.font({
+			family = "Monaspace Argon",
 		}),
 	},
 	{
 		italic = false,
 		intensity = "Bold",
 		font = wezterm.font({
-			family = "Monaspace Krypton Var",
+			family = "Monaspace Krypton",
 			style = "Italic",
-			weight = "Black",
+			weight = "Bold",
+			-- stretch = "Expanded",
 		}),
 	},
 }

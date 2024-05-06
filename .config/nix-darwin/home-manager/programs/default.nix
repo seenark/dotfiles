@@ -8,6 +8,8 @@
     ./bat.nix
     ./fish.nix
     ./direnv.nix
+    ./nodejs.nix
+    ./lsp.nix
   ];
 }
 

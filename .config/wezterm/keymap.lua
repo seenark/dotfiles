@@ -108,8 +108,8 @@ function SetKeyMaps(config, act)
 		},
 		{
 			key = "w",
-			mods = "SHIFT|CTRL",
-			action = act.CloseCurrentPane({ confirm = true }),
+			mods = "CMD",
+			action = act.CloseCurrentPane({ confirm = false }),
 		},
 		-- Switch to the default workspace
 		{
@@ -126,7 +126,7 @@ function SetKeyMaps(config, act)
 			action = act.SwitchToWorkspace({
 				name = "monitoring",
 				spawn = {
-					args = { "/opt/homebrew/bin/btm" },
+					args = { "~/.nix-profile/bin/btm" },
 				},
 			}),
 		},
@@ -160,6 +160,11 @@ function SetKeyMaps(config, act)
 				mode = "SwapWithActive",
 			}),
 		},
+		{
+			key = "t",
+			mods = "CTRL",
+			action = act.TogglePaneZoomState,
+		}
 	}
 end
 

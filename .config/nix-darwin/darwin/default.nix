@@ -33,7 +33,7 @@
 
   fonts.fontDir.enable = true;
   fonts.fonts = with pkgs; [
-    monaspace
+    # monaspace
     atkinson-hyperlegible
     fira-code-nerdfont
     jetbrains-mono
@@ -65,12 +65,18 @@
   homebrew = {
     enable = true;
 
+    brews = [
+      "dagger"
+    ];
+
     casks = [
       "podman-desktop"
       "font-3270-nerd-font"
       "font-gohufont-nerd-font"
       "font-open-dyslexic-nerd-font"
       "font-sf-mono-nerd-font"
+      "font-zed-mono-nerd-font"
+      "font-monaspace-nerd-font"
       "iina"
       "bruno"
       "google-cloud-sdk"
@@ -82,6 +88,10 @@
       "via"
       "visual-studio-code"
       "figma"
+      # "zed"
+      "zoom"
+
+
       # "blackhole-2ch"
       # "wezterm"
 

@@ -1,3 +1,4 @@
+-- Snap code
 local map = require("config.keymaps.mapFn")
 -- Lsp
 ---- format code style
