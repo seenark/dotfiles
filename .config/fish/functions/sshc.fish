@@ -37,7 +37,7 @@ end
 
 
 function handle_erc_master
-    ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc-master deployer@35.197.139.210
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc-master master@35.247.142.197
 end
 
 function handle_zero_carbon

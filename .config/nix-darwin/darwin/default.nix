@@ -90,6 +90,12 @@
       "figma"
       # "zed"
       "zoom"
+      # "whichspace"
+      # "meetingbar"
+      "spaceman" # https://github.com/Jaysce/Spaceman
+      # "lunar" # brightness control for mac https://github.com/alin23/Lunar
+      "amethyst"
+      "anydesk"
 
 
       # "blackhole-2ch"

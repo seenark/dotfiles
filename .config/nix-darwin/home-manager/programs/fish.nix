@@ -6,15 +6,17 @@
 
     interactiveShellInit = "";
     shellAbbrs = {
-      ".." = "cd ..";
-      "..." = "cd ../..";
-      "...." = "cd ../../..";
-      "....." = "cd ../../../..";
+      ".." = "z ..";
+      "..." = "z ../..";
+      "...." = "z ../../..";
+      "....." = "z ../../../..";
       nl = "nvim";
       ls = "eza -al --icons --group-directories-first --git";
       tree = "eza -T -L 2 -I 'node_modules|*.pyc'";
       hostsfile = "sudo NVIM_APPNAME=nvim-lazy4 nvim /etc/hosts";
       gcap = "git add . && git commit --amend --no-edit && git push -f";
+      exsubmit = "exercism submit";
+      extest = "exercism test";
     };
 
     functions = {
