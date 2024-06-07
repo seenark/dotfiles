@@ -1,5 +1,6 @@
 return {
   {
+    -- make snap-shot the highlighted code
     "michaelrommel/nvim-silicon",
     lazy = true,
     cmd = "Silicon",

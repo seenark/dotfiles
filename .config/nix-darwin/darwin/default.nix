@@ -37,6 +37,7 @@
     atkinson-hyperlegible
     fira-code-nerdfont
     jetbrains-mono
+    # noto-fonts-color-emoji
   ];
 
   services = {
@@ -77,6 +78,7 @@
       "font-sf-mono-nerd-font"
       "font-zed-mono-nerd-font"
       "font-monaspace-nerd-font"
+      "font-noto-color-emoji"
       "iina"
       "bruno"
       "google-cloud-sdk"
