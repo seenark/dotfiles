@@ -48,6 +48,7 @@
     zellij
     fastfetch
     oha
+    hashcat
     # gleam
 
     # # Adds the 'hello' command to your environment. It prints a friendly

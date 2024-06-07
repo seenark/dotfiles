@@ -11,13 +11,15 @@ function sshc
             handle_zero_carbon
         case tgo
             handle_tgo
+        case iipm
+            handle_iipm
         case iipm-old-database
             handle_iipm_old_database
     end
 end
 
 function select_server
-    set -l items erc-dev-db erc-master zero-carbon tgo iipm-old-database
+    set -l items erc-dev-db erc-master zero-carbon tgo iipm iipm-old-database
 
     echo "Enter server name (dev/uat/prod):"
 
@@ -48,6 +50,14 @@ end
 
 function handle_tgo
     ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo deployer@35.198.212.178
+end
+
+
+function handle_iipm
+    set -l server_ip "34.87.62.32"
+    set -l private_key_path "$HOME/.ssh/iipm-deployer"
+    set -l user deployer
+    command ssh -o StrictHostKeyChecking=no -i $private_key_path $user@$server_ip
 end
 
 function handle_iipm_old_database

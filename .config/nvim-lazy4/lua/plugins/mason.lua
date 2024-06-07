@@ -4,6 +4,7 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        -- https://mason-registry.dev/registry/list
         "stylua",
         "shellcheck",
         "shfmt",
@@ -17,7 +18,14 @@ return {
         "prisma-language-server",
         "js-debug-adapter",
         "yamlfmt",
-        -------- already installed by "Folke's plugins"
+        "biome",
+
+        -- #### elixir
+        -- "elixir-ls",
+        "lexical", -- next gen elixir lsp
+        -- #### elixir
+
+        -- ##### already installed by "Folke's plugins" #####
         -- "typescript-language-server"
         -- "tailwindcss-language-server", -- already installed by "Folke"
         -- "yaml-language-server",
@@ -25,7 +33,7 @@ return {
         -- "rustfmt",
         -- "codelldb",
         -- "taplo",
-        -------- already installed by "Folke's plugins"
+        -- ##### already installed by "Folke's plugins" #####
 
         -- "prosemd-lsp", --[[ for markdown ]]
         -- "solang",

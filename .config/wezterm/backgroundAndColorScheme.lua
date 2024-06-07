@@ -9,8 +9,8 @@ return function(config, wezterm)
 	config.window_background_opacity = 0.80
 	config.macos_window_background_blur = 0
 	config.window_background_gradient = {
-		colors = { buildin_color_scheme.background },
-		-- colors = { "#161616ff" },
+		-- colors = { buildin_color_scheme.background },
+		colors = { "#161616ff" },
 		-- preset = "Black",
 		-- orientation = {
 		-- 	Radial = {

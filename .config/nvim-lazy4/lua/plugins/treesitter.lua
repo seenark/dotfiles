@@ -28,6 +28,7 @@ return {
         "gitignore",
         "gleam",
         "nix",
+        "elixir",
       },
       highlight = {
         enable = true,

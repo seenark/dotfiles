@@ -14,10 +14,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    superfile = {
+      url = "github:yorukot/superfile";
+    };
+
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = inputs@{ self, darwin, nixpkgs, flake-utils, home-manager, ... }:
+  outputs = inputs@{ self, darwin, nixpkgs, flake-utils, home-manager, superfile, ... }:
     let
       configuration = { pkgs, ... }: {
         # List packages installed in system profile. To search by name, run:
@@ -25,6 +29,7 @@
         environment.systemPackages =
           [
             pkgs.vim
+            superfile.packages.aarch64-darwin.default
           ];
 
         # Auto upgrade nix package and the daemon service.

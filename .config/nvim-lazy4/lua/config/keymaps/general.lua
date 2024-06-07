@@ -13,6 +13,13 @@ map("n", "U", "<C-r>", { desc = "redo" })
 -- copy and paste
 map("n", "<leader>%", "<cmd>%y+<cr>", { desc = "copy whole file" })
 map("n", "<leader>y", '"+y', { desc = "Copy to clipboard" })
+-- map(
+--   "n",
+--   "<leader>cp",
+--   ":call setreg('+', expand('%:.') .. ':' .. line('.'))<cr> <cmd>lua vim.notifier.info('Yanked relative path')<cr>",
+--   "Relative Path"
+-- )
+map("n", "<leader>fp", ':call setreg("+", expand("%:.") .. ":" .. line("."))<CR>', { desc = "Copy Relative Path" })
 map("n", "<leader>p", '"+p', { desc = "Paste from clipboard" })
 map("x", "<leader>y", '"+y', { desc = "Copy to clipboard" })
 map("x", "<leader>p", '"+p', { desc = "Paste from clipboard" })
