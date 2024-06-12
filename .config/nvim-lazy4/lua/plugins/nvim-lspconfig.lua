@@ -26,8 +26,8 @@ return {
         jsonls = {},
         dockerls = {},
         docker_compose_language_service = {},
-        gleam = {},
-        nil_ls = {},
+        -- gleam = {}, -- installed by lazy extra
+        -- nil_ls = {},
         lua_ls = {
           settings = {
             Lua = {

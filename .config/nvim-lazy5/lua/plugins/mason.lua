@@ -1,6 +1,5 @@
 return {
   {
-
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
@@ -8,13 +7,12 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        "prettierd",
+        -- "prettierd",
         "html-lsp",
         "css-lsp",
         "cssmodules-language-server",
         -- "eslint_d",
         "jsonlint",
-        "prettierd",
         "prisma-language-server",
         "js-debug-adapter",
         "yamlfmt",
@@ -22,8 +20,7 @@ return {
 
         -- #### elixir
         -- "elixir-ls",
-        -- "lexical", -- next gen elixir lsp
-        -- "nextls",
+        "lexical", -- next gen elixir lsp
         -- #### elixir
 
         -- ##### already installed by "Folke's plugins" #####

@@ -2,6 +2,7 @@
   description = "HadesGod's Darwin system flake";
 
   inputs = {
+
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     home-manager = {
@@ -77,20 +78,21 @@
             }
           ];
         };
-        "Atiwats-MacBook-Air" = darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
-          modules = [
-            configuration
-            ./darwin
-            home-manager.darwinModules.home-manager
-            {
-              home-manager = {
-                users.atiwatseenark = import ./home-manager/home.nix;
-              };
-              users.users.atiwatseenark.home = "/Users/atiwatseenark";
-            }
-          ];
-        };
+        "Atiwats-MacBook-Air" = darwin.lib.darwinSystem
+          {
+            system = "aarch64-darwin";
+            modules = [
+              configuration
+              ./darwin
+              home-manager.darwinModules.home-manager
+              {
+                home-manager = {
+                  users.atiwatseenark = import ./home-manager/home.nix;
+                };
+                users.users.atiwatseenark.home = "/Users/atiwatseenark";
+              }
+            ];
+          };
       };
 
       # Expose the package set, including overlays, for convenience.

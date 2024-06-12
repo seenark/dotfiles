@@ -36,7 +36,7 @@
     sshpass
     stow
     fnm
-    neovim
+    # neovim
     devenv
     helix
     yazi
@@ -100,7 +100,7 @@
   #  /etc/profiles/per-user/atiwatseenark/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    NVIM_APPNAME = "nvim-lazy4";
+    NVIM_APPNAME = "nvim-lazy5";
     EDITOR = "nvim";
     DIRENV_LOG_FORMAT = "";
   };
