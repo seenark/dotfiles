@@ -7,6 +7,8 @@ function sshc
             handle_erc_dev_db
         case erc-master
             handle_erc_master
+        case erc-mk8s-master
+            handle_erc_mk8s_master
         case zero-carbon
             handle_zero_carbon
         case tgo
@@ -19,7 +21,7 @@ function sshc
 end
 
 function select_server
-    set -l items erc-dev-db erc-master zero-carbon tgo iipm iipm-old-database
+    set -l items erc-mk8s-master erc-dev-db erc-master zero-carbon tgo iipm iipm-old-database
 
     echo "Enter server name (dev/uat/prod):"
 
@@ -42,6 +44,10 @@ end
 
 function handle_erc_master
     ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc-master master@35.247.142.197
+end
+
+function handle_erc_mk8s_master
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc-mk8s deployer@35.240.249.243
 end
 
 function handle_zero_carbon

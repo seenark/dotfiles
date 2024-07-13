@@ -13,12 +13,15 @@
       nl = "nvim";
       ls = "eza -al --icons --group-directories-first --git";
       tree = "eza -T -L 2 -I 'node_modules|*.pyc'";
-      hostsfile = "sudo NVIM_APPNAME=nvim-lazy4 nvim /etc/hosts";
+      hostsfile = "sudo NVIM_APPNAME=nvim-lazy5 nvim /etc/hosts";
       gcap = "git add . && git commit --amend --no-edit && git push -f";
       nixgc = "nix-store --gc";
       exsubmit = "exercism submit";
       extest = "exercism test";
       spf = "superfile";
+      pm = "pnpm";
+      yn = "yarn";
+      b = "bun";
     };
 
     functions = {

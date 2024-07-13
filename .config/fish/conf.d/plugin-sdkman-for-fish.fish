@@ -1,1 +1,1 @@
-/nix/store/x9y4dwn849x6srfq7gq9p288jvjmmv6n-home-manager-files/.config/fish/conf.d/plugin-sdkman-for-fish.fish
+/nix/store/rph6bq2mg4033xqnysf6d87bkkvc3v7f-home-manager-files/.config/fish/conf.d/plugin-sdkman-for-fish.fish

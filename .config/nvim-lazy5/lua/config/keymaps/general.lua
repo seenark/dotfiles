@@ -22,3 +22,7 @@ map("x", "<leader>fp", '"+p', { desc = "Paste from clipboard" })
 map("n", "<leader>fp", ':call setreg("+", expand("%:.") .. ":" .. line("."))<CR>', { desc = "Copy Relative Path" })
 -- when highlight text and paste the yanked text this will not yank the replaced text
 map("x", "p", '"_dP')
+-- map("x", "p", '"0P')
+
+-- map("x", "p", "P")
+-- map("x", "P", "p")
