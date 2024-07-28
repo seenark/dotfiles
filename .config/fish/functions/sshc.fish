@@ -60,12 +60,9 @@ end
 
 
 function handle_iipm
-    set -l server_ip "34.87.62.32"
-    set -l private_key_path "$HOME/.ssh/iipm-deployer"
-    set -l user deployer
-    command ssh -o StrictHostKeyChecking=no -i $private_key_path $user@$server_ip
+    command ssh -o StrictHostKeyChecking=no -i ~/.ssh/iipm-deployer deployer@34.143.139.178
 end
 
 function handle_iipm_old_database
-    ssh -o StrictHostKeyChecking=no -i ~/.ssh/iipm-old-database deploye@34.145.37.192
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/iipm-old-database deploye@35.247.102.74
 end
