@@ -91,15 +91,15 @@
       "via"
       "visual-studio-code"
       "figma"
-      # "zed"
+      "zed"
       "zoom"
       # "whichspace"
       # "meetingbar"
       "spaceman" # https://github.com/Jaysce/Spaceman
       # "lunar" # brightness control for mac https://github.com/alin23/Lunar
       "silicon"
-      "amethyst"
-      "anydesk"
+      # "amethyst"
+      # "anydesk"
 
 
       # "blackhole-2ch"

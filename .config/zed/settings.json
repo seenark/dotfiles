@@ -17,5 +17,18 @@
     },
     "font_family": "MonaspiceKr Nerd Font",
     "font_size": 18
+  },
+  "languages": {
+    "TypeScript": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    }
   }
 }

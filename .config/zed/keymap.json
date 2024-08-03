@@ -27,7 +27,8 @@
       "U": "editor::Redo",
       "K": "editor::Hover",
       "space k": "editor::Hover",
-      "space y": ["workspace::SendKeystrokes", "cmd-c"]
+      "space y": ["workspace::SendKeystrokes", "cmd-c"],
+      "space o": "outline::Toggle"
     }
   },
 
@@ -37,16 +38,28 @@
   },
 
   {
+    "context": "Dock",
+    "bindings": {
+      "space ph": ["workspace::ActivatePaneInDirection", "Left"],
+      "space e": ["workspace::ToggleLeftDock", "Left"],
+      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"]
+      // ... or other keybindings
+    }
+  },
+
+  {
     "context": "ProjectPanel && not_editing",
     "bindings": {
       "a": "project_panel::NewFile",
       "r": "project_panel::Rename",
       "y": "project_panel::Copy",
       "d": "project_panel::Delete",
-      "space e": "workspace::ToggleLeftDock",
-      "space y": "project_panel::CopyRelativePath",
-      "ø": "project_panel::Open",
-      "enter": ["workspace::SendKeystrokes", "ø space e"]
+      // "space e": "workspace::ToggleLeftDock",
+      "space y": "project_panel::CopyRelativePath"
+      // "ø": "project_panel::Open",
+      // "enter": ["workspace::SendKeystrokes", "ø space e"]
     }
   },
 
