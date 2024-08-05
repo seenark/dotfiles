@@ -21,7 +21,7 @@
       "down": ["workspace::SendKeystrokes", "4 j"],
       "up": ["workspace::SendKeystrokes", "4 k"],
       "space e": "pane::RevealInProjectPanel",
-      "cmd-s": "workspace::Save",
+      // "cmd-s": "workspace::Sae",
       "= =": "editor::Format",
       "u": "editor::Undo",
       "U": "editor::Redo",

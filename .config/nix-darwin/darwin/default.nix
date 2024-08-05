@@ -80,6 +80,7 @@
       "font-zed-mono-nerd-font"
       "font-monaspace-nerd-font"
       "font-noto-color-emoji"
+      "font-geist-mono-nerd-font"
       "iina"
       "bruno"
       "google-cloud-sdk"
