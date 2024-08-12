@@ -17,11 +17,15 @@ function sshc
             handle_iipm
         case iipm-old-database
             handle_iipm_old_database
+        case prompt-erc-dev-master
+            handle_prompt-erc-dev-master
+        case prompt-erc-dev-worker1
+            handle_prompt-erc-dev-worker1
     end
 end
 
 function select_server
-    set -l items erc-mk8s-master erc-dev-db erc-master zero-carbon tgo iipm iipm-old-database
+    set -l items erc-mk8s-master erc-dev-db erc-master zero-carbon tgo iipm iipm-old-database prompt-erc-dev-master prompt-erc-dev-worker1
 
     echo "Enter server name (dev/uat/prod):"
 
@@ -65,4 +69,12 @@ end
 
 function handle_iipm_old_database
     ssh -o StrictHostKeyChecking=no -i ~/.ssh/iipm-old-database deploye@35.247.102.74
+end
+
+function handle_prompt-erc-dev-master
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc/dev/master-erc-dev master@34.87.11.28
+end
+
+function handle_prompt-erc-dev-worker1
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc/dev/dev-worker1 worker1@35.240.140.243
 end

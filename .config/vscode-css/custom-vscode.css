@@ -1,24 +1,24 @@
-span.mtk3 {
+/* span.mtk3 {
   color: yellow !important;
   font-family: "MonaspiceRn Nerd Font", "Monaspace Radon", monospace !important;
   color: #008c7d !important;
-}
+} */
 
 a.action-label,
 a.label-name {
-  font-family: "MonaspiceRn Nerd Font", "Monaspace Radon", monospace !important;
+  /* font-family: "MonaspiceRn Nerd Font", "Monaspace Radon", monospace !important; */
 }
 
-span.monaco-icon-description-container > span {
-  font-family: "MonaspiceKr Nerd Font", "Monaspace Radon", monospace !important;
+span.monaco-icon-description-container>span {
+  /* font-family: "MonaspiceKr Nerd Font", "Monaspace Radon", monospace !important; */
 }
 
 .line-numbers {
   position: relative !important;
   width: 35px !important;
-  font-size: 16px !important;
-  font-family: "Geist Mono" !important;
-  opacity: 0.3;
+  /* font-size: 16px !important; */
+  font-family: "MonaspiceKr Nerd Font" !important;
+  opacity: 1;
 }
 
 /* Code canvas top shadow */
@@ -28,12 +28,7 @@ span.monaco-icon-description-container > span {
 }
 
 /* Toolbars when tabs are enabled. */
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .editor-actions {
+.monaco-workbench .part.editor>.content .editor-group-container>.title .editor-actions {
   display: none !important;
 }
 
@@ -64,14 +59,14 @@ span.monaco-icon-description-container > span {
 /* File Explorer Item Label */
 .monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row .monaco-icon-label .label-name {
-  font-family: "Geist Mono", monospace !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
+  /* font-family: "Geist Mono", monospace !important; */
+  /* font-size: 14px !important; */
+  /* font-weight: 400 !important; */
   color: #fff !important;
 }
 
 /* Sidebar top shadow */
-.monaco-scrollable-element > .shadow.top {
+.monaco-scrollable-element>.shadow.top {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75) !important;
   top: -3px !important;
 }
@@ -83,18 +78,26 @@ span.monaco-icon-description-container > span {
   align-items: center !important;
   justify-items: center !important;
 }
+
 .composite.title h2 {
   font-weight: bold !important;
-  font-size: 12px !important;
+  /* font-size: 12px !important; */
   text-transform: uppercase;
-  color: #bc9abc !important;
+  /* color: #bc9abc !important; */
 }
 
 .composite.title h2::before {
   display: inline-block;
   margin-right: 6px;
   font-size: 1.1rem;
-  content: "✨";
+  content: "☀️";
+}
+
+.composite.title h2::after {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 1.1rem;
+  content: "🌙";
 }
 
 /* Scroll Bar */
@@ -116,20 +119,16 @@ span.monaco-icon-description-container > span {
 .monaco-hover {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   padding: 10px !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  /* background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important; */
+  background-image: linear-gradient(#1e1e2e 0%, #45475a 100%) !important;
   backdrop-filter: blur(3px) !important;
-  border-radius: 20px !important;
-  border: none !important;
+  border-radius: 10px !important;
+  /* border: none !important; */
+  border: solid white 1px !important;
 }
 
 /* Project title's style at the top. */
-.monaco-workbench
-  .part.titlebar
-  > .titlebar-container
-  > .titlebar-center
-  > .window-title
-  > .command-center
-  .action-item.command-center-center {
+.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
   border: none !important;
   background: transparent !important;
 }
@@ -163,7 +162,7 @@ span.monaco-icon-description-container > span {
   display: none !important;
 }
 
-.titlebar-right > * {
+.titlebar-right>* {
   display: none !important;
 }
 
@@ -206,7 +205,7 @@ span.monaco-icon-description-container > span {
 
 /* Command palette text input */
 .quick-input-filter .monaco-inputbox {
-  border-radius: 12px !important;
+  border-radius: 8px !important;
   padding: 8px !important;
   border: none !important;
   background-color: rgba(34, 34, 34, 0.4) !important;
@@ -251,3 +250,20 @@ span.monaco-icon-description-container > span {
   background-size: contain !important;
   width: 60% !important;
 }
+
+/* light bulb actions */
+/*
+how do i find icon
+1. see icon's here -> https://microsoft.github.io/vscode-codicons/dist/codicon.html
+2. use the name to find decimal number here -> https://github.com/microsoft/vscode-codicons/blob/main/src/template/mapping.json
+3. map decimal number to hex here -> https://calculator.name/baseconvert/decimal/hexadecimal/60179
+*/
+
+/* content: '\ea62'; */
+/* .codicon-light-bulb::before {
+  content: '\eb27';
+} */
+
+/* div.composite.has-composite-bar.header-or-footer.footer {
+  padding-left: 0px;
+} */

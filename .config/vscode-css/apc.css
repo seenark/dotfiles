@@ -1,0 +1,78 @@
+#status\.scm\.0 {
+    background-color: #f5a97f;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#status\.editor\.indentation {
+    background-color: #f0c6c6;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: #363a4f;
+}
+
+#status\.editor\.mode,
+#status\.languageStatus {
+    background-color: #b7bdf8;
+    color: #24273a;
+}
+
+#status\.languageStatus {
+    margin-left: 4px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+#status\.editor\.mode {
+    margin-right: 4px;
+    border-bottom-right-radius: 8px;
+}
+
+#status\.languageStatus > a {
+    position: relative;
+}
+
+#status\.languageStatus > a > span.codicon-bracket:before {
+    position: relative;
+    top: -2px;
+    content: '😎';
+    font-size: 20px;
+}
+
+#status\.languageStatus > a > span.codicon-bracket-error:before {
+    position: relative;
+    top: -2px;
+    content: '😤';
+    font-size: 20px;
+}
+
+
+#biomejs\.biome\.biome\.status {
+    background-color: #8aadf4;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #24273a;
+}
+
+#biomejs\.biome\.biome\.status > a > span  {
+    display: flex;
+    justify-content: cente😵r;
+    align-items: center;
+    position: relative;
+}
+
+#biomejs\.biome\.biome\.status > a > span.codicon-check:before {
+    position: relative;
+    top: -2px;
+    content: '😋';
+    font-size: 20px;
+}
+
+#biomejs\.biome\.biome\.status > a > span.codicon-eye-closed:before {
+    position: relative;
+    top: -2px;
+    content: '😵‍💫';
+    font-size: 20px;
+}

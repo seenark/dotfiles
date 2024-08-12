@@ -10,6 +10,7 @@
     ./direnv.nix
     ./nodejs.nix
     ./lsp.nix
+    ./mise.nix
   ];
 }
 

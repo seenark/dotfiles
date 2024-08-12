@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
+  # see language server here in Helix guide then search in NixPkgs
   # https://github.com/helix-editor/helix/wiki/Language-Server-Configurations
-
 
 
   # NodeJS package in NixOS pkgs 
@@ -31,7 +31,7 @@
     metals # Scala
     ansible-language-server # TS
     biome # Rust
-
+    gleam # Gleam
   ];
 
 }
