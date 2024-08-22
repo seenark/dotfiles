@@ -3,6 +3,7 @@
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+    color: #363a4f;
 }
 
 #status\.editor\.indentation {
@@ -58,7 +59,7 @@
 
 #biomejs\.biome\.biome\.status > a > span  {
     display: flex;
-    justify-content: cente😵r;
+    justify-content: center;
     align-items: center;
     position: relative;
 }

@@ -21,11 +21,13 @@ function sshc
             handle_prompt-erc-dev-master
         case prompt-erc-dev-worker1
             handle_prompt-erc-dev-worker1
+        case rtrda-dev
+            handle_rtrda_dev
     end
 end
 
 function select_server
-    set -l items erc-mk8s-master erc-dev-db erc-master zero-carbon tgo iipm iipm-old-database prompt-erc-dev-master prompt-erc-dev-worker1
+    set -l items erc-mk8s-master erc-dev-db erc-master zero-carbon tgo iipm iipm-old-database prompt-erc-dev-master prompt-erc-dev-worker1 rtrda-dev
 
     echo "Enter server name (dev/uat/prod):"
 
@@ -77,4 +79,8 @@ end
 
 function handle_prompt-erc-dev-worker1
     ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc/dev/dev-worker1 worker1@35.240.140.243
+end
+
+function handle_rtrda_dev
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/rtrda deployer@34.124.166.82
 end

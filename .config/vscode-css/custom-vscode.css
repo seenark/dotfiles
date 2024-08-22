@@ -31,7 +31,6 @@ span.monaco-icon-description-container>span {
 .monaco-workbench .part.editor>.content .editor-group-container>.title .editor-actions {
   display: none !important;
 }
-
 /* Side bar */
 .part.sidebar {
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
@@ -131,6 +130,10 @@ span.monaco-icon-description-container>span {
 .monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
   border: none !important;
   background: transparent !important;
+}
+
+.part.titlebar {
+  height: 0px;
 }
 
 /* Project Title */

@@ -22,6 +22,7 @@
       pm = "pnpm";
       yn = "yarn";
       b = "bun";
+      c = "code";
     };
 
     functions = {
