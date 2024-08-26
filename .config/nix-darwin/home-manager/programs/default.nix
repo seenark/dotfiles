@@ -8,7 +8,8 @@
     ./bat.nix
     ./fish.nix
     ./direnv.nix
-    ./nodejs.nix
+    # no use nodejs here changed to install via mise instead
+    # ./nodejs.nix
     ./lsp.nix
     ./mise.nix
   ];

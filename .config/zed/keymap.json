@@ -1,13 +1,20 @@
 [
   {
+    "bindings": {
+      "cmd-e": "workspace::ToggleLeftDock",
+      "cmd-s": "workspace::Save"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-e": "workspace::ToggleLeftDock"
+    }
+  },
+  {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
       "ctrl-x": "pane::CloseActiveItem"
     }
-  },
-
-  {
-    "bindings": {}
   },
 
   {

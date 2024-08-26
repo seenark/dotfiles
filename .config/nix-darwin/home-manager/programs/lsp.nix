@@ -8,7 +8,6 @@
   # https://github.com/NixOS/nixpkgs/blob/e8c05fe2e1a31a92731b92b6f78c2ff997d25e61/pkgs/development/node-packages/node-packages.json#L264
 
   home.packages = with pkgs; [
-    typescript
     nodePackages.typescript-language-server # TS
     nodePackages.bash-language-server # TS
     dockerfile-language-server-nodejs # TS
@@ -24,14 +23,17 @@
     nodePackages_latest."@prisma/language-server" # TS
     # Astro helix not yet supported LSP
     # nodePackages_latest."@astrojs/language-server" # TS
-    elixir-ls # Elixir
     gopls # Go
     golangci-lint # Go
     nil # Rust
     metals # Scala
     ansible-language-server # TS
     biome # Rust
-    gleam # Gleam
+
+    ## install via mise
+    # typescript
+    # gleam # Gleam
+    # elixir-ls # Elixir
   ];
 
 }
