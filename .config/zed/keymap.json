@@ -1,25 +1,48 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
 [
-  {
-    "bindings": {
-      "cmd-e": "workspace::ToggleLeftDock",
-      "cmd-s": "workspace::Save"
-    }
-  },
   {
     "bindings": {
       "cmd-e": "workspace::ToggleLeftDock"
     }
   },
   {
-    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "context": "Workspace",
     "bindings": {
-      "ctrl-x": "pane::CloseActiveItem"
+      // "shift shift": "file_finder::Toggle"
+      "cmd-escape": null
     }
   },
-
   {
-    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "context": "Editor",
     "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      // "c-x": "workspace::CloseWindow"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore" // remap jk in insert mode to escape.
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      // put key-bindings here (in addition to above) if you want them to
+      // work when no editor exists
+      "space f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
       "g l": "vim::EndOfLine",
       "g h": "vim::StartOfLine",
       "g e": "vim::EndOfDocument",
@@ -32,30 +55,15 @@
       "= =": "editor::Format",
       "u": "editor::Undo",
       "U": "editor::Redo",
-      "K": "editor::Hover",
+      // "K": "editor::Hover",
       "space k": "editor::Hover",
       "space y": ["workspace::SendKeystrokes", "cmd-c"],
-      "space o": "outline::Toggle"
+      "space o": "outline::Toggle",
+      "ctrl-x": "pane::CloseActiveItem",
+      "[ e": "editor::GoToPrevDiagnostic",
+      "] e": "editor::GoToDiagnostic"
     }
   },
-
-  {
-    "context": "ProjectPanel",
-    "bindings": {}
-  },
-
-  {
-    "context": "Dock",
-    "bindings": {
-      "space ph": ["workspace::ActivatePaneInDirection", "Left"],
-      "space e": ["workspace::ToggleLeftDock", "Left"],
-      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"]
-      // ... or other keybindings
-    }
-  },
-
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
@@ -63,18 +71,26 @@
       "r": "project_panel::Rename",
       "y": "project_panel::Copy",
       "d": "project_panel::Delete",
-      // "space e": "workspace::ToggleLeftDock",
+      "x": "project_panel::Cut",
+      "p": "project_panel::Paste",
+      "alt-c": "project_panel::CopyPath",
+      "alt-x": "project_panel::RevealInFileManager",
+      // "space e": "workspace::T: "workspace::ToggleLeftDock"ggleLeftDock",
       "space y": "project_panel::CopyRelativePath"
       // "ø": "project_panel::Open",
       // "enter": ["workspace::SendKeystrokes", "ø space e"]
     }
   },
-
   {
-    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
-    "bindings": {}
+    "context": "Dock",
+    "bindings": {
+      "space ph": ["workspace::ActivatePaneInDirection", "Left"],
+      // "space e": ["workspace::ToggleLeftDock", "Left"],
+      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
   },
-
   {
     "context": "Editor && vim_mode == insert && !menu",
     "bindings": {
@@ -82,6 +98,14 @@
       // "®": ["vim::SwitchMode", "Normal"],
       // "cmd-s": ["workspace::SedKeystrokes", "® ß"],
       "shift-space": "editor::ShowCompletions"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      ".": null, // i have to disable this because when type cmd+esc the action of "." key will done something so I disable "." key to solve this
+      "cmd+esc": null, // i have to disable this because when type cmd+esc the action of "." key will done something so I disable "." key to solve this
+      "space c h": "editor::ToggleInlayHints"
     }
   }
 ]

@@ -12,79 +12,142 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Alpha dashboard                                         │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.ui.alpha" },
 
-    ----- codeium -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ codeium                                                 │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.coding.codeium" },
 
-    ----- Yanky -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Yanky                                                   │
+    -- ╰─────────────────────────────────────────────────────────╯
+
     { import = "lazyvim.plugins.extras.coding.yanky" },
 
     ----- FZF -----
     -- { import = "lazyvim.plugins.extras.editor.fzf" },
 
-    ----- illuminate -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ illuminate                                              │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.editor.illuminate" },
 
-    ----- inc rename -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ inc-rename                                              │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.editor.inc-rename" },
 
-    ----- leap -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Leap                                                    │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.editor.leap" },
 
-    ----- mini diff -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Mini diff                                               │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.editor.mini-diff" },
     { import = "lazyvim.plugins.extras.editor.mini-move" },
 
-    ----- outline -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Outline                                                 │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.editor.outline" },
 
-    ----- typescript -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Typescript                                              │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.typescript" },
-    -- { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.linting.eslint" },
     -- { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.lang.json" },
 
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Markdown                                                │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.markdown" },
-    ----- Svelte -----
+
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Svelte                                                  │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.svelte" },
-    ----- Vue -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Vue                                                     │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.vue" },
-    ----- Tailwind -----
+
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Astro                                                   │
+    -- ╰─────────────────────────────────────────────────────────╯
+    { import = "lazyvim.plugins.extras.lang.astro" },
+
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Tailwind                                                │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.tailwind" },
 
-    ----- docker -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Prisma                                                  │
+    -- ╰─────────────────────────────────────────────────────────╯
+    { import = "lazyvim.plugins.extras.lang.prisma" },
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Docker                                                  │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.docker" },
 
-    ----- Elixir -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Elixir                                                  │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.elixir" },
 
-    ----- Git -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Git                                                     │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.git" },
 
-    ----- Gleam -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Gleam                                                   │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.gleam" },
 
-    ----- Go -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Go                                                      │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.go" },
 
-    ----- Helm -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Helm                                                    │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.helm" },
 
-    ----- Nix -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Nix                                                     │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.nix" },
 
-    ----- Rust -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Rust                                                    │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.rust" },
     { import = "lazyvim.plugins.extras.lang.toml" },
 
-    ----- Scala -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Scala                                                   │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.scala" },
 
-    ----- SQL -----
-    { import = "lazyvim.plugins.extras.lang.scala" },
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ SQL                                                     │
+    -- ╰─────────────────────────────────────────────────────────╯
+    { import = "lazyvim.plugins.extras.lang.sql" },
 
-    ----- Yaml -----
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Yaml                                                    │
+    -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.lang.yaml" },
 
     { import = "lazyvim.plugins.extras.lsp.none-ls" },
@@ -100,6 +163,11 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.mini-comment" },
 
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
+
+    -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Neogen                                                  │
+    -- ╰─────────────────────────────────────────────────────────╯
+    { import = "lazyvim.plugins.extras.coding.neogen" },
 
     -- import any extras modules here
 

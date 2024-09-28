@@ -5,10 +5,6 @@ function sshc
     switch $server_selected[2]
         case erc-dev-db
             handle_erc_dev_db
-        case erc-master
-            handle_erc_master
-        case erc-mk8s-master
-            handle_erc_mk8s_master
         case zero-carbon
             handle_zero_carbon
         case tgo
@@ -23,11 +19,21 @@ function sshc
             handle_prompt-erc-dev-worker1
         case rtrda-dev
             handle_rtrda_dev
+        case tgo-registry-master
+            handle_tgo-registry-master
+        case tgo-registry-gateway
+            handle_tgo-registry-gateway
+        case tgo-registry-prod-postgres
+            handle_tgo-registry-prod-postgres
+        case tgo-registry-prod-master
+            handle_tgo-registry-prod-master
+        case tgo-registry-prod-gateway
+            handle_tgo-registry-prod-gateway
     end
 end
 
 function select_server
-    set -l items erc-mk8s-master erc-dev-db erc-master zero-carbon tgo iipm iipm-old-database prompt-erc-dev-master prompt-erc-dev-worker1 rtrda-dev
+    set -l items erc-dev-db zero-carbon tgo iipm iipm-old-database prompt-erc-dev-master prompt-erc-dev-worker1 rtrda-dev tgo-registry-master tgo-registry-gateway tgo-registry-prod-postgres tgo-registry-prod-master tgo-registry-prod-gateway
 
     echo "Enter server name (dev/uat/prod):"
 
@@ -45,15 +51,6 @@ end
 
 function handle_erc_dev_db
     ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc-dev-db deployer@35.197.139.210
-end
-
-
-function handle_erc_master
-    ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc-master master@35.247.142.197
-end
-
-function handle_erc_mk8s_master
-    ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc-mk8s deployer@35.240.249.243
 end
 
 function handle_zero_carbon
@@ -83,4 +80,25 @@ end
 
 function handle_rtrda_dev
     ssh -o StrictHostKeyChecking=no -i ~/.ssh/rtrda deployer@34.124.166.82
+end
+
+
+function handle_tgo-registry-master
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/master master@34.124.161.63
+end
+
+function handle_tgo-registry-gateway
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/gateway gateway@34.124.249.225
+end
+
+function handle_tgo-registry-prod-postgres
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/prod/postgres postgres@34.143.139.57
+end
+
+function handle_tgo-registry-prod-master
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/prod/master master@34.143.194.102
+end
+
+function handle_tgo-registry-prod-gateway
+    ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/prod/gateway gateway@34.142.219.28
 end

@@ -16,7 +16,7 @@ return {
         "prisma-language-server",
         "js-debug-adapter",
         "yamlfmt",
-        "biome",
+        -- "biome",
 
         -- #### elixir
         -- "elixir-ls",
