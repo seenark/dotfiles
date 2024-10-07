@@ -1,0 +1,14 @@
+[tools]
+
+# node = "lts";
+node = "lts"
+"npm:typescript" = "latest"
+"npm:corepack" = "latest"
+"npm:@antfu/ni" = "latest"
+gleam = "latest"
+elixir = "latest"
+erlang = "latest"
+rebar = "latest"            # rebar must install erlang # "npm:biome" = "latest";
+# python = ["3.10" "3.11"];
+
+[settings]

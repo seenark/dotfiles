@@ -13,8 +13,8 @@ local setTopRightStatus = require("topRightStatus")
 setTopRightStatus(wezterm)
 
 -- Spawn a fish shell in login mode
--- config.default_prog = { "/opt/homebrew/bin/fish", "-l" }
-config.default_prog = { "/Users/atiwatseenark/.nix-profile/bin/fish", "-l" }
+config.default_prog = { "/opt/homebrew/bin/fish", "-l" }
+-- config.default_prog = { "/Users/atiwatseenark/.nix-profile/bin/fish", "-l" }
 
 local SetKeyMaps = require("keymap")
 SetKeyMaps(config, act)

@@ -23,6 +23,7 @@
       yn = "yarn";
       b = "bun";
       c = "code";
+      dc = "docker compose";
     };
 
     functions = {

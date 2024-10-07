@@ -72,7 +72,7 @@
     ];
 
     casks = [
-      "podman-desktop"
+      # "podman-desktop"
       "font-3270-nerd-font"
       "font-gohufont-nerd-font"
       "font-open-dyslexic-nerd-font"
