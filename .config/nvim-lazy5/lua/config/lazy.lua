@@ -19,6 +19,11 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.ui.alpha" },
 
     -- ╭─────────────────────────────────────────────────────────╮
+    -- │ Telescope                                               │
+    -- ╰─────────────────────────────────────────────────────────╯
+    { import = "lazyvim.plugins.extras.editor.telescope" },
+
+    -- ╭─────────────────────────────────────────────────────────╮
     -- │ codeium                                                 │
     -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.coding.codeium" },

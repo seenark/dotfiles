@@ -20,7 +20,6 @@ status is-interactive; and begin
     abbr --add -- yn yarn
     abbr --add -- brewbundleinstall 'brew bundle --file=~/.dotfiles/.config/brew/Brewfile install'
     abbr --add -- brewbundleclean 'brew bundle --file=~/.dotfiles/.config/brew/Brewfile cleanup --force'
-    abbr --add -- dust 'dust -r'
 end
 
 # ╭──────────────────────────────────────────────────────────╮
