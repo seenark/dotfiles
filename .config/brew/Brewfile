@@ -44,7 +44,9 @@ brew "hashcat"
 brew "atuin"
 brew "zoxide"
 brew "bat"
+brew "dotenvx/brew/dotenvx"
 # brew "zellij"
+
 
 cask "balenaetcher"
 cask "bruno"
