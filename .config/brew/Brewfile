@@ -78,6 +78,7 @@ cask "visual-studio-code"
 cask "wezterm"
 cask "zed"
 cask "zoom"
+cask "obsidian"
 
 vscode "aaron-bond.better-comments"
 vscode "adamcaviness.theme-monokai-dark-soda"
