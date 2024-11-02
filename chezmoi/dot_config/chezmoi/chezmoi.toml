@@ -1,0 +1,5 @@
+# sourceDir = "~/.local/share/chezmoi"
+sourceDir = "~/.dotfiles/chezmoi"
+[git]
+autoPush = true
+autoCommit = true
