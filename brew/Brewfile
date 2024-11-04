@@ -9,6 +9,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "hudochenkov/sshpass"
 tap "koekeishiya/formulae"
+tap "encore/tap"
 
 brew "exercism"
 brew "ffmpeg"
@@ -46,6 +47,7 @@ brew "zoxide"
 brew "bat"
 brew "dotenvx/brew/dotenvx"
 brew "chezmoi"
+brew "encoredev/tap/encore"
 # brew "zellij"
 
 
