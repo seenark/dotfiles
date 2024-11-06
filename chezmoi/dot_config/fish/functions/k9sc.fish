@@ -26,16 +26,16 @@ function _select_k9s_server
 end
 
 function _handle_k9s_tgo-registry-prod-postgres
-    set -x KUBECONFIG /Users/atiwatseenark/.dotfiles/.config/kube-config/tgo-registry/prod/postgres
+    set -x KUBECONFIG /Users/atiwatseenark/.dotfiles/kube-config/tgo-registry/prod/postgres
     command k9s
 end
 
 function _handle_k9s_tgo-registry-prod-master
-    set -x KUBECONFIG /Users/atiwatseenark/.dotfiles/.config/kube-config/tgo-registry/prod/master
+    set -x KUBECONFIG /Users/atiwatseenark/.dotfiles/kube-config/tgo-registry/prod/master
     command k9s
 end
 
 function _handle_k9s_tgo-registry-dev-master
-    set -x KUBECONFIG /Users/atiwatseenark/.dotfiles/.config/kube-config/tgo-registry/dev/master
+    set -x KUBECONFIG /Users/atiwatseenark/.dotfiles/kube-config/tgo-registry/dev/master
     command k9s
 end

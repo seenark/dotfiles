@@ -27,15 +27,15 @@ end
 
 
 function _handle_k8s_config_tgo-registry-prod-postgres
-    set -gx KUBECONFIG /Users/atiwatseenark/.dotfiles/.config/kube-config/tgo-registry/prod/postgres
+    set -gx KUBECONFIG /Users/atiwatseenark/.dotfiles/kube-config/tgo-registry/prod/postgres
     echo $KUBECONFIG
 end
 
 function _handle_k8s_config_tgo-registry-prod-master
-    set -gx KUBECONFIG /Users/atiwatseenark/.dotfiles/.config/kube-config/tgo-registry/prod/master
+    set -gx KUBECONFIG /Users/atiwatseenark/.dotfiles/kube-config/tgo-registry/prod/master
     echo $KUBECONFIG
 end
 function _handle_k8s_config_tgo-registry-dev-master
-    set -gx KUBECONFIG /Users/atiwatseenark/.dotfiles/.config/kube-config/tgo-registry/dev/master
+    set -gx KUBECONFIG /Users/atiwatseenark/.dotfiles/kube-config/tgo-registry/dev/master
     echo $KUBECONFIG
 end
