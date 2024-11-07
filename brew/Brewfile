@@ -86,6 +86,7 @@ cask "deskpad"
 cask "shottr"
 cask "spotify"
 cask "dataflare"
+cask "nikitabobko/tap/aerospace"
 
 vscode "aaron-bond.better-comments"
 vscode "adamcaviness.theme-monokai-dark-soda"

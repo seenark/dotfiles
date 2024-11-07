@@ -29,6 +29,8 @@ function sshc
             _handle_tgo-registry-prod-master
         case tgo-registry-prod-gateway
             _handle_tgo-registry-prod-gateway
+        case aquila-kms
+            _handle_aquila_kms
     end
 end
 
@@ -85,7 +87,7 @@ end
 
 
 function select_server
-    set -l items erc-dev-db zero-carbon tgo iipm iipm-old-database prompt-erc-dev-master prompt-erc-dev-worker1 rtrda-dev tgo-registry-master tgo-registry-gateway tgo-registry-prod-postgres tgo-registry-prod-master tgo-registry-prod-gateway
+    set -l items erc-dev-db zero-carbon tgo iipm iipm-old-database prompt-erc-dev-master prompt-erc-dev-worker1 rtrda-dev tgo-registry-master tgo-registry-gateway tgo-registry-prod-postgres tgo-registry-prod-master tgo-registry-prod-gateway aquila-kms
 
     echo "Enter server name (dev/uat/prod):"
 
@@ -103,7 +105,7 @@ end
 
 function _handle_erc_dev_db
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/erc-dev-db \
+        --key ~/.dotfiles/private-key/works/erc-dev-db \
         --host 35.197.139.210 \
         --user deployer
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc-dev-db deployer@35.197.139.210
@@ -111,7 +113,7 @@ end
 
 function _handle_zero_carbon
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/zerocarbon \
+        --key ~/.dotfiles/private-key/works/zerocarbon \
         --host 35.198.232.128 \
         --user deployer
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/zerocarbon deployer@35.198.232.128
@@ -119,7 +121,7 @@ end
 
 function _handle_tgo
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/tgo \
+        --key ~/.dotfiles/private-key/works/tgo \
         --host 35.198.212.178 \
         --user deployer
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo deployer@35.198.212.178
@@ -128,7 +130,7 @@ end
 
 function _handle_iipm
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/iipm/iipm-deployer \
+        --key ~/.dotfiles/private-key/works/iipm/iipm-deployer \
         --host 34.143.139.178 \
         --user deployer
     # command ssh -o StrictHostKeyChecking=no -i ~/.ssh/iipm-deployer deployer@34.143.139.178
@@ -136,14 +138,14 @@ end
 
 function _handle_iipm_old_database
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/iipm/iipm-old-database \
+        --key ~/.dotfiles/private-key/works/iipm/iipm-old-database \
         --host 35.247.102.74 \
         --user deploye
 end
 
 function _handle_prompt-erc-dev-master
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/erc/dev/master-erc-dev \
+        --key ~/.dotfiles/private-key/works/erc/dev/master-erc-dev \
         --host 34.87.11.28 \
         --user master
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc/dev/master-erc-dev master@34.87.11.28
@@ -151,7 +153,7 @@ end
 
 function _handle_prompt-erc-dev-worker1
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/erc/dev/dev-worker1 \
+        --key ~/.dotfiles/private-key/works/erc/dev/dev-worker1 \
         --host 35.240.140.243 \
         --user worker1
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/erc/dev/dev-worker1 worker1@35.240.140.243
@@ -159,7 +161,7 @@ end
 
 function _handle_rtrda_dev
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/rtrda \
+        --key ~/.dotfiles/private-key/works/rtrda \
         --host 34.124.166.82 \
         --user deployer
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/rtrda deployer@34.124.166.82
@@ -168,7 +170,7 @@ end
 
 function _handle_tgo-registry-master
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/tgo-registry/master \
+        --key ~/.dotfiles/private-key/works/tgo-registry/master \
         --host 34.124.161.63 \
         --user deployer
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/master master@34.124.161.63
@@ -176,7 +178,7 @@ end
 
 function _handle_tgo-registry-gateway
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/tgo-registry/gateway \
+        --key ~/.dotfiles/private-key/works/tgo-registry/gateway \
         --host 34.124.249.225 \
         --user gateway
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/gateway gateway@34.124.249.225
@@ -184,7 +186,7 @@ end
 
 function _handle_tgo-registry-prod-postgres
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/tgo-registry/prod/postgres \
+        --key ~/.dotfiles/private-key/works/tgo-registry/prod/postgres \
         --host 34.143.139.57 \
         --user postgres
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/prod/postgres postgres@34.143.139.57
@@ -192,7 +194,7 @@ end
 
 function _handle_tgo-registry-prod-master
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/tgo-registry/prod/master \
+        --key ~/.dotfiles/private-key/works/tgo-registry/prod/master \
         --host 34.143.194.102 \
         --user master
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/prod/master master@34.143.194.102
@@ -200,8 +202,15 @@ end
 
 function _handle_tgo-registry-prod-gateway
     ssh_with_key \
-        --key ~/.dotfiles/.config/private-key/works/tgo-registry/prod/master \
+        --key ~/.dotfiles/private-key/works/tgo-registry/prod/master \
         --host 34.142.219.28 \
         --user gateway
     # ssh -o StrictHostKeyChecking=no -i ~/.ssh/tgo-registry/prod/gateway gateway@34.142.219.28
+end
+
+function _handle_aquila_kms
+    ssh_with_key \
+        --key ~/.dotfiles/private-key/aqs-kms/aqs-kms \
+        --host 34.124.227.237 \
+        --user master
 end
