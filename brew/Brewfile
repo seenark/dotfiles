@@ -9,7 +9,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "hudochenkov/sshpass"
 tap "koekeishiya/formulae"
-tap "encore/tap"
+tap "FelixKratz/formulae" # for app: borders and svim(sketchyvim)
 
 brew "exercism"
 brew "ffmpeg"
@@ -48,6 +48,7 @@ brew "bat"
 brew "dotenvx/brew/dotenvx"
 brew "chezmoi"
 brew "encoredev/tap/encore"
+brew "borders"
 # brew "zellij"
 
 

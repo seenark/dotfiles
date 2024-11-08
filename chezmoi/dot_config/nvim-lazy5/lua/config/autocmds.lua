@@ -9,3 +9,8 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 vim.cmd("set numberwidth=4")
+
+if vim.g.neovide then
+  -- Put anything you want to happen only in Neovide here
+  vim.print(vim.g.neovide_version)
+end
