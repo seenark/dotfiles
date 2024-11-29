@@ -1,0 +1,6 @@
+
+Host aqs-kms
+    HostName 34.124.227.237
+    User master
+    StrictHostKeyChecking no
+    IdentityFile ~/.dotfiles/private-key/aqs-kms/aqs-kms

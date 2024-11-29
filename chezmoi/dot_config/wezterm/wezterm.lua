@@ -98,5 +98,6 @@ config.show_update_window = true
 -- -- hide title bar but keep resizable
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
+config.max_fps = 120
 
 return config

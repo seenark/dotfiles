@@ -1,0 +1,14 @@
+
+Host iipm-old-database
+    HostName 35.247.102.74
+    User deploye
+    StrictHostKeyChecking no
+    IdentityFile ~/.dotfiles/private-key/works/iipm/iipm-old-database
+
+Host iipm-dev
+    HostName 34.143.139.178
+    User deployer
+    StrictHostKeyChecking no
+    IdentityFile ~/.dotfiles/private-key/works/iipm/iipm-deployer
+
+

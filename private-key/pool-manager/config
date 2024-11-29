@@ -1,0 +1,5 @@
+Host poolmanager-dev
+    HostName 34.87.105.87
+    User deployer
+    StrictHostKeyChecking no
+    IdentityFile ~/.dotfiles/private-key/pool-manager/webcms

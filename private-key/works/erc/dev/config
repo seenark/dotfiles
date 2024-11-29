@@ -1,0 +1,15 @@
+
+Host erc-dev-worker1
+    HostName 35.240.140.243
+    User worker1
+    StrictHostKeyChecking no
+    IdentityFile ~/.dotfiles/private-key/works/erc/dev/dev-worker1
+
+
+Host erc-dev-master
+    HostName 34.87.11.28
+    User master
+    StrictHostKeyChecking no
+    IdentityFile ~/.dotfiles/private-key/works/erc/dev/master-erc-dev
+
+

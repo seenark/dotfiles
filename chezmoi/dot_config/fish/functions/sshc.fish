@@ -31,6 +31,8 @@ function sshc
             _handle_tgo-registry-prod-gateway
         case aquila-kms
             _handle_aquila_kms
+        case pool-manager-dev
+            _handle_pool_manager_dev
     end
 end
 
@@ -87,7 +89,7 @@ end
 
 
 function select_server
-    set -l items erc-dev-db zero-carbon tgo iipm iipm-old-database prompt-erc-dev-master prompt-erc-dev-worker1 rtrda-dev tgo-registry-master tgo-registry-gateway tgo-registry-prod-postgres tgo-registry-prod-master tgo-registry-prod-gateway aquila-kms
+    set -l items erc-dev-db zero-carbon tgo iipm iipm-old-database prompt-erc-dev-master prompt-erc-dev-worker1 rtrda-dev tgo-registry-master tgo-registry-gateway tgo-registry-prod-postgres tgo-registry-prod-master tgo-registry-prod-gateway aquila-kms pool-manager-dev
 
     echo "Enter server name (dev/uat/prod):"
 
@@ -213,4 +215,11 @@ function _handle_aquila_kms
         --key ~/.dotfiles/private-key/aqs-kms/aqs-kms \
         --host 34.124.227.237 \
         --user master
+end
+
+function _handle_pool_manager_dev
+    ssh_with_key \
+        --key ~/.dotfiles/private-key/pool-manager/webcms \
+        --host 34.87.105.87 \
+        --user deployer
 end

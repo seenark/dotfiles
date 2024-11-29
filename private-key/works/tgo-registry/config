@@ -1,0 +1,14 @@
+
+Host tgo-registry-dev-gateway
+    HostName 34.124.249.225
+    User gateway
+    StrictHostKeyChecking no
+    IdentityFile ~/.dotfiles/private-key/works/tgo-registry/gateway
+
+Host tgo-registry-dev-master
+    HostName 34.124.161.63
+    User master
+    StrictHostKeyChecking no
+    IdentityFile ~/.dotfiles/private-key/works/tgo-registry/master
+
+
