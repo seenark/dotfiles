@@ -1,7 +1,0 @@
-
-Host rtrda-dev
-    HostName 34.124.166.82
-    User deployer
-    StrictHostKeyChecking no
-    IdentityFile ~/.dotfiles/private-key/works/rtrda-dev/rtrda
-

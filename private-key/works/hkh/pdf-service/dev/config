@@ -1,5 +1,0 @@
-Host hkhpdf-dev
-    HostName 35.187.228.140
-    User deployer
-    StrictHostKeyChecking no
-    IdentityFile ~/.dotfiles/private-key/works/hkh/pdf-service/dev/hkhpdf-dev

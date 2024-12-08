@@ -1,7 +1,0 @@
-
-Host tgo-zerocarbon
-    HostName 35.198.232.128
-    User deployer
-    StrictHostKeyChecking no
-    IdentityFile ~/.dotfiles/private-key/works/tgo-zerocarbon/zerocarbon
-
