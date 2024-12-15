@@ -22,6 +22,7 @@ status is-interactive; and begin
     abbr --add -- brewi 'brew bundle --file=~/.dotfiles/brew/Brewfile install'
     abbr --add -- brewbundleclean 'brew bundle --file=~/.dotfiles/brew/Brewfile cleanup --force'
     abbr --add -- brewclean 'brew bundle --file=~/.dotfiles/brew/Brewfile cleanup --force'
+    abbr --add -- ff 'ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -headers $h -i "$URL" -c copy "$filepath"'
 end
 
 # ╭──────────────────────────────────────────────────────────╮
