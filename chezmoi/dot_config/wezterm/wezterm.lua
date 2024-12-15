@@ -37,7 +37,8 @@ config.font_rules = {
 		italic = false,
 		intensity = "Normal", -- Normal, Bold, Half
 		font = wezterm.font({
-			family = "Monaspace Neon",
+			-- family = "Monaspace Neon",
+			family = "MonaspiceNe Nerd Font",
 			weight = "Light", -- "Thin" "ExtraLight" "Light" "DemiLight" "Book" "Regular" "Medium" "DemiBold" "Bold" "ExtraBold" "Black" "ExtraBlack"
 		}),
 	},
@@ -45,7 +46,7 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = true,
 		font = wezterm.font({
-			family = "Monaspace Xenon",
+			family = "MonaspiceXe Nerd Font",
 			weight = "Bold",
 			style = "Italic",
 		}),
@@ -54,7 +55,7 @@ config.font_rules = {
 		italic = true,
 		intensity = "Half",
 		font = wezterm.font({
-			family = "Monaspace Xenon",
+			family = "MonaspiceXe Nerd Font",
 			weight = "DemiBold",
 			style = "Italic",
 		}),
@@ -63,7 +64,7 @@ config.font_rules = {
 		italic = true,
 		intensity = "Normal",
 		font = wezterm.font({
-			family = "Monaspace Radon",
+			family = "MonaspiceRn Nerd Font",
 			style = "Italic",
 		}),
 	},
@@ -71,14 +72,14 @@ config.font_rules = {
 		italic = false,
 		intensity = "Half",
 		font = wezterm.font({
-			family = "Monaspace Argon",
+			family = "MonaspiceAr Nerd Font",
 		}),
 	},
 	{
 		italic = false,
 		intensity = "Bold",
 		font = wezterm.font({
-			family = "Monaspace Krypton",
+			family = "MonaspiceKr Nerd Font",
 			style = "Italic",
 			weight = "Bold",
 			-- stretch = "Expanded",
