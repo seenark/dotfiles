@@ -49,6 +49,7 @@ brew "dotenvx/brew/dotenvx"
 brew "chezmoi"
 brew "encoredev/tap/encore"
 brew "borders"
+brew "chafa"
 # brew "zellij"
 
 
