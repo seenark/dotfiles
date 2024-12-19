@@ -6,7 +6,7 @@ return function(config, wezterm)
 	local buildin_color_scheme = wezterm.color.get_builtin_schemes()[color_scheme]
 
 	-- background
-	config.window_background_opacity = 0.85 --0.95 -- 0.75
+	config.window_background_opacity = 0.65 --0.95 -- 0.75
 	config.macos_window_background_blur = 0
 	config.window_background_gradient = {
 		-- colors = { buildin_color_scheme.background },
