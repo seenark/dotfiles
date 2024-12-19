@@ -63,25 +63,26 @@ return {
     dashboard = {
       pane_gap = 1, -- empty columns between vertical panes
       preset = {
-        header = ansiShadowCode,
+        header = ansiShadow,
       },
       sections = {
         {
           pane = 1,
           { section = "header" },
-          -- { section = "keys", gap = 1, padding = 1 },
+          { section = "keys", gap = 1, padding = 1 },
           -- { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 2 },
-          -- { section = "startup" },
           { section = "startup" },
         },
         {
           pane = 2,
           {
             section = "terminal",
-            cmd = "chafa ~/.dotfiles/pokemon-image/bird.png --format symbols -c full --size 60x17 --stretch",
-            height = 60,
-            width = 60,
-            padding = 1,
+            -- cmd = "chafa ~/.dotfiles/pokemon-image/bird.png --format symbols -c full --size 60x17 --stretch",
+            cmd = "ascii-image-converter ~/.dotfiles/pokemon-image/pen.png -C -c",
+            -- random = 10,
+            height = 30,
+            -- width = 60,
+            -- padding = 1,
             indent = 4,
           },
         },

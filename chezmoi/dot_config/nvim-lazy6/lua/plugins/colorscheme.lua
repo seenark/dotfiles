@@ -35,9 +35,13 @@ return {
             -- sky = "#89dceb",
             -- sapphire = "#74c7ec",
             -- blue = "#89b4fa",
+
             blue = "#ffd866", -- folder
+
             -- lavender = "#b4befe",
+
             lavender = "#cfd7ff",
+
             -- text = "#cdd6f4",
             -- subtext1 = "#bac2de",
             -- subtext0 = "#a6adc8",
