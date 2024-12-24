@@ -51,6 +51,7 @@ brew "encoredev/tap/encore"
 brew "borders"
 brew "chafa"
 brew "TheZoraiz/ascii-image-converter/ascii-image-converter"
+brew "cmatrix"
 # brew "zellij"
 
 

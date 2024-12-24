@@ -78,7 +78,9 @@ return {
           {
             section = "terminal",
             -- cmd = "chafa ~/.dotfiles/pokemon-image/bird.png --format symbols -c full --size 60x17 --stretch",
-            cmd = "ascii-image-converter ~/.dotfiles/pokemon-image/pen.png -C -c",
+            -- cmd = "ascii-image-converter ~/.dotfiles/pokemon-image/pen.png -C -c",
+            -- cmd = "asciiquarium",
+            cmd = "cmatrix -r -u 3",
             -- random = 10,
             height = 30,
             -- width = 60,
