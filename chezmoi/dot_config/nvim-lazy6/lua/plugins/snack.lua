@@ -51,6 +51,19 @@ local ansiShadowCode = [[
                             
 ]]
 
+local nvscript = [[
+     ,gggg,                                       ,gg,                                     
+   ,88"""Y8b,                   8I               i8""8i                          ,dPYb,    
+  d8"     `Y8                   8I               `8,,8'                          IP'`Yb    
+ d8'   8b  d8                   8I                `88'                           I8  8I    
+,8I    "Y88P'                   8I                dP"8,                          I8  8bgg, 
+I8'            ,ggggg,    ,gggg,8I   ,ggg,       dP' `8a    ,ggggg,    ,ggggg,   I8 dP" "8 
+d8            dP"  "Y8gggdP"  "Y8I  i8" "8i     dP'   `Yb  dP"  "Y8gggdP"  "Y8gggI8d8bggP" 
+Y8,          i8'    ,8I i8'    ,8I  I8, ,8I _ ,dP'     I8 i8'    ,8I i8'    ,8I  I8P' "Yb, 
+`Yba,,_____,,d8,   ,d8',d8,   ,d8b, `YbadP' "888,,____,dP,d8,   ,d8',d8,   ,d8' ,d8    `Yb,
+  `"Y8888888P"Y8888P"  P"Y8888P"`Y8888P"Y888a8P"Y88888P" P"Y8888P"  P"Y8888P"   88P      Y8
+]]
+
 return {
   "folke/snacks.nvim",
   priority = 1000,
@@ -80,7 +93,11 @@ return {
             -- cmd = "chafa ~/.dotfiles/pokemon-image/bird.png --format symbols -c full --size 60x17 --stretch",
             -- cmd = "ascii-image-converter ~/.dotfiles/pokemon-image/pen.png -C -c",
             -- cmd = "asciiquarium",
-            cmd = "cmatrix -r -u 3",
+            -- cmd = "cmatrix -r -u 3",
+            -- cmd = "cmatrix -C yellow -u 7",
+            -- cmd = "sl -l | lolcat",
+            -- cmd = "nyancat",
+            cmd = "cbonsai -l -t 0.01 -w 1 -i",
             -- random = 10,
             height = 30,
             -- width = 60,

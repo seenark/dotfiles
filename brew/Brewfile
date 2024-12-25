@@ -49,9 +49,15 @@ brew "dotenvx/brew/dotenvx"
 brew "chezmoi"
 brew "encoredev/tap/encore"
 brew "borders"
+# ╭─ fancy ──────────────────────────────────────────────────────────────╮
 brew "chafa"
 brew "TheZoraiz/ascii-image-converter/ascii-image-converter"
 brew "cmatrix"
+brew "sl"
+brew "lolcat"
+brew "cbonsai"
+brew "nyancat"
+# ╰─ fancy ──────────────────────────────────────────────────────────────╯
 # brew "zellij"
 
 
