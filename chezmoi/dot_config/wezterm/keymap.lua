@@ -164,7 +164,7 @@ function SetKeyMaps(config, act)
 			key = "t",
 			mods = "CTRL",
 			action = act.TogglePaneZoomState,
-		}
+		},
 	}
 end
 

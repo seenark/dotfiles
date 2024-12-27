@@ -97,6 +97,7 @@ cask "shottr"
 cask "spotify"
 cask "dataflare"
 cask "nikitabobko/tap/aerospace"
+cask "ghostty"
 
 vscode "aaron-bond.better-comments"
 vscode "adamcaviness.theme-monokai-dark-soda"
