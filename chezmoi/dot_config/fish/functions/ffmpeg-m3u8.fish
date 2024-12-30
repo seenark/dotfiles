@@ -25,7 +25,8 @@ function ffmpeg-m3u8
 
     set -l filepath (echo ~/Desktop/$filename.mp4)
     echo "File will be saved to: $filepath"
+    set -l header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 
     # Uncomment the following line to run the actual ffmpeg command
-    ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i "$url" -c copy "$filepath"
+    command ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -headers $header -i "$url" -c copy "$filepath"
 end
