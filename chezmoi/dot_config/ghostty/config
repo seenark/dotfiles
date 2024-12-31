@@ -2,7 +2,7 @@
 # font-family-bold = MonaspiceKr NFM Bold
 # font-family-italic = MonaspiceRn NFM
 # font-family-bold-italic = MonaspiceXe NFM
-# font-size = 20
+font-size = 20
 # theme = dark:catppuccin-mocha,light:catppuccin-latte
 theme = catppuccin-mocha
 # theme = tokyonight-storm
