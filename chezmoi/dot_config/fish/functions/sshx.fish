@@ -1,6 +1,6 @@
 function sshx
 
-    set -l items poolmanager-dev aqs-kms hkhpdf-dev tgo-registry-prod-gateway tgo-registry-prod-master tgo-registry-prod-postgres tgo-registry-dev-master tgo-registry-dev-gateway tgo-zerocarbon rtrda-dev erc-dev-worker1 erc-dev-master iipm-old-database iipm-dev dmf-nuxt-frontend
+    set -l items poolmanager-dev aqs-kms hkhpdf-dev tgo-registry-prod-gateway tgo-registry-prod-master tgo-registry-prod-postgres tgo-registry-dev-master tgo-registry-dev-gateway tgo-zerocarbon rtrda-dev erc-dev-worker1 erc-dev-master iipm-old-database iipm-dev dmf-nuxt-frontend erc-dev-kafka1 erc-dev-kafka2 erc-dev-kafka3
 
     echo "Enter server name:"
 

@@ -23,7 +23,7 @@ require("lazy").setup({
     -- │ Coding                                                  │
     -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.coding.blink" },
-    { import = "lazyvim.plugins.extras.coding.luasnip" },
+    -- { import = "lazyvim.plugins.extras.coding.luasnip" },
     { import = "lazyvim.plugins.extras.coding.mini-comment" },
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.neogen" },
@@ -33,7 +33,8 @@ require("lazy").setup({
     -- ╭─────────────────────────────────────────────────────────╮
     -- │ AI                                                      │
     -- ╰─────────────────────────────────────────────────────────╯
-    { import = "lazyvim.plugins.extras.ai.codeium" },
+    -- { import = "lazyvim.plugins.extras.ai.codeium" },
+    { import = "lazyvim.plugins.extras.ai.supermaven" },
 
     -- ╭─────────────────────────────────────────────────────────╮
     -- │ Editor                                                  │
@@ -71,6 +72,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.toml" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
+    { import = "lazyvim.plugins.extras.lang.prisma" },
 
     -- ╭─────────────────────────────────────────────────────────╮
     -- │ Frameworks                                              │

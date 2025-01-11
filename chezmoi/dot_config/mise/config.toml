@@ -8,6 +8,7 @@ elixir = "latest"
 erlang = "latest"
 rebar = "latest"            # rebar must install erlang # "npm:biome" = "latest";
 deno = "latest"
+go = "latest"
 # python = ["3.10" "3.11"];
 
 [settings]
