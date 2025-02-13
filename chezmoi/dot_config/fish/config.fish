@@ -11,7 +11,7 @@ status is-interactive; and begin
     abbr --add -- exsubmit 'exercism submit'
     abbr --add -- extest 'exercism test'
     abbr --add -- gcap 'git add . && git commit --amend --no-edit && git push -f'
-    abbr --add -- hostsfile 'sudo NVIM_APPNAME=nvim-lazy5 nvim /etc/hosts'
+    abbr --add -- hostsfile 'sudo NVIM_APPNAME=nvim-lazy6 nvim /etc/hosts'
     abbr --add -- ls 'eza -al --icons --group-directories-first --git'
     abbr --add -- nixgc 'nix-store --gc'
     abbr --add -- pm pnpm

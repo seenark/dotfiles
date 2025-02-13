@@ -243,5 +243,9 @@ if.app-id = 'com.apple.ScreenContinuity'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'jp.naver.line.mac'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = "com.mitchellh.ghostty"
 run = ["layout tiling", 'move-node-to-workspace 1']
