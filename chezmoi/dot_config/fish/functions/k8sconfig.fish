@@ -10,12 +10,14 @@ function k8sconfig
             _handle_k8s_config_tgo-registry-dev-master
         case erc-dev-master
             _handle_k8s_config_erc_dev_master
+        case poolmanager-dev-master
+            _handle_k8s_config_poolmanager_dev_master
     end
 
 end
 
 function _select_k9s_server
-    set -l k9s_server tgo-registry-prod-postgres tgo-registry-prod-master tgo-registry-dev-master erc-dev-master
+    set -l k9s_server tgo-registry-prod-postgres tgo-registry-prod-master tgo-registry-dev-master erc-dev-master poolmanager-dev-master
 
     echo "Enter server name (dev/uat/prod):"
 
@@ -29,7 +31,8 @@ end
 
 
 function _handle_k8s_config_tgo-registry-prod-postgres
-    set -gx KUBECONFIG /Users/atiwatseenark/.dotfiles/kube-config/tgo-registry/prod/postgres
+    # set -gx KUBECONFIG /Users/atiwatseenark/.dotfiles/kube-config/tgo-registry/prod/postgres
+    set -gx KUBECONFIG $HOME/.private-key/kube-config/tgo-registry/prod/postgres
     echo $KUBECONFIG
 end
 
@@ -45,5 +48,10 @@ end
 
 function _handle_k8s_config_erc_dev_master
     set -gx KUBECONFIG $HOME/.dotfiles/kube-config/erc/dev/master
+    echo $KUBECONFIG
+end
+
+function _handle_k8s_config_poolmanager_dev_master
+    set -gx KUBECONFIG $HOME/.private-key/kube-config/pool-manager/dev/master
     echo $KUBECONFIG
 end
