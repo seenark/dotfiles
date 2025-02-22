@@ -13,7 +13,7 @@ return {
           includeInlayParameterNameHints = "all",
           includeInlayVariableTypeHints = true,
         },
-        complete_function_calls = true,
+        complete_function_calls = false,
         code_lens = "off",
         disable_member_code_lens = true,
       },
