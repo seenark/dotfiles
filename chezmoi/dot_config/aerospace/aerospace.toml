@@ -236,7 +236,19 @@ run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = 'move-node-to-workspace O'
+run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+if.app-id = 'com.anthropic.claudefordesktop'
+run = 'move-node-to-workspace X'
+
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+run = 'move-node-to-workspace Z'
+
+[[on-window-detected]]
+if.app-id = 'dev.kdrag0n.MacVirt'
+run = 'move-node-to-workspace P'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.ScreenContinuity'

@@ -106,6 +106,7 @@ cask "nikitabobko/tap/aerospace"
 cask "ghostty"
 cask "warp"
 cask "claude"
+cask "zen-browser"
 
 vscode "aaron-bond.better-comments"
 vscode "adamcaviness.theme-monokai-dark-soda"
