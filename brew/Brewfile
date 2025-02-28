@@ -63,6 +63,7 @@ brew "sl"
 brew "lolcat"
 brew "cbonsai"
 brew "nyancat"
+brew "yadm"
 # ╰─ fancy ──────────────────────────────────────────────────────────────╯
 # brew "zellij"
 
