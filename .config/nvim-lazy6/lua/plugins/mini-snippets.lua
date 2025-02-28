@@ -1,5 +1,6 @@
 return {
   "echasnovski/mini.snippets",
+  enabled = false,
   event = "InsertEnter", -- don't depend on other plugins to load...
   dependencies = "rafamadriz/friendly-snippets",
   opts = function()
