@@ -55,6 +55,7 @@ brew "lusingander/tap/serie"
 brew "atac"
 brew "libpq"
 brew "dive"
+brew "act"
 # ╭─ fancy ──────────────────────────────────────────────────────────────╮
 brew "chafa"
 brew "TheZoraiz/ascii-image-converter/ascii-image-converter"
