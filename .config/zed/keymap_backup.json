@@ -47,15 +47,9 @@
       "g h": "vim::StartOfLine",
       "g e": "vim::EndOfDocument",
       "L": "pane::ActivateNextItem",
-      "H": "pane::ActivatePreviousItem",
-      "down": [
-        "workspace::SendKeystrokes",
-        "4 j"
-      ],
-      "up": [
-        "workspace::SendKeystrokes",
-        "4 k"
-      ],
+      "H": "pane::ActivatePrevItem",
+      "down": ["workspace::SendKeystrokes", "4 j"],
+      "up": ["workspace::SendKeystrokes", "4 k"],
       "space e": "pane::RevealInProjectPanel",
       // "cmd-s": "workspace::Sae",
       "= =": "editor::Format",
@@ -63,13 +57,10 @@
       "U": "editor::Redo",
       // "K": "editor::Hover",
       "space k": "editor::Hover",
-      "space y": [
-        "workspace::SendKeystrokes",
-        "cmd-c"
-      ],
+      "space y": ["workspace::SendKeystrokes", "cmd-c"],
       "space o": "outline::Toggle",
       "ctrl-x": "pane::CloseActiveItem",
-      "[ e": "editor::GoToPreviousDiagnostic",
+      "[ e": "editor::GoToPrevDiagnostic",
       "] e": "editor::GoToDiagnostic"
     }
   },
@@ -93,11 +84,11 @@
   {
     "context": "Dock",
     "bindings": {
-      "space ph": "workspace::ActivatePaneLeft",
+      "space ph": ["workspace::ActivatePaneInDirection", "Left"],
       // "space e": ["workspace::ToggleLeftDock", "Left"],
-      "ctrl-w l": "workspace::ActivatePaneRight",
-      "ctrl-w k": "workspace::ActivatePaneUp",
-      "ctrl-w j": "workspace::ActivatePaneDown"
+      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"]
     }
   },
   {

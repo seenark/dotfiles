@@ -1,0 +1,60 @@
+{
+  "text span color": {
+    "prefix": "text-span-color",
+    "body": [
+      "<span class=\"text-$2\">$1</span>",
+      "$0"
+    ],
+    "description": "create span color"
+  },
+  "text span bold color": {
+    "prefix": "text-span-bold-color",
+    "body": [
+      "<span class=\"font-bold text-$2\">$1</span>",
+      "$0"
+    ],
+    "description": "create bold span color"
+  },
+  "text color": {
+    "prefix": "text-color",
+    "body": [
+      "<text$2>$1</text$2>$3"
+    ],
+    "description": "Create text color"
+  },
+  "text bold color": {
+    "prefix": "text-color-bold",
+    "body": [
+      "<textbold$2>$1</textbold$2>$3"
+    ],
+    "description": "Create text color"
+  },
+  "code collapse": {
+    "prefix": "collapse",
+    "body": [
+      "collapse={$1}$2"
+    ],
+    "description": "collapse the code from lint to line"
+  },
+  "code title": {
+    "prefix": "title",
+    "body": [
+      "title=\"$1\"$2"
+    ],
+    "description": "collapse the code from lint to line"
+  },
+  "file name": {
+    "prefix": "filename",
+    "body": [
+      "##### **$1**$0"
+    ],
+    "description": "create file name"
+  },
+  "link new tab": {
+    "prefix": "link-new-tab",
+    "body": [
+      "<a href=\"$1\" target=\"_blank\">$2</a>"
+    ],
+    "description": "create link new tab"
+  }
+}

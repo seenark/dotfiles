@@ -10,21 +10,21 @@ local vsaction = vscode.action -- non blocking
 --   "command": "workbench.view.explorer",
 --   "when": "!explorerViewletVisible"
 -- }
-function closeSideBar() 
-    vsaction("workbench.action.toggleSidebarVisibility")
-end 
-
-function openFileFromExplorerThenCloseSideBar() 
-    vsaction("list.focusDown")
-    closeSideBar()
-    isOpen = false
+function closeSideBar()
+  vsaction("workbench.action.toggleSidebarVisibility")
 end
-function openAndFocusFileExplorer() 
+
+function openFileFromExplorerThenCloseSideBar()
+  vsaction("list.focusDown")
+  closeSideBar()
+  isOpen = false
+end
+function openAndFocusFileExplorer()
   vsaction("workbench.files.action.focusFilesExplorer")
 end
 
 local isOpen = false
-function toggleFileExplorer() 
+function toggleFileExplorer()
   if isOpen == true then
     isOpen = false
     closeSideBar()
@@ -41,7 +41,7 @@ end, { desc = "reset file explorer" })
 
 map("n", "<C-u><C-u>", function()
   toggleFileExplorer()
-end, {desc = "toggle file explorer"})
+end, { desc = "toggle file explorer" })
 
 -- workbench.view.explorer
 map("n", "<leader>e", function()
@@ -62,7 +62,7 @@ end, { desc = "vscode file explorer" })
 map("n", "<C-l><C-l>", function()
   vsaction("list.select")
   openFileFromExplorerThenCloseSideBar()
-end, {desc = "ctrl + shift + L"})
+end, { desc = "ctrl + shift + L" })
 
 map("n", "<C-x>", function()
   vsaction("workbench.action.closeActiveEditor")

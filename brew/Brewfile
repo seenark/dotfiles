@@ -56,6 +56,7 @@ brew "atac"
 brew "libpq"
 brew "dive"
 brew "act"
+brew "docker-slim"
 # ╭─ fancy ──────────────────────────────────────────────────────────────╮
 brew "chafa"
 brew "TheZoraiz/ascii-image-converter/ascii-image-converter"
@@ -110,8 +111,9 @@ cask "warp"
 cask "claude"
 cask "zen-browser"
 cask "github"
-cask "yaak"
-cask "legcord"
+# cask "yaak" postman alternative like bruno
+# cask "legcord" discord alternative
+cask "trae"
 
 vscode "aaron-bond.better-comments"
 vscode "adamcaviness.theme-monokai-dark-soda"

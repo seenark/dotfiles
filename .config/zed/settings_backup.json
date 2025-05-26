@@ -7,16 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-  "agent": {
+  "assistant": {
     "default_model": {
-      "provider": "anthropic",
-      "model": "claude-3-7-sonnet-latest"
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
     },
     "version": "2"
   },
   "ui_font_size": 22,
   "buffer_font_size": 22,
-  "extend_comment_on_newline": false,
   "theme": {
     "mode": "system",
     "light": "Catppuccin Mocha",
@@ -24,8 +23,7 @@
   },
   "relative_line_numbers": true,
   "vertical_scroll_margin": 8,
-  "soft_wrap": "none",
-  "autosave": "off",
+  "autosave": "on_focus_change",
   "tabs": {
     "file_icons": true,
     "close_position": "left",
@@ -33,34 +31,20 @@
   },
   "format_on_save": "on",
   "languages": {
-    "Markdown": {
-      "remove_trailing_whitespace_on_save": false
-    },
     "TypeScript": {
-      "language_servers": ["!deno", "!typescript-language-server", "vtsls"],
+      "language_servers": ["typescript-language-server", "!vtsls"],
+      // "language_servers": ["typescript-language-server"],
+      // "language_servers": ["vtsls"],
       "code_actions_on_format": {
         "source.organizeImports": true,
         "source.fixAll.eslint": true
       },
       "formatter": "language_server"
-      // "formatter": {
-      //   "external": {
-      //     "command": "biome",
-      //     "arguments": ["format", "{buffer_path}"]
-
-      //   }
-      // }
     },
     "TSX": {
-      "language_servers": [
-        "deno",
-        "!typescript-language-server",
-        "!vtsls",
-        "!eslint"
-      ],
       "code_actions_on_format": {
         "source.organizeImports": true,
-        "source.fixAll.eslint": false
+        "source.fixAll.eslint": true
       },
       "formatter": "language_server"
     },
@@ -75,31 +59,11 @@
       //     "arguments": ["--stdin-filepath", "{buffer_path}"]
       //   }
       // }
-    },
-    "Prisma": {
-      "formatter": "language_server"
-    }
-  },
-  "lsp": {
-    "deno": {
-      "settings": {
-        "deno": {
-          "enable": true
-        }
-      }
-    },
-    "vtsls": {
-      "settings": {
-        // For TypeScript:
-        "typescript": { "tsserver": { "maxTsServerMemory": 16184 } },
-        // For JavaScript:
-        "javascript": { "tsserver": { "maxTsServerMemory": 16184 } }
-      }
     }
   },
   "inlay_hints": {
-    "enabled": true,
-    "show_type_hints": false,
+    "enabled": false,
+    "show_type_hints": true,
     "show_parameter_hints": true,
     "show_other_hints": false,
     "edit_debounce_ms": 0,
@@ -121,7 +85,7 @@
   "ui_font_family": "MonaspiceRn Nerd Font",
   "terminal": {
     "shell": {
-      "program": "/opt/homebrew/bin/fish"
+      "program": "/Users/atiwatseenark/.nix-profile/bin/fish"
     },
     "font_family": "MonaspiceKr Nerd Font",
     "font_size": 18
