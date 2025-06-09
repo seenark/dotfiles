@@ -57,6 +57,7 @@ brew "libpq"
 brew "dive"
 brew "act"
 brew "docker-slim"
+brew "ollama"
 # ╭─ fancy ──────────────────────────────────────────────────────────────╮
 brew "chafa"
 brew "TheZoraiz/ascii-image-converter/ascii-image-converter"
