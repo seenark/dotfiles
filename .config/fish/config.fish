@@ -89,3 +89,8 @@ function batdiff
 end
 
 # ╰─ Bat ──────────────────────────────────────────────────────────────╯
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/atiwatseenark/.lmstudio/bin
+# End of LM Studio CLI section
+

@@ -115,6 +115,8 @@ cask "github"
 # cask "yaak" postman alternative like bruno
 # cask "legcord" discord alternative
 cask "trae"
+cask "lm-studio" 
+cask "anythingllm"
 
 vscode "aaron-bond.better-comments"
 vscode "adamcaviness.theme-monokai-dark-soda"
