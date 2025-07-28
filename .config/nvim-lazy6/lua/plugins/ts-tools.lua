@@ -13,6 +13,13 @@ return {
           includeInlayParameterNameHints = "all",
           includeInlayVariableTypeHints = true,
         },
+        tsserver_plugins = {
+          "@effect/language-service",
+          -- for TypeScript v4.9+
+          -- "@styled/typescript-styled-plugin",
+          -- or for older TypeScript versions
+          -- "typescript-styled-plugin",
+        },
         complete_function_calls = false,
         code_lens = "off",
         disable_member_code_lens = true,
