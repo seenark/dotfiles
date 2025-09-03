@@ -21,11 +21,11 @@ SetKeyMaps(config, act)
 
 -- font
 config.font = wezterm.font_with_fallback({
-	"Monaspace Neon",
-	"Monaspace Radon",
-	"Monaspace Krypton",
-	"Monaspace Xenon Var",
-	"Monaspace Argon",
+	"MonaspiceNe Nerd Font",
+	"MonaspiceRn Nerd Font",
+	"MonaspiceKr Nerd Font",
+	"MonaspiceXe Nerd Font",
+	"MonaspaceAr Nerd Font",
 	"JetBrains Mono",
 	"Fira Code",
 	"DengXian",
