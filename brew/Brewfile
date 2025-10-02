@@ -54,6 +54,7 @@ brew "rsync" # copy file from local to server or vise versa
 brew "doggo" # dig-like but in table
 brew "gping" # ping but in chart view
 brew "btop" # like top and bottom but c++ and nice chart
+brew "nmap" # Network mapping use to scan ip and ports
 
 # ╭─ fancy ──────────────────────────────────────────────────────────────╮
 # brew "chafa"
