@@ -119,7 +119,7 @@ return {
             -- cmd = "sl -l | lolcat",
             -- cmd = "nyancat",
             -- cmd = "cbonsai -l -t 0.01 -w 1 -i",
-            cmd = "/Users/atiwatseenark/.local/share/mise/installs/bun/1.2.21/bin/bun /Volumes/HadesGodBlue/CodeSook/ascii/src/index.ts",
+            cmd = "/Users/atiwatseenark/.local/share/mise/installs/bun/1.2.21/bin/bun ~/.dotfiles/ascii/src/index.ts",
 
             -- cmd = "gh screensaver -sfireworks",
             -- cmd = "gh screensaver -s starfield -- --speed=10 --density=500",

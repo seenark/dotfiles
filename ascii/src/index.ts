@@ -81,7 +81,9 @@ const frames: string[] = [
     `
 ];
 
-const src = "~/.dotfiles/ascii/src"
+
+const username = "/Users/atiwatseenark"
+const src = `${username}/.dotfiles/ascii`
 
 const apple = await Bun.file(`${src}/frames/apple/00`).text()
 
