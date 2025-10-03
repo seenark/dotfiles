@@ -1,6 +1,8 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+add_newline = true
+
 format = """
 [](red)\
 $os\
@@ -30,6 +32,18 @@ $line_break\
 $character"""
 
 palette = 'catppuccin_macchiato'
+
+# Show memory usage
+[memory_usage]
+disabled = false
+threshold = 70
+format = "🐏 [${ram}( | ${swap})]($style) "
+
+# Show battery status
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
 
 [os]
 disabled = false
