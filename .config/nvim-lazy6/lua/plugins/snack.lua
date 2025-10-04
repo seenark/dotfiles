@@ -64,6 +64,27 @@ Y8,          i8'    ,8I i8'    ,8I  I8, ,8I _ ,dP'     I8 i8'    ,8I i8'    ,8I 
   `"Y8888888P"Y8888P"  P"Y8888P"`Y8888P"Y888a8P"Y88888P" P"Y8888P"  P"Y8888P"   88P      Y8
 ]]
 
+local mac = [[
+                                    
+    .__________________________.    
+    | .___________________. |==|    
+    | | ................. | |  |    
+    | | ::::Apple ][::::: | |  |    
+    | | ::::::::::::::::: | |  |    
+    | | ::::::::::::::::: | |  |    
+    | | ::::::::::::::::: | |  |    
+    | | ::::::::::::::::: | |  |    
+    | | ::::::::::::::::: | | ,|    
+    | !___________________! |(c|    
+    !_______________________!__!    
+   /                            \   
+  /  [][][][][][][][][][][][][]  \  
+ /  [][][][][][][][][][][][][][]  \ 
+(  [][][][][____________][][][][]  )
+ \ ------------------------------ / 
+  \______________________________/  
+]]
+
 return {
   "folke/snacks.nvim",
   priority = 1000,
@@ -97,7 +118,9 @@ return {
             -- cmd = "cmatrix -C yellow -u 7",
             -- cmd = "sl -l | lolcat",
             -- cmd = "nyancat",
-            cmd = "cbonsai -l -t 0.01 -w 1 -i",
+            -- cmd = "cbonsai -l -t 0.01 -w 1 -i",
+            cmd = "/Users/atiwatseenark/.local/share/mise/installs/bun/1.2.21/bin/bun ~/.dotfiles/ascii/src/index.ts",
+
             -- cmd = "gh screensaver -sfireworks",
             -- cmd = "gh screensaver -s starfield -- --speed=10 --density=500",
             -- random = 10,

@@ -160,16 +160,6 @@ function nvims() {
 
 bindkey -s ^n "nvims\n"
 
-
-
-
-# bun completions
-[ -s "/Users/atiwatseenark/.bun/_bun" ] && source "/Users/atiwatseenark/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
 # Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
 eval "$(mise activate zsh)"
@@ -178,3 +168,4 @@ eval "$(mise activate zsh)"
 export PATH="$PATH:/Users/atiwatseenark/.lmstudio/bin"
 # End of LM Studio CLI section
 
+eval "$(mise activate zsh)"

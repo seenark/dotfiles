@@ -9,7 +9,7 @@ erlang = "latest"
 rebar = "latest"  # rebar must install erlang # "npm:biome" = "latest";
 deno = "latest"
 go = "latest"
-bun = "1"
+bun = "latest"
 uv = "latest"
 python = "3"
 "npm:@musistudio/claude-code-router" = "latest"
