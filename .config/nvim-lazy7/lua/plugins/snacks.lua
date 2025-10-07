@@ -103,7 +103,9 @@ return {
           include = {
             ".git",
             ".config",
+            "dist",
           },
+          exclude = {},
           auto_close = true,
         },
       },
