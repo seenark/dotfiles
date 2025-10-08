@@ -104,6 +104,8 @@ return {
             ".git",
             ".config",
             "dist",
+            ".moon",
+            ".github",
           },
           exclude = {},
           auto_close = true,

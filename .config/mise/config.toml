@@ -21,6 +21,7 @@ python = "3"
 "npm:localtunnel" = "latest"
 "npm:surge" = "latest"
 elixir-ls = "latest"
+"npm:@moonrepo/cli" = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
