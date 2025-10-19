@@ -37,7 +37,7 @@ require("lazy").setup({
     -- │ Editor                                                  │
     -- ╰─────────────────────────────────────────────────────────╯
     { import = "lazyvim.plugins.extras.editor.illuminate" },
-    { import = "lazyvim.plugins.extras.editor.leap" },
+    -- { import = "lazyvim.plugins.extras.editor.leap" },
     { import = "lazyvim.plugins.extras.editor.mini-diff" },
     -- { import = "lazyvim.plugins.extras.editor.neo-tree" },
     -- { import = "lazyvim.plugins.extras.editor.mini-files" },
