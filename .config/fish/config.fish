@@ -95,3 +95,9 @@ end
 set -gx PATH $PATH /Users/atiwatseenark/.lmstudio/bin
 # End of LM Studio CLI section
 mise activate fish | source
+
+# ╭─ Specify ──────────────────────────────────────────────────────────╮
+
+fish_add_path ~/.local/bin
+
+# ╰─ Specify ──────────────────────────────────────────────────────────╯
