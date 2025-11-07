@@ -169,3 +169,7 @@ export PATH="$PATH:/Users/atiwatseenark/.lmstudio/bin"
 # End of LM Studio CLI section
 
 eval "$(mise activate zsh)"
+
+# Task Master aliases added on 10/22/2025
+alias tm='task-master'
+alias taskmaster='task-master'
