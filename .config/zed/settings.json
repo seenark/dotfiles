@@ -88,6 +88,7 @@
         "mode": "eager"
     },
     "agent": {
+        "always_allow_tool_actions": true,
         "dock": "right",
         "default_model": {
             "provider": "anthropic",
