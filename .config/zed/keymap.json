@@ -65,6 +65,13 @@
         }
     },
     {
+        "context": "Terminal",
+        "bindings": {
+            "L": "pane::ActivateNextItem",
+            "H": "pane::ActivatePreviousItem"
+        }
+    },
+    {
         "context": "ProjectPanel && not_editing",
         "bindings": {
             "a": "project_panel::NewFile",
