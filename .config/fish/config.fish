@@ -24,6 +24,7 @@ status is-interactive; and begin
     abbr --add -- brewclean 'brew bundle --file=~/.dotfiles/brew/Brewfile cleanup --force'
     abbr --add -- ff 'ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -headers $h -i "$URL" -c copy "$filepath"'
     abbr --add -- claudemcp 'cd ~/Library/Application\ Support/Claude/'
+    abbr --add -- vscode_spam_while_holding 'defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false'
 end
 
 # ╭──────────────────────────────────────────────────────────╮

@@ -23,6 +23,7 @@ python = "3"
 elixir-ls = "latest"
 "npm:@moonrepo/cli" = "latest"
 "npm:@fission-ai/openspec" = "latest"
+"npm:@kilocode/cli" = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
