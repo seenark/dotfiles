@@ -178,7 +178,7 @@
     "command_aliases": {
         // "W": "w"
     },
-    "buffer_font_family": "Maple Mono",
+    "buffer_font_family": "MonoLisa",
     "ui_font_family": "Monaspace Radon",
     "terminal": {
         "button": false,
