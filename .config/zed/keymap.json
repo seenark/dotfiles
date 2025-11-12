@@ -133,5 +133,11 @@
         "bindings": {
             "cmd-t": "workspace::NewTerminal"
         }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd-shift-s": "workspace::SaveWithoutFormat"
+        }
     }
 ]

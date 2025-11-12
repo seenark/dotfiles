@@ -7,6 +7,35 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+    "ssh_connections": [
+        {
+            "host": "local-ubuntu-server",
+            "args": [],
+            "projects": [
+                {
+                    "paths": ["/home/codesook"]
+                }
+            ]
+        }
+    ],
+    "auto_install_extensions": {
+        "html": true,
+        "dockerfile": true,
+        "docker-compose": true,
+        "astro": true,
+        "biome": true,
+        "catppuccin-blur": true,
+        "catppuccin-blur-plus": true,
+        "catppuccin-icons": true,
+        "colored-zed-icons-theme": true,
+        "make": true,
+        "opencode": true,
+        "oxc": true,
+        "prisma": true,
+        "sql": true,
+        "toml": true,
+        "vue": true
+    },
     "git_panel": {
         "scrollbar": {
             "show": "auto"
@@ -112,7 +141,7 @@
     "theme": {
         "mode": "dark",
         "light": "Catppuccin Latte",
-        "dark": "Catppuccin Frappé (Blur) [Heavy]"
+        "dark": "Catppuccin Frappé (Blur) [Light]"
     },
     "relative_line_numbers": true,
     "vertical_scroll_margin": 4.0,
@@ -193,7 +222,7 @@
         "font_size": 15.0
     },
     "project_panel": {
-        "sticky_scroll": true,
+        "sticky_scroll": false,
         "auto_fold_dirs": false,
         "default_width": 275.0,
         "hide_hidden": false,
@@ -226,11 +255,11 @@
         ],
         "editor.active_line.background": "#838ba755",
         "editor.document_highlight.bracket_background": "#e5c89055",
-        "tab.active_background": "#c6d0f533",
+        "tab.active_background": "#c6d0f577",
         "panel.focused_border": "#ef9f76",
         "element.hover": "#8caaee55",
         "ghost_element.background": "#00000000",
         "ghost_element.hover": "#8caaee55",
-        "border": "#30344611"
+        "border": "#c6d0f511"
     }
 }
