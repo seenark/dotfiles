@@ -135,13 +135,13 @@
             "model": "claude-sonnet-4-5-latest"
         }
     },
-    "ui_font_size": 18.0,
-    "buffer_font_size": 16.0,
+    "ui_font_size": 20.0,
+    "buffer_font_size": 18.0,
     "extend_comment_on_newline": false,
     "theme": {
         "mode": "dark",
         "light": "Catppuccin Latte",
-        "dark": "Catppuccin Frappé (Blur) [Light]"
+        "dark": "Catppuccin Frappé (Blur)"
     },
     "relative_line_numbers": true,
     "vertical_scroll_margin": 4.0,
@@ -218,8 +218,8 @@
         "shell": {
             "program": "/opt/homebrew/bin/fish"
         },
-        "font_family": "MonaspiceAr Nerd Font",
-        "font_size": 15.0
+        "font_family": "MonaspiceNe Nerd Font",
+        "font_size": 18.0
     },
     "project_panel": {
         "sticky_scroll": false,

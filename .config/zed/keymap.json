@@ -67,8 +67,9 @@
     {
         "context": "Terminal",
         "bindings": {
-            "L": "pane::ActivateNextItem",
-            "H": "pane::ActivatePreviousItem"
+            "cmd-]": "pane::ActivateNextItem",
+            "cmd-[": "pane::ActivatePreviousItem",
+            "cmd-i": "terminal::ToggleViMode"
         }
     },
     {
