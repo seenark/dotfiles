@@ -143,7 +143,7 @@
         "light": "Catppuccin Latte",
         "dark": "Catppuccin Frappé (Blur)"
     },
-    "relative_line_numbers": true,
+    "relative_line_numbers": "enabled",
     "vertical_scroll_margin": 4.0,
     "soft_wrap": "none",
     "autosave": "off",
@@ -163,6 +163,16 @@
         }
     },
     "lsp": {
+        "rust-analyzer": {
+            "binary": {
+                "path": "~/.cargo/bin/rust-analyzer"
+            },
+            "initialization_options": {
+                "check": {
+                    "command": "clippy"
+                }
+            }
+        },
         "deno": {
             "settings": {
                 "deno": {
