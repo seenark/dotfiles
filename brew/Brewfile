@@ -55,6 +55,7 @@ brew "doggo" # dig-like but in table
 brew "gping" # ping but in chart view
 brew "btop" # like top and bottom but c++ and nice chart
 brew "nmap" # Network mapping use to scan ip and ports
+brew "tw93/tap/mole"
 
 # ╭─ fancy ──────────────────────────────────────────────────────────────╮
 # brew "chafa"
