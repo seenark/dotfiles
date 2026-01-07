@@ -19,6 +19,7 @@ status is-interactive; and begin
     abbr --add -- tree 'eza -T -L 2 -I '\''node_modules|*.pyc'\'''
     abbr --add -- yn yarn
     abbr --add -- brewbundleinstall 'brew bundle --file=~/.dotfiles/brew/Brewfile install'
+    abbr --add -- brewfileinstall 'brew bundle --file=~/.dotfiles/brew/Brewfile install'
     abbr --add -- brewi 'brew bundle --file=~/.dotfiles/brew/Brewfile install'
     abbr --add -- brewbundleclean 'brew bundle --file=~/.dotfiles/brew/Brewfile cleanup --force'
     abbr --add -- brewclean 'brew bundle --file=~/.dotfiles/brew/Brewfile cleanup --force'

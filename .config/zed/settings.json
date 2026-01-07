@@ -155,6 +155,9 @@
     },
     "format_on_save": "on",
     "languages": {
+        "YAML": {
+            "tab_size": 2,
+        },
         "Markdown": {
             "remove_trailing_whitespace_on_save": false,
         },

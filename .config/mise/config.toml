@@ -1,6 +1,6 @@
 [tools]
 
-node = "lts"
+node = "22.20"
 # "npm:typescript" = "latest"
 # "npm:corepack" = "latest"
 gleam = "latest"
@@ -22,6 +22,8 @@ elixir-ls = "latest"
 "npm:@moonrepo/cli" = "latest"
 "npm:@fission-ai/openspec" = "latest"
 "npm:task-master-ai" = "latest"
+rust = "latest"
+"aqua:just" = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
