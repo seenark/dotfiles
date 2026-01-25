@@ -128,6 +128,10 @@
         "mode": "eager",
     },
     "agent": {
+        "inline_assistant_model": {
+            "provider": "ZAI",
+            "model": "GLM-4.7",
+        },
         "always_allow_tool_actions": true,
         "dock": "right",
         "default_model": {
@@ -259,6 +263,37 @@
         "diagnostics": false,
     },
     "language_models": {
+        "openai_compatible": {
+            "ZAI": {
+                "api_url": "https://api.z.ai/api/coding/paas/v4",
+                "available_models": [
+                    {
+                        "name": "GLM-4.7",
+                        "max_tokens": 204800,
+                        "max_output_tokens": 98304,
+                        "max_completion_tokens": 204800,
+                        "capabilities": {
+                            "tools": true,
+                            "images": false,
+                            "parallel_tool_calls": false,
+                            "prompt_cache_key": false,
+                        },
+                    },
+                    {
+                        "name": "GLM-4.5-air",
+                        "max_tokens": 204800,
+                        "max_output_tokens": 98304,
+                        "max_completion_tokens": 204800,
+                        "capabilities": {
+                            "tools": true,
+                            "images": false,
+                            "parallel_tool_calls": false,
+                            "prompt_cache_key": false,
+                        },
+                    },
+                ],
+            },
+        },
         "anthropic": {
             "api_url": "https://api.z.ai/api/anthropic",
         },

@@ -8,36 +8,36 @@
 [
     {
         "bindings": {
-            "cmd-e": "workspace::ToggleLeftDock"
-        }
+            "cmd-e": "workspace::ToggleLeftDock",
+        },
     },
     {
         "context": "Workspace",
         "bindings": {
             // "shift shift": "file_finder::Toggle"
-            "cmd-escape": null
-        }
+            "cmd-escape": null,
+        },
     },
     {
         "context": "Editor",
         "bindings": {
             // "j k": ["workspace::SendKeystrokes", "escape"]
             // "c-x": "workspace::CloseWindow"
-        }
+        },
     },
     {
         "context": "vim_mode == insert",
         "bindings": {
             // "j k": "vim::NormalBefore" // remap jk in insert mode to escape.
-        }
+        },
     },
     {
         "context": "EmptyPane || SharedScreen",
         "bindings": {
             // put key-bindings here (in addition to above) if you want them to
             // work when no editor exists
-            "space f": "file_finder::Toggle"
-        }
+            "space f": "file_finder::Toggle",
+        },
     },
     {
         "context": "VimControl && !menu",
@@ -61,16 +61,16 @@
             "space o": "outline::Toggle",
             "ctrl-x": "pane::CloseActiveItem",
             "[ e": "editor::GoToPreviousDiagnostic",
-            "] e": "editor::GoToDiagnostic"
-        }
+            "] e": "editor::GoToDiagnostic",
+        },
     },
     {
         "context": "Terminal",
         "bindings": {
             "cmd-]": "pane::ActivateNextItem",
             "cmd-[": "pane::ActivatePreviousItem",
-            "cmd-i": "terminal::ToggleViMode"
-        }
+            "cmd-i": "terminal::ToggleViMode",
+        },
     },
     {
         "context": "ProjectPanel && not_editing",
@@ -87,18 +87,18 @@
             "space y": "workspace::CopyRelativePath",
             // "ø": "project_panel::Open",
             "enter": ["workspace::SendKeystrokes", "enter ∫"],
-            "space e": ["workspace::SendKeystrokes", "enter ∫"]
-        }
+            "space e": ["workspace::SendKeystrokes", "enter ∫"],
+        },
     },
     {
         "context": "Dock",
         "bindings": {
-            "space ph": "workspace::ActivatePaneLeft",
+            // "space ph": "workspace::ActivatePaneLeft",
             // "space e": ["workspace::ToggleLeftDock", "Left"],
             "ctrl-w l": "workspace::ActivatePaneRight",
             "ctrl-w k": "workspace::ActivatePaneUp",
-            "ctrl-w j": "workspace::ActivatePaneDown"
-        }
+            "ctrl-w j": "workspace::ActivatePaneDown",
+        },
     },
     {
         "context": "Editor && vim_mode == insert && !menu",
@@ -106,39 +106,39 @@
             // "ß": "workspace::Save",
             // "®": ["vim::SwitchMode", "Normal"],
             // "cmd-s": ["workspace::SedKeystrokes", "® ß"],
-            "shift-space": "editor::ShowCompletions"
-        }
+            "shift-space": "editor::ShowCompletions",
+        },
     },
     {
         "context": "Editor && vim_mode == normal && !menu",
         "bindings": {
             ".": null, // i have to disable this because when type cmd+esc the action of "." key will done something so I disable "." key to solve this
             "cmd+esc": null, // i have to disable this because when type cmd+esc the action of "." key will done something so I disable "." key to solve this
-            "space u h": "editor::ToggleInlayHints"
-        }
+            "space u h": "editor::ToggleInlayHints",
+        },
     },
     {
         "context": "(VimControl && !menu)",
         "bindings": {
-            "space .": "editor::ToggleCodeActions"
-        }
+            "space .": "editor::ToggleCodeActions",
+        },
     },
     {
         "context": "Workspace",
         "bindings": {
-            "∫": "workspace::ToggleLeftDock"
-        }
+            "∫": "workspace::ToggleLeftDock",
+        },
     },
     {
         "context": "Terminal",
         "bindings": {
-            "cmd-t": "workspace::NewTerminal"
-        }
+            "cmd-t": "workspace::NewTerminal",
+        },
     },
     {
         "context": "Workspace",
         "bindings": {
-            "cmd-shift-s": "workspace::SaveWithoutFormat"
-        }
-    }
+            "cmd-shift-s": "workspace::SaveWithoutFormat",
+        },
+    },
 ]
