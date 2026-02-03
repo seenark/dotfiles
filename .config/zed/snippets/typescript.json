@@ -6,5 +6,20 @@
       "$0"
     ],
     "description": "Log to console"
+  },
+  "Oxlint Disable": {
+    "prefix": "oxlint-disable",
+    "body": [
+      "/* oxlint-disable $1 */",
+      "$0"
+    ],
+    "description": "Oxlint Disable"
+  },
+  "Oxlint Disable Line": {
+    "prefix": "oxlint-disable-line",
+    "body": [
+      "// oxlint-disable $0"
+    ],
+    "description": "Oxlint Disable Line"
   }
 }
