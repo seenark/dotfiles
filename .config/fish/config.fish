@@ -17,6 +17,9 @@ status is-interactive; and begin
     abbr --add -- pm pnpm
     abbr --add -- spf superfile
     abbr --add -- tree 'eza -T -L 2 -I '\''node_modules|*.pyc'\'''
+    abbr --add -- tree3 'eza -T -L 3 -I '\''node_modules|*.pyc'\'''
+    abbr --add -- tree4 'eza -T -L 4 -I '\''node_modules|*.pyc'\'''
+    abbr --add -- tree5 'eza -T -L 5 -I '\''node_modules|*.pyc'\'''
     abbr --add -- yn yarn
     abbr --add -- brewbundleinstall 'brew bundle --file=~/.dotfiles/brew/Brewfile install'
     abbr --add -- brewfileinstall 'brew bundle --file=~/.dotfiles/brew/Brewfile install'
