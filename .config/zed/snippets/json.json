@@ -1,0 +1,9 @@
+{
+  "deps workspace": {
+    "prefix": "dependency-workspace",
+    "body": [
+      "\"$0\": \"workspace:*\""
+    ],
+    "description": "Oxlint Disable Line"
+  }
+}
