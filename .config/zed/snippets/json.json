@@ -5,5 +5,12 @@
       "\"$0\": \"workspace:*\""
     ],
     "description": "Oxlint Disable Line"
+  },
+  "catalog": {
+    "prefix": "catalog",
+    "body": [
+      "\"$1\": \"catalog:$0\""
+    ],
+    "description": "Add catalog package"
   }
 }
