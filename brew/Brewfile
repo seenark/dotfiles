@@ -56,6 +56,7 @@ brew "gping" # ping but in chart view
 brew "btop" # like top and bottom but c++ and nice chart
 brew "nmap" # Network mapping use to scan ip and ports
 brew "tw93/tap/mole"
+brew "rtk" # Rust Token Killer (reduce use of token for AI Coding Agents)
 
 # ╭─ fancy ──────────────────────────────────────────────────────────────╮
 # brew "chafa"
