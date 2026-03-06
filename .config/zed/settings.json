@@ -179,6 +179,7 @@
                     "command": "clippy",
                 },
             },
+            "checkOnSave": false,
         },
         "deno": {
             "settings": {
@@ -190,15 +191,23 @@
         "vtsls": {
             "settings": {
                 // For TypeScript:
-                "typescript": { "updateImportsOnFileMove": {
-                                      "enabled": "always"
-                                },
-                                "tsserver": { "maxTsServerMemory": 16184 } },
+                "typescript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                    "tsserver": {
+                        "maxTsServerMemory": 16184,
+                    },
+                },
                 // For JavaScript:
-                "javascript": { "updateImportsOnFileMove": {
-                                      "enabled": "always"
-                                },
-                                "tsserver": { "maxTsServerMemory": 16184 } },
+                "javascript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                    "tsserver": {
+                        "maxTsServerMemory": 16184,
+                    },
+                },
             },
         },
         "yaml-language-server": {
@@ -307,7 +316,6 @@
             "api_url": "https://api.z.ai/api/anthropic",
         },
     },
-
     // UI
     "unstable.ui_density": "compact",
     "experimental.theme_overrides": {
