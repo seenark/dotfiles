@@ -190,9 +190,15 @@
         "vtsls": {
             "settings": {
                 // For TypeScript:
-                "typescript": { "tsserver": { "maxTsServerMemory": 16184 } },
+                "typescript": { "updateImportsOnFileMove": {
+                                      "enabled": "always"
+                                },
+                                "tsserver": { "maxTsServerMemory": 16184 } },
                 // For JavaScript:
-                "javascript": { "tsserver": { "maxTsServerMemory": 16184 } },
+                "javascript": { "updateImportsOnFileMove": {
+                                      "enabled": "always"
+                                },
+                                "tsserver": { "maxTsServerMemory": 16184 } },
             },
         },
         "yaml-language-server": {

@@ -173,3 +173,5 @@ eval "$(mise activate zsh)"
 # Task Master aliases added on 10/22/2025
 alias tm='task-master'
 alias taskmaster='task-master'
+
+alias claude-mem='bun "/Users/atiwatseenark/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
