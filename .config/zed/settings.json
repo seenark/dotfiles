@@ -334,4 +334,16 @@
         "ghost_element.hover": "#8caaee55",
         "border": "#c6d0f511",
     },
+
+    // Agent
+    "agent_servers": {
+        "opencode": {
+            "type": "registry"
+        },
+        "OpenCode": {
+            "type": "custom",
+            "command": "opencode",
+            "args": ["acp"],
+        },
+    },
 }
