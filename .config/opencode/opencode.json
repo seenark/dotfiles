@@ -2,5 +2,8 @@
   "$schema": "https://opencode.ai/config.json",
   "autoupdate": true,
   "provider": {},
-  "plugin": ["@mohak34/opencode-notifier@latest", "openrtk"]
+  "plugin": [
+    "@mohak34/opencode-notifier@latest",
+    "openrtk"
+  ]
 }
