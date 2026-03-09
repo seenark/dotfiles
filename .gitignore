@@ -1,3 +1,5 @@
 **/.DS_Store
 .config/nix-darwin/home-manager/result
 **/zed/prompts/**
+
+.config/fish/private.fish

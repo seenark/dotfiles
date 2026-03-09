@@ -32,6 +32,13 @@ status is-interactive; and begin
 end
 
 # ╭──────────────────────────────────────────────────────────╮
+# │ Load Private fish config                                 │
+# ╰──────────────────────────────────────────────────────────╯
+if test -f ~/.config/fish/private.fish
+    source ~/.config/fish/private.fish
+end
+
+# ╭──────────────────────────────────────────────────────────╮
 # │ Homebrew completions                                     │
 # ╰──────────────────────────────────────────────────────────╯
 if test -d (brew --prefix)"/share/fish/completions"
