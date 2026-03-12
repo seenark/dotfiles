@@ -91,6 +91,13 @@ zoxide init fish | source
 
 # ╰─ Zoxide ───────────────────────────────────────────────────────────╯
 
+# ╭─ Carapace Auto completion for shell ───────────────────────────────╮
+
+set -Ux CARAPACE_BRIDGES 'zsh,fish,bash,inshellisense' # optional
+carapace _carapace | source
+
+# ╰─ Carapace Auto completion for shell ───────────────────────────────╯
+
 # ╭─ Bat ──────────────────────────────────────────────────────────────╮
 
 function bat
