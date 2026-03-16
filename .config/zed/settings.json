@@ -337,9 +337,6 @@
 
     // Agent
     "agent_servers": {
-        "opencode": {
-            "type": "registry"
-        },
         "OpenCode": {
             "type": "custom",
             "command": "opencode",
