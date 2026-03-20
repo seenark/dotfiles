@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/runkids/skillshare/main/schemas/config.schema.json
+source: /Users/atiwatseenark/.config/skillshare/skills
+mode: merge
+targets:
+    claude:
+        path: /Users/atiwatseenark/.claude/skills
+    kilocode:
+        path: /Users/atiwatseenark/.kilocode/skills
+    opencode:
+        path: /Users/atiwatseenark/.config/opencode/skills
+ignore:
+    - '**/.DS_Store'
+    - '**/.git/**'
+audit:
+    block_threshold: CRITICAL
