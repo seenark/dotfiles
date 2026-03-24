@@ -4,6 +4,7 @@
   "provider": {},
   "plugin": [
     "@mohak34/opencode-notifier@latest",
-    "openrtk"
+    "openrtk",
+    "opencode-gemini-auth@latest"
   ]
 }
