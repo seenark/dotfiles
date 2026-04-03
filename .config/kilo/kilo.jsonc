@@ -2,6 +2,8 @@
     "$schema": "https://app.kilo.ai/config.json",
     "permission": {
         "*": "ask",
+        "git": "allow",
+        "rtk": "allow",
         "npm": "ask",
         "bash": "allow",
         "bun": "allow",
