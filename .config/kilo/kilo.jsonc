@@ -1,0 +1,11 @@
+{
+    "$schema": "https://app.kilo.ai/config.json",
+    "permission": {
+        "*": "ask",
+        "npm": "ask",
+        "bash": "allow",
+        "bun": "allow",
+        "biome": "allow",
+        "tsc": "allow",
+    },
+}
