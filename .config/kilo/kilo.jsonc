@@ -1,13 +1,27 @@
 {
-    "$schema": "https://app.kilo.ai/config.json",
-    "permission": {
-        "*": "ask",
-        "git": "allow",
-        "rtk": "allow",
-        "npm": "ask",
-        "bash": "allow",
-        "bun": "allow",
-        "biome": "allow",
-        "tsc": "allow",
-    },
+  "$schema": "https://app.kilo.ai/config.json",
+  "permission": {
+    "bash": {
+      "*": "ask",
+      "head *": "allow",
+      "tail *": "allow",
+      "turbo *": "allow",
+      "find *": "allow",
+      "rm *": "allow",
+      "rtk *": "allow",
+      "git *": "allow",
+      "npm run *": "ask",
+      "npx *": "ask",
+      "bun *": "allow",
+      "biome *": "allow",
+      "tsc *": "allow",
+      "jq *": "allow",
+      "cat *": "allow",
+      "bun run check-types *": "allow",
+      "bun run build *": "allow",
+      "bun x ultracite *": "allow",
+      "bun run check *": "allow",
+      "bun x tsc *": "allow"
+    }
+  },
 }
