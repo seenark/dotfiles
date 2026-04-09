@@ -1,16 +1,24 @@
 {
-    "$schema": "https://opencode.ai/config.json",
-    "autoupdate": true,
-    "provider": {
-        "google": {
-            "options": {
-                "projectId": "ai-coding-assistant-491205"
-            }
-        }
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": true,
+  "provider": {
+    "google": {
+      "options": {
+        "projectId": "ai-coding-assistant-491205"
+      }
+    }
+  },
+  "plugin": [
+    "@mohak34/opencode-notifier@latest",
+    "openrtk",
+    "opencode-gemini-auth@latest"
+  ],
+  "permission": {
+    "read": {
+      "~/.config/opencode/get-shit-done/*": "allow"
     },
-    "plugin": [
-        "@mohak34/opencode-notifier@latest",
-        "openrtk",
-        "opencode-gemini-auth@latest"
-    ]
+    "external_directory": {
+      "~/.config/opencode/get-shit-done/*": "allow"
+    }
+  }
 }
