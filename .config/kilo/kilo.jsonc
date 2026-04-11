@@ -48,14 +48,17 @@
             "bun install *": "allow",
             "bun x biome *": "allow",
             "git reset *": "allow",
+            "git push *": "allow",
         },
         "read": {
             "~/.config/kilo/get-shit-done/*": "allow",
         },
         "external_directory": {
             "~/.config/kilo/get-shit-done/*": "allow",
+            "~/.config/kilo/get-shit-done/templates": "allow",
             "/Users/atiwatseenark/.gsd/*": "allow",
             "/Users/atiwatseenark/Documents/aqs/2026/*": "allow",
+            "/Users/atiwatsteenark/Documents/aqs/2026/pdms/faq-chat/.planning/phases/06-liff-app/*": "allow",
         },
     },
 }
