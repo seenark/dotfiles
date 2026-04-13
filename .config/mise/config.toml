@@ -24,6 +24,7 @@ rust = "latest"
 "npm:@termly-dev/cli" = "latest"
 "npm:@google/gemini-cli" = "latest"
 "npm:@kilocode/cli" = "latest"
+"npm:openrtk" = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
