@@ -29,6 +29,8 @@ status is-interactive; and begin
     abbr --add -- ff 'ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -headers $h -i "$URL" -c copy "$filepath"'
     abbr --add -- claudemcp 'cd ~/Library/Application\ Support/Claude/'
     abbr --add -- vscode_spam_while_holding 'defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false'
+    abbr --add -- disable_mouse_reports "printf '\e[?1000l\e[?1002l\e[?1003l\e[?1006l'"
+
 end
 
 # ╭──────────────────────────────────────────────────────────╮

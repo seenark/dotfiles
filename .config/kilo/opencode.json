@@ -8,9 +8,5 @@
             }
         }
     },
-    "plugin": [
-        "@mohak34/opencode-notifier@latest",
-        "openrtk",
-        "opencode-gemini-auth@latest"
-    ]
+    "plugin": ["@mohak34/opencode-notifier@latest", "openrtk"]
 }
