@@ -11,7 +11,7 @@
             "rtk *": "allow",
             "git *": "allow",
             "npm run *": "ask",
-            "npx *": "ask",
+            "npx *": "allow",
             "bun *": "allow",
             "biome *": "allow",
             "tsc *": "allow",
@@ -51,6 +51,7 @@
         },
         "read": {
             "~/.config/kilo/get-shit-done/*": "allow",
+            "*": "allow",
         },
         "external_directory": {
             "~/.config/kilo/get-shit-done/*": "allow",
