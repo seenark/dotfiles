@@ -7,9 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-    "cli_default_open_behavior": "new_window",
+    "cli_default_open_behavior": "new_window", // "existing_window",
     "collaboration_panel": {
-        "dock": "left"
+        "dock": "left",
     },
     "ssh_connections": [
         {
@@ -19,7 +19,15 @@
                 {
                     "paths": ["/home/codesook"],
                 },
+                {
+                    "paths": ["/home/codesook/CodeSook/timesheet-ai/./"],
+                },
             ],
+        },
+        {
+            "host": "local-ubuntu-server-tunnel",
+            "args": [],
+            "projects": [],
         },
     ],
     "auto_install_extensions": {
@@ -41,7 +49,6 @@
         "vue": true,
     },
     "git_panel": {
-        "dock": "left",
         "scrollbar": {
             "show": "auto",
         },
@@ -94,7 +101,7 @@
         "button": false,
     },
     "title_bar": {
-        "show_branch_icon": true,
+        "show_branch_status_icon": true,
         "show_branch_name": true,
         "show_project_items": true,
         "show_onboarding_banner": true,
@@ -133,11 +140,14 @@
         "mode": "eager",
     },
     "agent": {
+        "tool_permissions": {
+            "default": "allow",
+        },
+        "sidebar_side": "right",
         "inline_assistant_model": {
             "provider": "ZAI",
             "model": "GLM-4.7",
         },
-        "always_allow_tool_actions": true,
         "dock": "right",
         "default_model": {
             "provider": "anthropic",
@@ -339,7 +349,6 @@
         "ghost_element.hover": "#8caaee55",
         "border": "#c6d0f511",
     },
-
     // Agent
     "agent_servers": {
         "OpenCode": {
