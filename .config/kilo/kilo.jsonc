@@ -60,7 +60,9 @@
             "/Users/atiwatseenark/.gsd/*": "allow",
             "/Users/atiwatseenark/Documents/aqs/2026/*": "allow",
             "/Users/atiwatsteenark/Documents/aqs/2026/pdms/faq-chat/.planning/phases/06-liff-app/*": "allow",
+            "/private/tmp/*": "allow",
             "/tmp/*": "allow",
+            "/Users/atiwatsevenark/Documents/aqs/2026/pool-manager/pool-manager-ai-billing/packages/ocr-shipper/src/ptt/supply-pailin/gas-quantity/*": "allow",
         },
     },
 }
