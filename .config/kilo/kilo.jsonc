@@ -60,6 +60,7 @@
             "/Users/atiwatseenark/.gsd/*": "allow",
             "/Users/atiwatseenark/Documents/aqs/2026/*": "allow",
             "/Users/atiwatsteenark/Documents/aqs/2026/pdms/faq-chat/.planning/phases/06-liff-app/*": "allow",
+            "/tmp/*": "allow",
         },
     },
 }
