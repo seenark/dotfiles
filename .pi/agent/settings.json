@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.75.4",
+  "lastChangelogVersion": "0.75.5",
   "defaultProvider": "minimax",
   "defaultModel": "MiniMax-M2.7-highspeed",
   "defaultThinkingLevel": "medium",
@@ -15,5 +15,7 @@
       "source": "npm:@plannotator/pi-extension",
       "skills": []
     }
-  ]
+  ],
+  "powerline": "full",
+  "theme": "dark"
 }
