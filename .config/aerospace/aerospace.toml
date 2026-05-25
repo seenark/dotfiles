@@ -215,8 +215,8 @@ alt-shift-l = ['join-with right', 'mode main']
 
 
 # [[on-window-detected]]
-# if.app-id = 'com.github.wez.wezterm'
-# run = 'move-node-to-workspace 1'
+if.app-id = 'com.github.wez.wezterm'
+run = 'move-node-to-workspace Q'
 
 [[on-window-detected]]
 if.app-id = 'com.brave.Browser'
@@ -263,4 +263,8 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = "com.mitchellh.ghostty"
-run = ["layout tiling", 'move-node-to-workspace 1']
+run = ["layout tiling", 'move-node-to-workspace Q']
+
+[[on-window-detected]]
+if.app-id = "com.apple.Safari"
+run = ['move-node-to-workspace E']

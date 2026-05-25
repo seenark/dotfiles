@@ -1,0 +1,19 @@
+{
+  "lastChangelogVersion": "0.75.4",
+  "defaultProvider": "minimax",
+  "defaultModel": "MiniMax-M2.7-highspeed",
+  "defaultThinkingLevel": "medium",
+  "packages": [
+    "npm:pi-subagents",
+    "npm:pi-web-access",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:pi-simplify",
+    "npm:pi-lens",
+    "npm:pi-powerline-footer",
+    {
+      "source": "npm:@plannotator/pi-extension",
+      "skills": []
+    }
+  ]
+}

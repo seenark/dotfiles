@@ -4,3 +4,6 @@
 
 .config/fish/private.fish
 .config/opencode/superpowers
+.pi/agent/bin/fd
+.pi/agent/auth.json
+.pi/agent/sessions
