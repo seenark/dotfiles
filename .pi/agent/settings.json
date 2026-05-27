@@ -1,7 +1,7 @@
 {
   "lastChangelogVersion": "0.75.5",
-  "defaultProvider": "minimax",
-  "defaultModel": "MiniMax-M2.7-highspeed",
+  "defaultProvider": "zai",
+  "defaultModel": "glm-5.1",
   "defaultThinkingLevel": "medium",
   "packages": [
     "npm:pi-subagents",
@@ -14,8 +14,13 @@
     {
       "source": "npm:@plannotator/pi-extension",
       "skills": []
-    }
+    },
+    "npm:@sherif-fanous/pi-catppuccin",
+    "npm:context-mode"
   ],
-  "powerline": "full",
-  "theme": "dark"
+  "powerline": {
+    "preset": "full",
+    "welcome": true
+  },
+  "theme": "catppuccin-mocha"
 }
