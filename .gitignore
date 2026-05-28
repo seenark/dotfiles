@@ -7,4 +7,5 @@
 .pi/agent/bin/fd
 .pi/agent/auth.json
 .pi/agent/sessions
+.pi/context-mode/sessions
 .config/opencode/opencode-notifier-state.json
