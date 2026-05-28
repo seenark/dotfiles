@@ -1,5 +1,6 @@
 {
-  "lastChangelogVersion": "0.75.5",
+  "lastChangelogVersion": "0.76.0",
+  "quietStartup": true,
   "defaultProvider": "zai",
   "defaultModel": "glm-5.1",
   "defaultThinkingLevel": "medium",
@@ -10,17 +11,13 @@
     "npm:@juicesharp/rpiv-ask-user-question",
     "npm:pi-simplify",
     "npm:pi-lens",
-    "npm:pi-powerline-footer",
+    "npm:@sherif-fanous/pi-catppuccin",
+    "npm:context-mode",
     {
       "source": "npm:@plannotator/pi-extension",
       "skills": []
     },
-    "npm:@sherif-fanous/pi-catppuccin",
-    "npm:context-mode"
+    "npm:@codesook/pi-welcome-screen"
   ],
-  "powerline": {
-    "preset": "full",
-    "welcome": true
-  },
   "theme": "catppuccin-mocha"
 }
