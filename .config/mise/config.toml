@@ -24,6 +24,7 @@ rust = "latest"
 "npm:openrtk" = "latest"
 "npm:wscat" = "latest"
 "npm:@earendil-works/pi-coding-agent" = "latest"
+"github:can1357/oh-my-pi" = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];

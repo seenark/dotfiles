@@ -1,8 +1,8 @@
 {
   "lastChangelogVersion": "0.76.0",
   "quietStartup": true,
-  "defaultProvider": "zai",
-  "defaultModel": "glm-5.1",
+  "defaultProvider": "minimax",
+  "defaultModel": "MiniMax-M2.7-highspeed",
   "defaultThinkingLevel": "medium",
   "packages": [
     "npm:pi-subagents",
