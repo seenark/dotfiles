@@ -1,0 +1,8 @@
+{
+  "name": "omp-plugins",
+  "private": true,
+  "dependencies": {
+    "@codesook/pi-welcome-screen": "^0.3.1",
+    "@ryan_nookpi/pi-extension-headroom": "^0.1.2"
+  }
+}
