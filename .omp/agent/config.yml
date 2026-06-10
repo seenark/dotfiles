@@ -1,0 +1,10 @@
+setupVersion: 1
+modelRoles:
+  plan: openai-codex/gpt-5.5:medium
+  default: openai-codex/gpt-5.4:medium
+  smol: openai-codex/gpt-5.4:low
+  task: openai-codex/gpt-5.4:medium
+  commit: openai-codex/gpt-5.3-codex:off
+
+startup:
+  quiet: true

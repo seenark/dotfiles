@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "allowRemote": true,
+  "baseUrl": "https://headroom.codesook.dev",
+  "autoStart": false
+}
