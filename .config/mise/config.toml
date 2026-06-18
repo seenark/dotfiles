@@ -26,6 +26,7 @@ rust = "latest"
 "github:can1357/oh-my-pi" = "latest"
 "npm:headroom-ai" = "latest"
 "github:seenark/sshx-rust" = "latest"
+neovim = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
