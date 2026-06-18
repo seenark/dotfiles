@@ -1,18 +1,23 @@
 setupVersion: 1
-modelRoles:
+modelRoles: 
   plan: openai-codex/gpt-5.5:medium
   default: openai-codex/gpt-5.4:medium
   smol: openai-codex/gpt-5.4:low
   task: openai-codex/gpt-5.4:medium
   commit: openai-codex/gpt-5.3-codex:off
-startup:
+startup: 
   quiet: true
-searxng:
+searxng: 
   endpoint: https://searxng.codesook.dev
-memory:
+memory: 
   backend: hindsight
-hindsight:
+hindsight: 
   apiUrl: https://hindsight.codesook.dev
   apiToken: this_is_api_key
-  bankId: null # per-project bucket allocated on first use
+  bankId: null
   scoping: per-project
+theme: 
+  dark: catppuccin-mocha
+  light: light-catppuccin
+statusLine: 
+  separator: powerline

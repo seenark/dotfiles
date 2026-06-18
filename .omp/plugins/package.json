@@ -2,7 +2,7 @@
     "name": "omp-plugins",
     "private": true,
     "dependencies": {
-        "@codesook/pi-welcome-screen": "^0.3.6",
+        "@codesook/omp-welcome-screen": "^0.3.7",
         "@ryan_nookpi/pi-extension-headroom": "^0.1.2",
         "pi-rtk-optimizer": "^0.8.2"
     }

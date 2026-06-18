@@ -1,5 +1,7 @@
 status is-interactive; and begin
     # set -g NVIM_APPNAME nvim-lazy5
+    set -gx EDITOR zed
+
     # abbr --add -- nl nvim
     abbr --add -- .. 'cd ..'
     abbr --add -- ... 'cd ../..'
