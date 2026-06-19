@@ -15,7 +15,7 @@ macos-titlebar-style = native
 window-padding-y = 8
 window-padding-x = 8
 background-opacity = 0.75
-background-blur-radius = 0
+background-blur-radius = 20
 background = #000000
 unfocused-split-opacity = 0.6
 # unfocused-split-fill = #232634
@@ -34,4 +34,3 @@ keybind = "super+/=text:÷"
 keybind = "shift+space=text:\x00"
 keybind = "ctrl+backspace=text: un"
 keybind = "ctrl+shift+space=toggle_quick_terminal"
-
