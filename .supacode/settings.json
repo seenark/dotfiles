@@ -1,0 +1,113 @@
+{
+  "global" : {
+    "agentPresenceBadgesEnabled" : true,
+    "analyticsEnabled" : false,
+    "appearanceMode" : "dark",
+    "autoUpdateAgentIntegrationsEnabled" : true,
+    "automatedActionPolicy" : "cliOnly",
+    "confirmQuitMode" : "auto",
+    "copyIgnoredOnWorktreeCreate" : false,
+    "copyUntrackedOnWorktreeCreate" : false,
+    "crashReportsEnabled" : false,
+    "defaultEditorID" : "auto",
+    "deleteBranchOnDeleteWorktree" : true,
+    "fetchOriginBeforeWorktreeCreation" : true,
+    "githubIntegrationEnabled" : true,
+    "globalScripts" : [
+
+    ],
+    "hideSingleTabBar" : true,
+    "inAppNotificationsEnabled" : true,
+    "moveNotifiedWorktreeToTop" : true,
+    "notificationSoundEnabled" : true,
+    "promptForWorktreeCreation" : true,
+    "pullRequestMergeStrategy" : "merge",
+    "richAgentNotificationsEnabled" : true,
+    "shortcutOverrides" : {
+      "toggleLeftSidebar" : {
+        "isEnabled" : true,
+        "keyCode" : 11,
+        "modifiers" : 1
+      }
+    },
+    "systemNotificationsEnabled" : false,
+    "terminalThemeSyncEnabled" : false,
+    "terminateSessionsOnQuit" : false,
+    "updateChannel" : "stable",
+    "updatesAutomaticallyCheckForUpdates" : true,
+    "updatesAutomaticallyDownloadUpdates" : false
+  },
+  "pinnedWorktreeIDs" : [
+
+  ],
+  "repositories" : {
+    "\/Users\/atiwatseenark\/.dotfiles\/" : {
+      "archiveScript" : "",
+      "deleteScript" : "",
+      "openActionID" : "auto",
+      "runScript" : "",
+      "scripts" : [
+
+      ],
+      "setupScript" : ""
+    },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style\/" : {
+      "archiveScript" : "",
+      "deleteScript" : "",
+      "openActionID" : "auto",
+      "runScript" : "",
+      "scripts" : [
+
+      ],
+      "setupScript" : ""
+    },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/omp-theme-catppuccin\/" : {
+      "archiveScript" : "",
+      "deleteScript" : "",
+      "openActionID" : "auto",
+      "runScript" : "",
+      "scripts" : [
+
+      ],
+      "setupScript" : ""
+    },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/project-management\/" : {
+      "archiveScript" : "",
+      "deleteScript" : "",
+      "openActionID" : "auto",
+      "runScript" : "",
+      "scripts" : [
+
+      ],
+      "setupScript" : ""
+    },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/skills\/" : {
+      "archiveScript" : "",
+      "deleteScript" : "",
+      "openActionID" : "auto",
+      "runScript" : "",
+      "scripts" : [
+
+      ],
+      "setupScript" : ""
+    },
+    "\/Users\/atiwatseenark\/Documents\/public-repos\/oh-my-pi\/" : {
+      "archiveScript" : "",
+      "deleteScript" : "",
+      "openActionID" : "auto",
+      "runScript" : "",
+      "scripts" : [
+
+      ],
+      "setupScript" : ""
+    }
+  },
+  "repositoryRoots" : [
+    "\/Users\/atiwatseenark\/Documents\/public-repos\/oh-my-pi\/",
+    "\/Users\/atiwatseenark\/Documents\/codesook\/skills\/",
+    "\/Users\/atiwatseenark\/Documents\/codesook\/project-management\/",
+    "\/Users\/atiwatseenark\/.dotfiles\/",
+    "\/Users\/atiwatseenark\/Documents\/codesook\/omp-theme-catppuccin\/",
+    "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style\/"
+  ]
+}

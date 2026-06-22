@@ -1,0 +1,82 @@
+{
+  "\/Users\/atiwatseenark\/.dotfiles\/" : {
+    "selectedTabIndex" : 1,
+    "tabs" : [
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "FC0C032B-8641-4A7F-A0CD-B66FA9C93435",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "35B764F7-A40E-4BF6-9AD8-5795253315A2",
+              "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
+            }
+          }
+        },
+        "title" : "~\/.dotfiles"
+      },
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "128C94A4-75F1-40E2-9E59-856A964CFA2B",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "533608A2-D95B-4CE8-9D45-5C92BD44F471",
+              "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
+            }
+          }
+        },
+        "title" : "~\/.dotfiles"
+      }
+    ]
+  },
+  "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style\/" : {
+    "selectedTabIndex" : 1,
+    "tabs" : [
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "9D7D4632-ACD1-4F7E-B794-5E63729D9B79",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "3130506A-A286-4986-89E7-0E27B43899DD",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style"
+            }
+          }
+        },
+        "title" : "π: omp-prompt-border-style"
+      },
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "6FF1AA14-398A-42B8-A4C3-419A8C4792F0",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "0D3BCCF3-403C-40E1-897D-C36190AF94A2",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style"
+            }
+          }
+        },
+        "title" : "~\/D\/c\/omp-prompt-border-style"
+      }
+    ]
+  },
+  "\/Users\/atiwatseenark\/Documents\/public-repos\/oh-my-pi\/" : {
+    "selectedTabIndex" : 0,
+    "tabs" : [
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "27D23967-526A-4846-A46D-46051729A88E",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "205E98DA-9708-443C-86BF-BB075B801C03",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/public-repos\/oh-my-pi"
+            }
+          }
+        },
+        "title" : "π: oh-my-pi"
+      }
+    ]
+  }
+}

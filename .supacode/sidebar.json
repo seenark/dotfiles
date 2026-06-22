@@ -1,0 +1,61 @@
+{
+  "focusedWorktreeID" : "\/Users\/atiwatseenark\/.dotfiles\/",
+  "schemaVersion" : 1,
+  "sections" : [
+    "\/Users\/atiwatseenark\/Documents\/public-repos\/oh-my-pi\/",
+    {
+      "buckets" : [
+
+      ],
+      "collapsed" : false
+    },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/skills\/",
+    {
+      "buckets" : [
+
+      ],
+      "collapsed" : false
+    },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/project-management\/",
+    {
+      "buckets" : [
+        "unpinned",
+        {
+          "items" : [
+            "folder:\/Users\/atiwatseenark\/Documents\/codesook\/project-management\/",
+            {
+
+            }
+          ]
+        }
+      ],
+      "collapsed" : false
+    },
+    "\/Users\/atiwatseenark\/.dotfiles\/",
+    {
+      "buckets" : [
+
+      ],
+      "collapsed" : false
+    },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/omp-theme-catppuccin\/",
+    {
+      "buckets" : [
+        "unpinned",
+        {
+          "items" : [
+
+          ]
+        }
+      ],
+      "collapsed" : false
+    },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style\/",
+    {
+      "buckets" : [
+
+      ],
+      "collapsed" : false
+    }
+  ]
+}
