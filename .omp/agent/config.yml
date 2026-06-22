@@ -21,3 +21,39 @@ theme:
   light: light-catppuccin
 statusLine: 
   separator: powerline
+  preset: custom
+  sessionAccent: true
+  transparent: true
+  leftSegments: 
+    - model
+    - mode
+    - git
+    - context_pct
+    - cost
+  rightSegments: 
+    - subagents
+    - time
+tui: 
+  textSizing: false
+  hyperlinks: auto
+  tight: false
+display: 
+  showTokenUsage: true
+  shimmer: kitt
+  cacheMissMarker: true
+showHardwareCursor: true
+task: 
+  showResolvedModelBadge: true
+  eager: preferred
+tools: 
+  approvalMode: yolo
+autolearn: 
+  enabled: true
+  autoContinue: false
+edit: 
+  mode: hashline
+plan: 
+  defaultOnStartup: true
+dev: 
+  autoqa: 
+    consent: denied
