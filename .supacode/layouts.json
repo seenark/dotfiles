@@ -1,6 +1,6 @@
 {
   "\/Users\/atiwatseenark\/.dotfiles\/" : {
-    "selectedTabIndex" : 1,
+    "selectedTabIndex" : 0,
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
@@ -14,50 +14,24 @@
           }
         },
         "title" : "~\/.dotfiles"
-      },
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "128C94A4-75F1-40E2-9E59-856A964CFA2B",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "533608A2-D95B-4CE8-9D45-5C92BD44F471",
-              "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
-            }
-          }
-        },
-        "title" : "~\/.dotfiles"
       }
     ]
   },
-  "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style\/" : {
-    "selectedTabIndex" : 1,
+  "\/Users\/atiwatseenark\/Documents\/codesook\/omp-theme-catppuccin\/" : {
+    "selectedTabIndex" : 0,
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
-        "id" : "9D7D4632-ACD1-4F7E-B794-5E63729D9B79",
+        "id" : "44C23D60-25C5-4593-A073-F518866B27C1",
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "3130506A-A286-4986-89E7-0E27B43899DD",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style"
+              "id" : "58770431-EEC5-4451-B6D1-56E10EDD83EB",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/omp-theme-catppuccin"
             }
           }
         },
-        "title" : "π: omp-prompt-border-style"
-      },
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "6FF1AA14-398A-42B8-A4C3-419A8C4792F0",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "0D3BCCF3-403C-40E1-897D-C36190AF94A2",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style"
-            }
-          }
-        },
-        "title" : "~\/D\/c\/omp-prompt-border-style"
+        "title" : "~\/D\/c\/omp-theme-catppuccin"
       }
     ]
   },
