@@ -17,6 +17,91 @@
       }
     ]
   },
+  "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/dga-2026-form\/" : {
+    "selectedTabIndex" : 0,
+    "tabs" : [
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "D1586536-60B5-4353-9F90-81B4F931C8D6",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "34196D2D-D5E9-4546-BEED-9C56D909E00F",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/dga-2026-form"
+            }
+          }
+        },
+        "title" : "π: Exclude test users report"
+      }
+    ]
+  },
+  "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pool-manager-ai-billing\/" : {
+    "selectedTabIndex" : 1,
+    "tabs" : [
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "3731D671-530D-484A-AEA2-019E8BF32C51",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "0C089296-C731-4946-A4CC-9C20A67F5A77",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pool-manager-ai-billing"
+            }
+          }
+        },
+        "title" : "π: pool-manager-ai-billing"
+      },
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "A913C53C-0529-4A0A-BE30-D3F669FDBC47",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "D674499C-B365-4261-8DAD-43BB57AEE96C",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pool-manager-ai-billing"
+            }
+          }
+        },
+        "title" : "~\/D\/a\/2\/p\/pool-manager-ai-billing"
+      }
+    ]
+  },
+  "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph\/" : {
+    "selectedTabIndex" : 0,
+    "tabs" : [
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "BEDE1F0D-3539-4B71-9812-C7B715A17D00",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "45724556-D15A-4AFD-9AFE-2170A1073ED2",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph"
+            }
+          }
+        },
+        "title" : "~\/D\/c\/codesook-glyph"
+      }
+    ]
+  },
+  "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style\/" : {
+    "selectedTabIndex" : 0,
+    "tabs" : [
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "9C7774E0-236A-4644-8EB5-867881349ACB",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "9242BC64-908D-41F4-BBD2-6736EFA64660",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style"
+            }
+          }
+        },
+        "title" : "π: omp-prompt-border-style"
+      }
+    ]
+  },
   "\/Users\/atiwatseenark\/Documents\/codesook\/omp-theme-catppuccin\/" : {
     "selectedTabIndex" : 0,
     "tabs" : [
@@ -35,8 +120,26 @@
       }
     ]
   },
-  "\/Users\/atiwatseenark\/Documents\/public-repos\/oh-my-pi\/" : {
+  "\/Users\/atiwatseenark\/Documents\/codesook\/skills\/" : {
     "selectedTabIndex" : 0,
+    "tabs" : [
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "9899E95F-C6EC-4C51-AC7B-0D4D5DDB77AE",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "53A436B9-68E9-4752-BD18-DDC6DE2CA045",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/skills"
+            }
+          }
+        },
+        "title" : "~\/D\/c\/skills"
+      }
+    ]
+  },
+  "\/Users\/atiwatseenark\/Documents\/public-repos\/oh-my-pi\/" : {
+    "selectedTabIndex" : 1,
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
@@ -50,6 +153,19 @@
           }
         },
         "title" : "π: oh-my-pi"
+      },
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "A99CF13C-4DA2-4BB2-89FE-950CA080FDBF",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "CCBEF934-E9FD-45D8-BB5F-A40B6123ED1A",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook"
+            }
+          }
+        },
+        "title" : "~\/D\/codesook"
       }
     ]
   }
