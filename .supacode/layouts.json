@@ -4,16 +4,16 @@
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
-        "id" : "FC0C032B-8641-4A7F-A0CD-B66FA9C93435",
+        "id" : "DCA29E60-005D-4DF4-8C66-34307D507988",
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "35B764F7-A40E-4BF6-9AD8-5795253315A2",
+              "id" : "35899ADD-750C-4072-862B-D358468BB1D2",
               "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
             }
           }
         },
-        "title" : "~\/.dotfiles"
+        "title" : "nl ~\/.dotfiles"
       }
     ]
   },
@@ -44,8 +44,7 @@
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "0C089296-C731-4946-A4CC-9C20A67F5A77",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pool-manager-ai-billing"
+              "id" : "0C089296-C731-4946-A4CC-9C20A67F5A77"
             }
           }
         },
@@ -57,8 +56,7 @@
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "D674499C-B365-4261-8DAD-43BB57AEE96C",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pool-manager-ai-billing"
+              "id" : "D674499C-B365-4261-8DAD-43BB57AEE96C"
             }
           }
         },
@@ -71,11 +69,37 @@
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
-        "id" : "BEDE1F0D-3539-4B71-9812-C7B715A17D00",
+        "id" : "1BB5F86D-76EC-425F-AC04-8BEE6B2CEFE4",
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "45724556-D15A-4AFD-9AFE-2170A1073ED2",
+              "id" : "2B20F050-0B59-41A1-BBCB-80C2AF549101",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph"
+            }
+          }
+        },
+        "title" : "petiglyph ~\/D\/c\/codesook-glyph"
+      },
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "A8BD6F79-DADA-43D0-9726-6413B113AC91",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "6430EE9B-D01F-4E07-9818-5F218A9AD5FD",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph"
+            }
+          }
+        },
+        "title" : "~\/D\/c\/codesook-glyph"
+      },
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "8DF6A478-DD5D-442B-81D4-4C45E876DC5A",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "685A9799-6971-459E-9C5F-9EC3709C1192",
               "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph"
             }
           }
@@ -93,12 +117,11 @@
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "9242BC64-908D-41F4-BBD2-6736EFA64660",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style"
+              "id" : "9242BC64-908D-41F4-BBD2-6736EFA64660"
             }
           }
         },
-        "title" : "π: omp-prompt-border-style"
+        "title" : "π: Animated left glyph"
       }
     ]
   },
@@ -111,8 +134,7 @@
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "58770431-EEC5-4451-B6D1-56E10EDD83EB",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/omp-theme-catppuccin"
+              "id" : "58770431-EEC5-4451-B6D1-56E10EDD83EB"
             }
           }
         },

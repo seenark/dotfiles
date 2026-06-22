@@ -78,7 +78,7 @@ source (/opt/homebrew/bin/starship init fish --print-full-init | psub)
 # ╭─ Neovim ───────────────────────────────────────────────────────────╮
 
 function nl
-    env NVIM_APPNAME=nvim-lazy7 nvim
+    env NVIM_APPNAME=nvim8 nvim
 end
 
 # ╰─ Neovim ───────────────────────────────────────────────────────────╯
