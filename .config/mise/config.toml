@@ -27,6 +27,7 @@ rust = "latest"
 "github:seenark/sshx-rust" = "latest"
 neovim = "latest"
 "npm:petiglyph" = "latest"
+"github:seenark/codesook-omp" = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
