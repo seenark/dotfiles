@@ -1,0 +1,7 @@
+   app.model.selectTemporary: ctrl+m
+   app.plan.toggle: ctrl+n
+   # app:
+   #   model:
+   #     selectTemporary: ctrl+m
+   #   plan:
+   #     toggle: ctrl+shift+p
