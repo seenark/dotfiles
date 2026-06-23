@@ -1,11 +1,56 @@
 {
   "promptBorder": {
-    "style": "double",
+    "style": "sharp",
     "layout": "full",
     "leftGlyph": {
       "frameMs": 24,
-      "glyphs": "􁦘􁦙 􁦚􁦛 􁦜􁦝 􁦞􁦟 􁦠􁦡 􁦢􁦣 􁦤􁦥 􁦦􁦧 􁦨􁦩 􁦪􁦫 􁦬􁦭  􁦮􁦯  􁦰􁦱  􁦲􁦳  􁦴􁦵  􁦶􁦷  􁦸􁦹  􁦺􁦻  􁦼􁦽  􁦾􁦿  􁧀􁧁  􁧂􁧃  􁧄􁧅  􁧆􁧇  􁧈􁧉  􁧊􁧋  􁧌􁧍  􁧎􁧏  􁧐􁧑  􁧒􁧓  􁧔􁧕  􁧖􁧗  􁧘􁧙  􁧚􁧛  􁧜􁧝  􁧞􁧟  􁧠􁧡  􁧢􁧣  􁧤􁧥  􁧦􁧧  􁧨􁧩  􁧪􁧫  􁧬􁧭  􁧮􁧯  􁧰􁧱  􁧲􁧳  􁧴􁧵  􁧶􁧷  􁧸􁧹  􁧺􁧻  􁧼􁧽  􁧾􁧿  􁨀􁨁  􁨂􁨃  􁨄􁨅  􁨆􁨇  􁨈􁨉  􁨊􁨋  􁨌􁨍  􁨎􁨏  􁨐􁨑  􁨒􁨓  􁨔􁨕  􁨖􁨗  􁨘􁨙  􁨚􁨛  􁨜􁨝  􁨞􁨟  􁨠􁨡  􁨢􁨣  􁨤􁨥  􁨦􁨧  􁨨􁨩"
+      "glyphs": "􆹕􆹖 􆹗􆹘  􆹙􆹚  􆹛􆹜  􆹝􆹞  􆹟􆹠  􆹡􆹢  􆹣􆹤  􆹥􆹦  􆹧􆹨  􆹩􆹪  􆹫􆹬  􆹭􆹮  􆹯􆹰  􆹱􆹲  􆹳􆹴  􆹵􆹶  􆹷􆹸  􆹹􆹺  􆹻􆹼  􆹽􆹾  􆹿􆺀  􆺁􆺂  􆺃􆺄"
     }
+  },
+  "welcomeScreen": {
+    "mainText": "CodeSook",
+    "url": "https://codesook.dev",
+    "animationStyle": "rainbow",
+    "animationText": "Welcome",
+    "frameDelayMs": 80,
+    "fgColor": "lavender",
+    "bgColor": "base",
+    "accentColor": "blue",
+    "urlColor": "sapphire",
+    "animationColor": "pink",
+    "paddingTop": 2,
+    "paddingBottom": 2,
+    "borderStyle": "rounded",
+    "bgFillChar": "",
+    "minTerminalWidth": 80,
+    "overlayWidth": 120,
+    "countdown": -1,
+    "debug": false,
+    "enableScrolling": true,
+    "showBanner": true,
+    "showMainText": true,
+    "showUrl": true,
+    "showCountdown": true,
+    "showPadding": true,
+    "showBorder": true,
+    "showInfoPanel": true,
+    "showVersion": true,
+    "showModel": true,
+    "showTips": true,
+    "showLoaded": true,
+    "showResources": true,
+    "showSessions": true,
+    "infoPanelSections": [
+      "version",
+      "model",
+      "tips",
+      "loaded",
+      "resources",
+      "sessions"
+    ],
+    "modelName": "",
+    "providerName": "",
+    "logoChar": "π",
+    "bannerFile": ""
   }
 }
-

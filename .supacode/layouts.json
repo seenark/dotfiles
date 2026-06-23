@@ -1,69 +1,4 @@
 {
-  "\/Users\/atiwatseenark\/.dotfiles\/" : {
-    "selectedTabIndex" : 0,
-    "tabs" : [
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "DCA29E60-005D-4DF4-8C66-34307D507988",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "35899ADD-750C-4072-862B-D358468BB1D2",
-              "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
-            }
-          }
-        },
-        "title" : "nl ~\/.dotfiles"
-      }
-    ]
-  },
-  "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/dga-2026-form\/" : {
-    "selectedTabIndex" : 0,
-    "tabs" : [
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "D1586536-60B5-4353-9F90-81B4F931C8D6",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "34196D2D-D5E9-4546-BEED-9C56D909E00F",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/dga-2026-form"
-            }
-          }
-        },
-        "title" : "π: Exclude test users report"
-      }
-    ]
-  },
-  "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pool-manager-ai-billing\/" : {
-    "selectedTabIndex" : 1,
-    "tabs" : [
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "3731D671-530D-484A-AEA2-019E8BF32C51",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "0C089296-C731-4946-A4CC-9C20A67F5A77"
-            }
-          }
-        },
-        "title" : "π: pool-manager-ai-billing"
-      },
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "A913C53C-0529-4A0A-BE30-D3F669FDBC47",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "D674499C-B365-4261-8DAD-43BB57AEE96C"
-            }
-          }
-        },
-        "title" : "~\/D\/a\/2\/p\/pool-manager-ai-billing"
-      }
-    ]
-  },
   "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph\/" : {
     "selectedTabIndex" : 0,
     "tabs" : [
@@ -78,90 +13,30 @@
             }
           }
         },
-        "title" : "petiglyph ~\/D\/c\/codesook-glyph"
-      },
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "A8BD6F79-DADA-43D0-9726-6413B113AC91",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "6430EE9B-D01F-4E07-9818-5F218A9AD5FD",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph"
-            }
-          }
-        },
-        "title" : "~\/D\/c\/codesook-glyph"
-      },
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "8DF6A478-DD5D-442B-81D4-4C45E876DC5A",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "685A9799-6971-459E-9C5F-9EC3709C1192",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph"
-            }
-          }
-        },
         "title" : "~\/D\/c\/codesook-glyph"
       }
     ]
   },
-  "\/Users\/atiwatseenark\/Documents\/codesook\/omp-prompt-border-style\/" : {
+  "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-omp\/" : {
     "selectedTabIndex" : 0,
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
-        "id" : "9C7774E0-236A-4644-8EB5-867881349ACB",
+        "id" : "0139F787-9F45-42F5-9CCC-8BF34D9D4F90",
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "9242BC64-908D-41F4-BBD2-6736EFA64660"
+              "id" : "7274A8B2-6C53-486F-AF5F-E2AC03131447",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-omp"
             }
           }
         },
-        "title" : "π: Animated left glyph"
-      }
-    ]
-  },
-  "\/Users\/atiwatseenark\/Documents\/codesook\/omp-theme-catppuccin\/" : {
-    "selectedTabIndex" : 0,
-    "tabs" : [
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "44C23D60-25C5-4593-A073-F518866B27C1",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "58770431-EEC5-4451-B6D1-56E10EDD83EB"
-            }
-          }
-        },
-        "title" : "~\/D\/c\/omp-theme-catppuccin"
-      }
-    ]
-  },
-  "\/Users\/atiwatseenark\/Documents\/codesook\/skills\/" : {
-    "selectedTabIndex" : 0,
-    "tabs" : [
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "9899E95F-C6EC-4C51-AC7B-0D4D5DDB77AE",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "53A436B9-68E9-4752-BD18-DDC6DE2CA045",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/skills"
-            }
-          }
-        },
-        "title" : "~\/D\/c\/skills"
+        "title" : "π: codesook-omp"
       }
     ]
   },
   "\/Users\/atiwatseenark\/Documents\/public-repos\/oh-my-pi\/" : {
-    "selectedTabIndex" : 1,
+    "selectedTabIndex" : 0,
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
@@ -169,25 +44,11 @@
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "205E98DA-9708-443C-86BF-BB075B801C03",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/public-repos\/oh-my-pi"
+              "id" : "205E98DA-9708-443C-86BF-BB075B801C03"
             }
           }
         },
         "title" : "π: oh-my-pi"
-      },
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "A99CF13C-4DA2-4BB2-89FE-950CA080FDBF",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "CCBEF934-E9FD-45D8-BB5F-A40B6123ED1A",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook"
-            }
-          }
-        },
-        "title" : "~\/D\/codesook"
       }
     ]
   }
