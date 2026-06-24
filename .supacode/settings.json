@@ -71,6 +71,26 @@
       ],
       "setupScript" : ""
     },
+    "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pts-pjo24014-app-frontend\/" : {
+      "archiveScript" : "",
+      "deleteScript" : "",
+      "openActionID" : "auto",
+      "runScript" : "",
+      "scripts" : [
+
+      ],
+      "setupScript" : ""
+    },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/ascii-animation\/" : {
+      "archiveScript" : "",
+      "deleteScript" : "",
+      "openActionID" : "auto",
+      "runScript" : "",
+      "scripts" : [
+
+      ],
+      "setupScript" : ""
+    },
     "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph\/" : {
       "archiveScript" : "",
       "deleteScript" : "",
@@ -152,6 +172,8 @@
     "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/dga-2026-form\/",
     "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pool-manager-ai-billing\/",
     "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph\/",
-    "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-omp\/"
+    "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-omp\/",
+    "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pts-pjo24014-app-frontend\/",
+    "\/Users\/atiwatseenark\/Documents\/codesook\/ascii-animation\/"
   ]
 }
