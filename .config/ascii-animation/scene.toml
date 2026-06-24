@@ -1,0 +1,138 @@
+frame_rate = 30
+color = true
+
+[[instances]]
+id = "galaxy-1"
+preset = "galaxy"
+layer = "normal"
+z_index = 0
+enabled = true
+
+[instances.options.arms]
+type = "int"
+value = 3
+
+[instances.options.glow]
+type = "float"
+value = 0.0
+
+[instances.options.gradient]
+type = "choice"
+value = "starry"
+
+[instances.options.noise]
+type = "float"
+value = 0.0
+
+[instances.options.palette]
+type = "choice"
+value = "cosmic"
+
+[instances.options.size]
+type = "int"
+value = 55
+
+[instances.options.speed]
+type = "int"
+value = 35
+
+[instances.options.stars]
+type = "int"
+value = 400
+
+[instances.options.twinkle]
+type = "float"
+value = 0.0
+
+[instances.options.twist]
+type = "float"
+value = 1.0
+
+[instances.placement]
+kind = "center"
+
+[[instances]]
+id = "text-art-1"
+preset = "text-art"
+layer = "normal"
+z_index = 0
+enabled = true
+
+[instances.options.text]
+type = "text"
+value = "Code Sook"
+
+[instances.options.text-amp]
+type = "float"
+value = 2.5
+
+[instances.options.text-bg]
+type = "choice"
+value = "none"
+
+[instances.options.text-border]
+type = "bool"
+value = false
+
+[instances.options.text-bright]
+type = "float"
+value = 1.0
+
+[instances.options.text-color-mode]
+type = "choice"
+value = "gradient-h"
+
+[instances.options.text-drop-shadow]
+type = "bool"
+value = false
+
+[instances.options.text-effect]
+type = "choice"
+value = "dissolve"
+
+[instances.options.text-font]
+type = "choice"
+value = "ANSI Shadow"
+
+[instances.options.text-freq]
+type = "float"
+value = 1.0
+
+[instances.options.text-glitch]
+type = "float"
+value = 0.15
+
+[instances.options.text-glow]
+type = "bool"
+value = true
+
+[instances.options.text-mirror]
+type = "bool"
+value = false
+
+[instances.options.text-overflow]
+type = "choice"
+value = "extend"
+
+[instances.options.text-palette]
+type = "choice"
+value = "gold"
+
+[instances.options.text-particles]
+type = "bool"
+value = false
+
+[instances.options.text-reflection]
+type = "bool"
+value = false
+
+[instances.options.text-speed]
+type = "float"
+value = 1.5
+
+[instances.options.text-voffset]
+type = "int"
+value = 1
+
+[instances.placement]
+kind = "center"

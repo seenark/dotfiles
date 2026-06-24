@@ -1,6 +1,6 @@
 {
   "\/Users\/atiwatseenark\/.dotfiles\/" : {
-    "selectedTabIndex" : 0,
+    "selectedTabIndex" : 2,
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
@@ -9,6 +9,32 @@
           "leaf" : {
             "_0" : {
               "id" : "786D874D-C988-40B4-A518-E77CE37C7FF6",
+              "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
+            }
+          }
+        },
+        "title" : "ascii-animation tui ~\/.dotfiles"
+      },
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "EC196835-7513-4B69-B95D-3B5C7D090C79",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "0E089893-8D24-446F-A124-205DF5AC3C34",
+              "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
+            }
+          }
+        },
+        "title" : "nl ~\/.dotfiles"
+      },
+      {
+        "focusedLeafIndex" : 0,
+        "id" : "D9D0AF0D-4EA0-4888-BB84-3ABEAC72C307",
+        "layout" : {
+          "leaf" : {
+            "_0" : {
+              "id" : "5B2871B1-E25C-427F-AB23-420613EA2CF0",
               "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
             }
           }
