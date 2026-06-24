@@ -81,6 +81,10 @@ function nl
     env NVIM_APPNAME=nvim8 nvim
 end
 
+function nll
+    env NVIM_APPNAME=nvim8 /Users/atiwatseenark/.local/share/mise/installs/neovim/latest/bin/nvim
+end
+
 # ╰─ Neovim ───────────────────────────────────────────────────────────╯
 
 # ╭─ Atuin ────────────────────────────────────────────────────────────╮
