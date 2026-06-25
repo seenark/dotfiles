@@ -4,6 +4,7 @@
 
 
 # set default editor
+export NVIM_APPNAME=nvim8
 export EDITOR=nvim
 export VISUAL="$EDITOR"
 
@@ -138,10 +139,8 @@ alias k="kubectl"
 
 # export PATH=/opt/homebrew/opt/llvm/bin:$PATH
 
-alias nl1="NVIM_APPNAME=nvim-lazy nvim"
 # default nvim use nl
-alias nl="NVIM_APPNAME=nvim-lazy2 nvim"
-alias nc="NVIM_APPNAME=chad-lazy nvim"
+alias nl="NVIM_APPNAME=nvim8 nvim"
 
 alias z1="zellij -l ~/.config/zellij/layouts/z1.kdl"
 alias z2="zellij -l ~/.config/zellij/layouts/z2.kdl"
@@ -170,8 +169,3 @@ export PATH="$PATH:/Users/atiwatseenark/.lmstudio/bin"
 
 eval "$(mise activate zsh)"
 
-# Task Master aliases added on 10/22/2025
-alias tm='task-master'
-alias taskmaster='task-master'
-
-alias claude-mem='bun "/Users/atiwatseenark/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'

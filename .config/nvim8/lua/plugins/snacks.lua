@@ -50,7 +50,7 @@ return {
           },
           {
             section = "terminal",
-            cmd = "ascii-animation run text-art --text '_         :) github#seenark (:' --text-amp 2.50 --text-bg none --text-border false --text-bright 1 --text-color-mode gradient-h --text-drop-shadow false --text-effect none --text-font 'Future Smooth' --text-freq 1 --text-glitch 0.15 --text-glow true --text-mirror false --text-overflow extend --text-palette ice --text-particles false --text-reflection false --text-speed 1.60 --text-voffset 0",
+            cmd = "ascii-animation run text-art --text '_        <{ github#seenark }>' --text-amp 2.50 --text-bg none --text-border false --text-bright 1 --text-color-mode gradient-h --text-drop-shadow false --text-effect none --text-font 'Future Smooth' --text-freq 1 --text-glitch 0.15 --text-glow true --text-mirror false --text-overflow extend --text-palette ice --text-particles false --text-reflection false --text-speed 1.60 --text-voffset 0",
             width = 80,
             height = 5,
             indent = -26,
