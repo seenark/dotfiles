@@ -44,7 +44,7 @@
     "\/Users\/atiwatseenark\/.dotfiles\/" : {
       "archiveScript" : "",
       "deleteScript" : "",
-      "openActionID" : "auto",
+      "openActionID" : "zed",
       "runScript" : "",
       "scripts" : [
 
@@ -141,6 +141,16 @@
       ],
       "setupScript" : ""
     },
+    "\/Users\/atiwatseenark\/Documents\/codesook\/route4-kanban-ai-driven\/" : {
+      "archiveScript" : "",
+      "deleteScript" : "",
+      "openActionID" : "auto",
+      "runScript" : "",
+      "scripts" : [
+
+      ],
+      "setupScript" : ""
+    },
     "\/Users\/atiwatseenark\/Documents\/codesook\/skills\/" : {
       "archiveScript" : "",
       "deleteScript" : "",
@@ -174,6 +184,7 @@
     "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-glyph\/",
     "\/Users\/atiwatseenark\/Documents\/codesook\/codesook-omp\/",
     "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pts-pjo24014-app-frontend\/",
-    "\/Users\/atiwatseenark\/Documents\/codesook\/ascii-animation\/"
+    "\/Users\/atiwatseenark\/Documents\/codesook\/ascii-animation\/",
+    "\/Users\/atiwatseenark\/Documents\/codesook\/route4-kanban-ai-driven\/"
   ]
 }

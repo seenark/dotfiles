@@ -1,40 +1,14 @@
 {
   "\/Users\/atiwatseenark\/.dotfiles\/" : {
-    "selectedTabIndex" : 2,
+    "selectedTabIndex" : 0,
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
-        "id" : "C874BAAA-8D81-49D2-BCEE-A97BACBF5320",
+        "id" : "A991E4D4-6C37-48BA-8FE2-F0AF6AB1F90A",
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "786D874D-C988-40B4-A518-E77CE37C7FF6",
-              "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
-            }
-          }
-        },
-        "title" : "ascii-animation tui ~\/.dotfiles"
-      },
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "EC196835-7513-4B69-B95D-3B5C7D090C79",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "0E089893-8D24-446F-A124-205DF5AC3C34",
-              "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
-            }
-          }
-        },
-        "title" : "nl ~\/.dotfiles"
-      },
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "D9D0AF0D-4EA0-4888-BB84-3ABEAC72C307",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "5B2871B1-E25C-427F-AB23-420613EA2CF0",
+              "id" : "02D440CE-9216-467D-BE88-9414627BCD18",
               "workingDirectory" : "\/Users\/atiwatseenark\/.dotfiles"
             }
           }
@@ -43,39 +17,21 @@
       }
     ]
   },
-  "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/dga-2026-form\/" : {
+  "\/Users\/atiwatseenark\/Documents\/codesook\/route4-kanban-ai-driven\/" : {
     "selectedTabIndex" : 0,
     "tabs" : [
       {
         "focusedLeafIndex" : 0,
-        "id" : "74A82886-CE9A-45C3-9DB2-7683878EA3B4",
+        "id" : "9FA02F55-E787-4777-8F89-21B068622710",
         "layout" : {
           "leaf" : {
             "_0" : {
-              "id" : "63707568-3B03-44C9-87C0-EC3DBAD1DA48",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/dga-2026-form"
+              "id" : "BD36A1AA-1E91-4D06-B628-27E05995CADF",
+              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/codesook\/route4-kanban-ai-driven"
             }
           }
         },
-        "title" : "π: dga-2026-form"
-      }
-    ]
-  },
-  "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pts-pjo24014-app-frontend\/" : {
-    "selectedTabIndex" : 0,
-    "tabs" : [
-      {
-        "focusedLeafIndex" : 0,
-        "id" : "1419360A-086D-4E47-8873-3C4F5863BCFF",
-        "layout" : {
-          "leaf" : {
-            "_0" : {
-              "id" : "6B92A1A2-ADCE-4F0F-938C-5BF8D4DEAB32",
-              "workingDirectory" : "\/Users\/atiwatseenark\/Documents\/aqs\/2026\/pool-manager\/pts-pjo24014-app-frontend"
-            }
-          }
-        },
-        "title" : "~\/D\/a\/2\/p\/pts-pjo24014-app-frontend"
+        "title" : "π: route4-kanban-ai-driven"
       }
     ]
   },
