@@ -28,8 +28,8 @@
   "// === Banner File ===": null,
   "bannerFile": "",
   "// === TERMINAL ===": null,
-  "terminalBannerCommand": "ascii-animation run"
-  ,"terminalBannerRows": 8
-  ,"terminalBannerColumns": 100
-  ,"terminalBannerFrameDelayMs": 33
+  "terminalBannerCommand": "ascii-animation run text-art --text 'Code Sook #Agetn' --text-amp 0.5099999999999999 --text-bg none --text-border false --text-bright 1 --text-color-direction reverse --text-color-mode gradient-h --text-drop-shadow false --text-effect glitch --text-font Future --text-freq 0.1 --text-glitch 0.05 --text-glow true --text-hold-hidden-seconds 0 --text-hold-visible-seconds 0 --text-mirror false --text-overflow extend --text-palette catppuccin-mocha --text-particles false --text-reflection false --text-speed 1.8700000000000003 --text-typewriter-loop false --text-voffset 1",
+  "terminalBannerRows": 8,
+  "terminalBannerColumns": 100,
+  "terminalBannerFrameDelayMs": 15
 }

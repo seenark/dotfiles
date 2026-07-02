@@ -1,0 +1,20 @@
+{
+  "promptBorder": {
+    "style": "round",
+    "layout": "full",
+    "leftGlyph": {
+      "frameMs": 70
+    },
+    "rightGlyph": {
+      "frameMs": 70
+    },
+    "spinnerGlyphs": {
+      "status": {
+        "frameMs": 80
+      },
+      "activity": {
+        "frameMs": 80
+      }
+    }
+  }
+}

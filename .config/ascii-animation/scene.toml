@@ -64,7 +64,7 @@ value = "Code Sook"
 
 [instances.options.text-amp]
 type = "float"
-value = 2.5
+value = 0.6
 
 [instances.options.text-bg]
 type = "choice"
@@ -78,9 +78,13 @@ value = false
 type = "float"
 value = 1.0
 
+[instances.options.text-color-direction]
+type = "choice"
+value = "reverse"
+
 [instances.options.text-color-mode]
 type = "choice"
-value = "gradient-h"
+value = "wave-color"
 
 [instances.options.text-drop-shadow]
 type = "bool"
@@ -88,7 +92,7 @@ value = false
 
 [instances.options.text-effect]
 type = "choice"
-value = "dissolve"
+value = "wave"
 
 [instances.options.text-font]
 type = "choice"
@@ -96,7 +100,7 @@ value = "ANSI Shadow"
 
 [instances.options.text-freq]
 type = "float"
-value = 1.0
+value = 0.1
 
 [instances.options.text-glitch]
 type = "float"
@@ -105,6 +109,14 @@ value = 0.15
 [instances.options.text-glow]
 type = "bool"
 value = true
+
+[instances.options.text-hold-hidden-seconds]
+type = "float"
+value = 0.0
+
+[instances.options.text-hold-visible-seconds]
+type = "float"
+value = 0.0
 
 [instances.options.text-mirror]
 type = "bool"
@@ -116,7 +128,7 @@ value = "extend"
 
 [instances.options.text-palette]
 type = "choice"
-value = "gold"
+value = "catppuccin-latte"
 
 [instances.options.text-particles]
 type = "bool"
@@ -128,7 +140,11 @@ value = false
 
 [instances.options.text-speed]
 type = "float"
-value = 1.5
+value = 2.0000000000000004
+
+[instances.options.text-typewriter-loop]
+type = "bool"
+value = false
 
 [instances.options.text-voffset]
 type = "int"

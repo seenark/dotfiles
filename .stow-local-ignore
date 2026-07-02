@@ -17,3 +17,7 @@ x-circle.svg
 
 .config/kilo/get-shit-done
 ^/.supacode$
+.config/codesook-omp/prompt-border-activity-spinner-glyphs.txt
+.config/codesook-omp/prompt-border-left-glyphs.txt
+.config/codesook-omp/prompt-border-right-glyphs.txt
+.config/codesook-omp/prompt-border-status-spinner-glyphs.txt
