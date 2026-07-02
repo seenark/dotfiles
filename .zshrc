@@ -169,3 +169,6 @@ export PATH="$PATH:/Users/atiwatseenark/.lmstudio/bin"
 
 eval "$(mise activate zsh)"
 
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+export PATH="$HOME/.local/bin:$PATH"

@@ -64,7 +64,7 @@ value = "Code Sook"
 
 [instances.options.text-amp]
 type = "float"
-value = 0.6
+value = 0.5100000000000093
 
 [instances.options.text-bg]
 type = "choice"
@@ -92,7 +92,7 @@ value = false
 
 [instances.options.text-effect]
 type = "choice"
-value = "wave"
+value = "typewriter"
 
 [instances.options.text-font]
 type = "choice"
@@ -112,11 +112,11 @@ value = true
 
 [instances.options.text-hold-hidden-seconds]
 type = "float"
-value = 0.0
+value = 0.30000000000000016
 
 [instances.options.text-hold-visible-seconds]
 type = "float"
-value = 0.0
+value = 1.400000000000001
 
 [instances.options.text-mirror]
 type = "bool"
@@ -128,7 +128,7 @@ value = "extend"
 
 [instances.options.text-palette]
 type = "choice"
-value = "catppuccin-latte"
+value = "catppuccin-mocha"
 
 [instances.options.text-particles]
 type = "bool"
@@ -140,11 +140,11 @@ value = false
 
 [instances.options.text-speed]
 type = "float"
-value = 2.0000000000000004
+value = 1.0000000000000018
 
 [instances.options.text-typewriter-loop]
 type = "bool"
-value = false
+value = true
 
 [instances.options.text-voffset]
 type = "int"
