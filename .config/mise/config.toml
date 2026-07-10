@@ -29,6 +29,7 @@ neovim = "latest"
 "github:seenark/codesook-omp" = "latest"
 "github:seenark/ascii-animation" = "latest"
 "github:ogulcancelik/herdr" = "latest"
+"npm:markdownlint-cli2" = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
