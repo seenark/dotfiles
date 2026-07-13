@@ -133,3 +133,23 @@
 2026-07-13T03:54:00.770087Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
 2026-07-13T03:54:00.899378Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
 2026-07-13T04:29:13.683035Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=4668
+2026-07-13T04:42:00.712057Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=60011
+2026-07-13T04:42:00.712107Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-13T04:42:00.826242Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-13T04:42:41.106660Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=60011
+2026-07-13T04:42:42.487570Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=61688
+2026-07-13T04:42:42.487653Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-13T04:42:42.630698Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-13T04:42:48.045255Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=61688
+2026-07-13T04:43:13.766476Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=62550
+2026-07-13T04:43:13.766531Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-13T04:43:13.954826Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-13T04:44:06.942105Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=62550
+2026-07-13T04:44:12.180999Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=63548
+2026-07-13T04:44:12.181045Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-13T04:44:12.272304Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-13T04:44:17.106236Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=63548
+2026-07-13T04:44:18.895943Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=64314
+2026-07-13T04:44:18.895987Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-13T04:44:19.139630Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-13T04:48:14.748205Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=64314
