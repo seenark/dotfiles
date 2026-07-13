@@ -3,8 +3,8 @@ modelRoles:
   plan: openai-codex/gpt-5.6-sol
   default: openai-codex/gpt-5.6-terra:medium
   smol: openai-codex/gpt-5.6-luna
-  task: openai-codex/gpt-5.6-terra
-  commit: openai-codex/gpt-5.4:off
+  task: openai-codex/gpt-5.6-luna
+  commit: openai-codex/gpt-5.5:off
   tiny: openai-codex/gpt-5.6-luna
   designer: openai-codex/gpt-5.5
   slow: openai-codex/gpt-5.6-sol

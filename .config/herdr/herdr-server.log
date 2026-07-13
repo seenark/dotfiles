@@ -1,0 +1,663 @@
+2026-06-08T06:29:27.442848Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-06-08T06:29:27.443405Z  INFO herdr::api::server: api server listening path=/Users/atiwatseenark/.config/herdr/herdr.sock
+2026-06-08T06:29:27.444615Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-06-08T06:29:27.448102Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T06:29:27.448302Z  INFO herdr::server::headless: client protocol socket listening path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-08T06:29:27.448348Z  INFO herdr::server::headless: herdr server started api_socket=/Users/atiwatseenark/.config/herdr/herdr.sock client_socket=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-08T06:29:27.448393Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=48240
+2026-06-08T06:29:27.708499Z  INFO herdr::server::headless: client connected client_id=2 cols=207 rows=49 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-08T06:29:39.201034Z  INFO herdr::logging: integration action finished event="integration.action" subsystem="integration" outcome="ok" action="install" target="claude"
+2026-06-08T06:29:39.202046Z  INFO herdr::logging: integration action finished event="integration.action" subsystem="integration" outcome="ok" action="install" target="codex"
+2026-06-08T06:29:39.202578Z  INFO herdr::logging: integration action finished event="integration.action" subsystem="integration" outcome="ok" action="install" target="opencode"
+2026-06-08T06:29:48.903648Z  INFO herdr::logging: session cleared event="persist.clear" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json
+2026-06-08T06:30:37.965479Z  INFO herdr::logging: session cleared event="persist.clear" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json
+2026-06-08T06:31:24.037757Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-06-08T06:31:24.039392Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-06-08T06:31:26.164902Z  INFO herdr::logging: session cleared event="persist.clear" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json
+2026-06-08T06:31:34.343481Z  INFO herdr::server::headless: client connected client_id=4 cols=206 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-08T06:31:40.702614Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:31:57.876636Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:32:16.756744Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-06-08T06:32:16.769549Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=48439
+2026-06-08T06:32:16.771589Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w653b82bf41cfd1" pane_id=1
+2026-06-08T06:32:16.771884Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w653b82bf41cfd1"
+2026-06-08T06:32:16.771931Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w653b82bf41cfd1" tab_id="w653b82bf41cfd1:1"
+2026-06-08T06:32:21.788178Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-08T06:32:28.401226Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w653b82bf41cfd1"
+2026-06-08T06:32:33.406967Z  INFO herdr::logging: session cleared event="persist.clear" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json
+2026-06-08T06:32:55.688839Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:59:27.478547Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T07:13:12.937689Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:22.808065Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:26.882357Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-06-08T07:13:26.910721Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=48712
+2026-06-08T07:13:26.911040Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w653b8bf2f77b32" pane_id=2
+2026-06-08T07:13:26.911050Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w653b8bf2f77b32"
+2026-06-08T07:13:26.911064Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w653b8bf2f77b32" tab_id="w653b8bf2f77b32:1"
+2026-06-08T07:13:31.921793Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-08T07:13:33.152915Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-06-08T07:13:33.158728Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-06-08T07:13:33.178313Z  INFO herdr::pane: pane session terminated pane=1 pid=48439 signal=Hangup
+2026-06-08T07:13:33.178477Z  INFO herdr::pane: pane session terminated pane=2 pid=48712 signal=Hangup
+2026-06-08T07:13:33.178555Z  WARN herdr::app::actions: PaneDied for unknown pane pane=1
+2026-06-08T07:13:38.181323Z  INFO herdr::logging: session cleared event="persist.clear" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json
+2026-06-08T07:13:39.696521Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:15:02.716367Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-06-08T07:15:02.733981Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=48889
+2026-06-08T07:15:02.738315Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w653b8c4e59e363" pane_id=3
+2026-06-08T07:15:02.738373Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w653b8c4e59e363"
+2026-06-08T07:15:02.738389Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w653b8c4e59e363" tab_id="w653b8c4e59e363:1"
+2026-06-08T07:15:07.755242Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-08T07:24:06.057742Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w653b8c4e59e363"
+2026-06-08T07:24:11.075314Z  INFO herdr::logging: session cleared event="persist.clear" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json
+2026-06-08T07:24:13.297406Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.461449Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.656326Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.858340Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:14.029414Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:14.193216Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:17.286680Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:18.789394Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:51.355395Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:57.343586Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:59.695719Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:25:02.650839Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-06-08T07:25:02.654616Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-06-08T07:29:27.478386Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T07:59:27.491392Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T08:29:27.497807Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T08:59:27.528364Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T09:29:27.423654Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T09:59:27.467168Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T10:29:27.441043Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T10:59:27.513975Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T11:29:27.513617Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T11:59:27.480665Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T12:29:27.445948Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T12:59:27.404205Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T13:29:27.437400Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T13:59:27.432988Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T14:29:27.454861Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T14:59:27.516154Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T15:29:27.572849Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T15:59:27.560549Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T16:29:27.541657Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T16:59:27.585925Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T17:29:27.550371Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T17:59:27.618203Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T18:29:27.649722Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T18:59:27.650387Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T19:29:27.665922Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T19:59:27.654988Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T20:29:27.654138Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T20:59:27.593941Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T21:29:27.570544Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T21:59:27.608432Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T22:29:27.643269Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T22:59:27.643022Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T23:29:27.674669Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-08T23:59:27.696171Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T00:29:27.607282Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T00:59:27.601699Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T01:29:27.650733Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T01:59:27.695946Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T02:29:27.702369Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T02:59:27.703676Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T03:29:27.727089Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T03:59:27.656304Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T04:29:27.649008Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T04:59:27.707025Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T05:29:27.731477Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T05:59:27.752029Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T06:29:27.768794Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T06:59:27.772955Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T07:29:27.723770Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T07:59:27.746604Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T08:29:27.732815Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T08:59:27.762512Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T09:29:27.705695Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T09:59:27.724547Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T10:29:27.762495Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T10:59:27.782291Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T11:29:27.762401Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T11:59:27.785073Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T12:29:27.812844Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T12:59:27.818686Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T13:29:27.834658Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T13:59:27.842302Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T14:29:27.775087Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T14:59:27.797511Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T15:29:27.739178Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T15:59:27.754138Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T16:29:27.704618Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T16:59:27.807678Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T17:29:27.845875Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T17:59:27.825152Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T18:29:27.804773Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T18:59:27.861055Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T19:29:27.832605Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T19:59:27.840741Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T20:29:27.819266Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T20:59:27.756511Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T21:29:27.828227Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T21:59:27.817988Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T22:29:27.835463Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T22:59:27.800190Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T23:29:27.769823Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-09T23:59:27.831838Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T00:29:27.877319Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T00:59:27.927625Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T01:29:27.908388Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T01:59:27.897822Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T02:29:27.860039Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T02:59:27.874081Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T03:29:27.904219Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T03:59:27.889113Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T04:29:27.898303Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T04:59:27.874260Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T05:29:27.950391Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T05:59:27.966121Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T06:29:27.958779Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T06:59:27.984070Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T07:29:27.982851Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T07:59:28.011079Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T08:29:28.028516Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T08:59:28.004961Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T09:29:27.973491Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T09:59:27.965836Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T10:29:28.006803Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T10:59:28.037506Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T11:29:28.022363Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T11:59:28.014455Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T12:29:28.007776Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T12:59:28.041592Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T13:29:28.036632Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T13:59:28.062009Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T14:29:28.042524Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T14:59:28.035035Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T15:29:28.098395Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T15:59:28.063900Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T16:29:28.009195Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T16:59:28.070347Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T17:29:28.032196Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T17:59:28.057693Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T18:29:28.070993Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T18:59:28.141329Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T19:29:28.082714Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T19:59:28.104724Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T20:29:28.169978Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T20:59:28.140637Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-10T20:59:28.556731Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.6.9"
+2026-06-10T20:59:28.557460Z  INFO herdr::update: new stable build available at https://github.com/ogulcancelik/herdr/releases/download/v0.6.9/herdr-macos-aarch64
+2026-06-10T20:59:28.558959Z  INFO herdr::update: auto-update check: 0.6.9 available, waiting for explicit install
+2026-06-10T20:59:28.585117Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 1, signal: None }"
+2026-06-10T20:59:28.588936Z  INFO herdr::pane: pane session terminated pane=3 pid=48889 signal=Hangup
+2026-06-10T20:59:28.589009Z  WARN herdr::app::actions: PaneDied for unknown pane pane=3
+2026-06-26T15:43:05.299426Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-06-26T15:43:05.300414Z  INFO herdr::api::server: api server listening path=/Users/atiwatseenark/.config/herdr/herdr.sock
+2026-06-26T15:43:05.300953Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-06-26T15:43:05.325237Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-26T15:43:05.329363Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-06-26T15:43:05.334053Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=84081
+2026-06-26T15:43:05.334501Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-06-26T15:43:05.334530Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-06-26T15:43:05.334588Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-06-26T15:43:05.334611Z  INFO herdr::server::headless: created startup workspace cwd=/Volumes/HadesGodBlue/CodeSook/plane-ai
+2026-06-26T15:43:05.334846Z  INFO herdr::server::headless: client protocol socket listening path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-26T15:43:05.334887Z  INFO herdr::server::headless: herdr server started api_socket=/Users/atiwatseenark/.config/herdr/herdr.sock client_socket=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-26T15:43:05.334907Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=84000
+2026-06-26T15:43:05.597592Z  INFO herdr::server::headless: client connected client_id=2 cols=90 rows=26 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-26T15:43:05.633289Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.7.1"
+2026-06-26T15:43:05.633313Z  INFO herdr::update: new stable build available at https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-macos-aarch64
+2026-06-26T15:43:05.634017Z  INFO herdr::update: auto-update check: 0.7.1 available, waiting for explicit install
+2026-06-26T15:43:10.341174Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-26T15:43:32.777692Z  INFO herdr::server::headless: client resize client_id=2 cols=103 rows=26 cell_width_px=0 cell_height_px=0
+2026-06-26T15:43:32.878425Z  INFO herdr::server::headless: client resize client_id=2 cols=112 rows=26 cell_width_px=0 cell_height_px=0
+2026-06-26T15:44:19.668173Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T15:55:59.678473Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T15:56:34.654902Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T15:57:51.336387Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T15:58:47.658986Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T16:00:20.296506Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-06-26T16:00:20.305011Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-06-26T16:06:09.296482Z  INFO herdr::server::headless: client connected client_id=4 cols=112 rows=26 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-26T16:06:30.885674Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-06-26T16:06:30.890679Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-06-26T16:08:40.257995Z  INFO herdr::server::headless: client connected client_id=6 cols=112 rows=26 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-26T16:08:55.169554Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T16:10:42.805627Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T16:14:13.651114Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T16:15:40.528577Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T16:16:14.498851Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T16:16:16.570809Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T16:16:22.553651Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-26T16:17:42.284948Z  INFO herdr::server::headless: client detach requested via keybind client_id=6
+2026-06-26T16:17:42.297300Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-06-27T02:14:40.840385Z  INFO herdr::server::headless: client connected client_id=8 cols=112 rows=26 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-27T02:26:04.360270Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-27T02:26:36.861220Z  INFO herdr::server::headless: client detach requested via keybind client_id=8
+2026-06-27T02:26:36.874215Z  INFO herdr::server::headless: client disconnected client_id=8
+2026-06-27T02:51:45.668296Z  INFO herdr::server::headless: client connected client_id=10 cols=182 rows=50 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-27T02:52:56.509362Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=49 cols=156 scrollback_limit_bytes=10000000
+2026-06-27T02:52:56.524406Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=98160
+2026-06-27T02:52:56.524645Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w2" pane_id=2
+2026-06-27T02:52:56.524654Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-06-27T02:52:56.524668Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-06-27T02:53:01.540660Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T02:53:09.536457Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-06-27T02:53:14.542900Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T02:53:19.401391Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-06-27T02:53:24.417018Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T02:53:25.884032Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-06-27T02:53:25.884184Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-06-27T02:53:30.913324Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T02:54:10.417050Z  INFO herdr::server::headless: client detach requested via keybind client_id=10
+2026-06-27T02:54:10.419822Z  INFO herdr::server::headless: client disconnected client_id=10
+2026-06-27T03:11:28.060324Z  INFO herdr::server::headless: client connected client_id=12 cols=182 rows=50 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-27T03:11:32.159047Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-06-27T03:11:32.159146Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-06-27T03:11:37.181285Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T03:22:56.479770Z  INFO herdr::server::headless: client connected client_id=14 cols=112 rows=26 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-27T03:22:58.825328Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-06-27T03:22:58.825448Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-06-27T03:23:03.844573Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T03:23:12.748501Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-27T03:23:36.998553Z  INFO herdr::server::headless: client detach requested via keybind client_id=14
+2026-06-27T03:23:37.011249Z  INFO herdr::server::headless: client disconnected client_id=14
+2026-06-27T03:38:00.768658Z  INFO herdr::server::headless: client connected client_id=16 cols=112 rows=26 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-27T03:38:25.312984Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=25 cols=86 scrollback_limit_bytes=10000000
+2026-06-27T03:38:25.333132Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=24552
+2026-06-27T03:38:25.334709Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-06-27T03:38:25.335539Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2" pane_id=3
+2026-06-27T03:38:30.367153Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T03:39:30.260791Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=25 cols=86 scrollback_limit_bytes=10000000
+2026-06-27T03:39:30.271358Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=30596
+2026-06-27T03:39:30.271618Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-06-27T03:39:30.271649Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3" pane_id=4
+2026-06-27T03:39:35.281770Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T03:39:56.399465Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-06-27T03:40:01.403435Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T03:43:58.699410Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-06-27T03:44:03.707307Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T03:58:09.171591Z  INFO herdr::server::headless: client detach requested via keybind client_id=16
+2026-06-27T03:58:09.180299Z  INFO herdr::server::headless: client disconnected client_id=16
+2026-06-27T15:31:32.305088Z  INFO herdr::server::headless: client connected client_id=18 cols=112 rows=26 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-27T15:31:38.773967Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 0, signal: None }"
+2026-06-27T15:31:38.774490Z  INFO herdr::pane: pane session terminated pane=4 pid=30596 signal=Hangup
+2026-06-27T15:31:43.781031Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:31:46.462395Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-06-27T15:31:51.487824Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:31:54.600195Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 0, signal: None }"
+2026-06-27T15:31:54.604684Z  INFO herdr::pane: pane session terminated pane=1 pid=84081 signal=Hangup
+2026-06-27T15:31:56.431579Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 0, signal: None }"
+2026-06-27T15:31:56.431770Z  INFO herdr::pane: pane session terminated pane=3 pid=24552 signal=Hangup
+2026-06-27T15:32:01.444809Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-27T15:32:08.634574Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=25 cols=86 scrollback_limit_bytes=10000000
+2026-06-27T15:32:08.653970Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=11003
+2026-06-27T15:32:08.655502Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3" pane_id=5
+2026-06-27T15:32:08.655543Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-06-27T15:32:08.655577Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-06-27T15:32:13.672765Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:32:27.732222Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=25 cols=86 scrollback_limit_bytes=10000000
+2026-06-27T15:32:27.740952Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=11177
+2026-06-27T15:32:27.741187Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-06-27T15:32:27.741211Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2" pane_id=6
+2026-06-27T15:32:32.769318Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:32:53.923307Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=25 cols=86 scrollback_limit_bytes=10000000
+2026-06-27T15:32:53.937062Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=11266
+2026-06-27T15:32:53.937992Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-06-27T15:32:53.938037Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3" pane_id=7
+2026-06-27T15:32:58.958350Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:33:00.550493Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-06-27T15:33:02.362605Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-06-27T15:33:03.244047Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-06-27T15:33:04.733052Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-06-27T15:33:05.324179Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-06-27T15:33:10.344864Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:33:23.605155Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-06-27T15:33:28.630243Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:33:29.624067Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-06-27T15:33:30.945007Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-06-27T15:33:31.682100Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-06-27T15:33:36.722252Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:34:07.119109Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-06-27T15:34:11.836361Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-06-27T15:34:16.865709Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:34:38.311878Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-27T15:35:00.303083Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-06-27T15:35:03.273144Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t3"
+2026-06-27T15:35:08.306515Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:35:51.101803Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:36:02.014004Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-27T15:40:31.819545Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=7 status="ExitStatus { code: 0, signal: None }"
+2026-06-27T15:40:31.822344Z  INFO herdr::pane: pane session terminated pane=7 pid=11266 signal=Hangup
+2026-06-27T15:40:35.101235Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=6 status="ExitStatus { code: 130, signal: None }"
+2026-06-27T15:40:35.101460Z  INFO herdr::pane: pane session terminated pane=6 pid=11177 signal=Hangup
+2026-06-27T15:40:40.120853Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-06-27T15:40:58.770482Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 0, signal: None }"
+2026-06-27T15:40:58.770682Z  INFO herdr::pane: pane session terminated pane=5 pid=11003 signal=Hangup
+2026-06-27T15:41:02.871614Z  INFO herdr::server::headless: client detach requested via keybind client_id=18
+2026-06-27T15:41:02.880085Z  INFO herdr::server::headless: client disconnected client_id=18
+2026-06-27T15:41:03.785029Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-29T01:35:42.372679Z  INFO herdr::server::headless: client resize client_id=12 cols=133 rows=38 cell_width_px=0 cell_height_px=0
+2026-06-29T01:35:42.899992Z  INFO herdr::server::headless: client resize client_id=12 cols=182 rows=50 cell_width_px=0 cell_height_px=0
+2026-06-29T01:36:31.814356Z  INFO herdr::server::headless: client resize client_id=12 cols=64 rows=23 cell_width_px=0 cell_height_px=0
+2026-06-29T01:36:32.139976Z  INFO herdr::server::headless: client resize client_id=12 cols=182 rows=50 cell_width_px=0 cell_height_px=0
+2026-06-29T04:33:13.986221Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-06-29T04:33:13.986599Z  INFO herdr::pane: pane session terminated pane=2 pid=98160 signal=Hangup
+2026-06-29T04:33:13.987357Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=49 cols=159 scrollback_limit_bytes=10000000
+2026-06-29T04:33:13.994114Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=13246
+2026-06-29T04:33:13.994459Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w4" pane_id=8
+2026-06-29T04:33:13.994477Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-06-29T04:33:13.994496Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-06-29T04:33:15.728261Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=8 status="ExitStatus { code: 0, signal: None }"
+2026-06-29T04:33:15.728435Z  INFO herdr::pane: pane session terminated pane=8 pid=13246 signal=Hangup
+2026-06-29T04:33:15.728610Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=49 cols=159 scrollback_limit_bytes=10000000
+2026-06-29T04:33:15.734071Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=13286
+2026-06-29T04:33:15.734316Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w5" pane_id=9
+2026-06-29T04:33:15.734330Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-06-29T04:33:15.734341Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-06-29T04:33:20.740633Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-29T04:33:31.086390Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-06-29T04:33:31.086673Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=10 rows=49 cols=159 scrollback_limit_bytes=10000000
+2026-06-29T04:33:31.098244Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=10 pid=13308
+2026-06-29T04:33:31.098578Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w6" pane_id=10
+2026-06-29T04:33:31.098597Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w6"
+2026-06-29T04:33:31.098629Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w6" tab_id="w6:t1"
+2026-06-29T04:33:31.664376Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 1, signal: None }"
+2026-06-29T04:33:31.677565Z  INFO herdr::pane: pane session terminated pane=9 pid=13286 signal=Hangup
+2026-06-29T04:33:31.678399Z  WARN herdr::app::actions: PaneDied for unknown pane pane=9
+2026-06-29T04:33:36.114688Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-29T04:34:03.477942Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w6"
+2026-06-29T04:34:03.478164Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=11 rows=49 cols=159 scrollback_limit_bytes=10000000
+2026-06-29T04:34:03.495936Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=11 pid=13758
+2026-06-29T04:34:03.496146Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w7" pane_id=11
+2026-06-29T04:34:03.496155Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w7"
+2026-06-29T04:34:03.496163Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-06-29T04:34:04.054458Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=10 status="ExitStatus { code: 1, signal: None }"
+2026-06-29T04:34:04.076702Z  INFO herdr::pane: pane session terminated pane=10 pid=13308 signal=Hangup
+2026-06-29T04:34:04.077376Z  WARN herdr::app::actions: PaneDied for unknown pane pane=10
+2026-06-29T04:34:08.504196Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-29T04:34:10.787733Z  INFO herdr::server::headless: client detach requested via keybind client_id=12
+2026-06-29T04:34:10.803534Z  INFO herdr::server::headless: client disconnected client_id=12
+2026-06-29T04:34:17.150414Z  INFO herdr::server::headless: client connected client_id=20 cols=182 rows=50 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-29T04:35:07.780958Z  INFO herdr::server::headless: client detach requested via keybind client_id=20
+2026-06-29T04:35:07.785044Z  INFO herdr::server::headless: client disconnected client_id=20
+2026-06-29T04:35:17.527962Z  INFO herdr::server::headless: server shutdown initiated
+2026-06-29T04:35:17.579992Z  INFO herdr::server::headless: completing server shutdown
+2026-06-29T04:35:17.581781Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-29T04:35:17.581810Z  INFO herdr::server::headless: headless server exiting
+2026-06-29T04:35:17.584236Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=11 status="ExitStatus { code: 1, signal: None }"
+2026-06-29T04:35:17.605487Z  INFO herdr::pane: pane session terminated pane=11 pid=13758 signal=Hangup
+2026-06-29T04:35:17.607934Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=84000
+2026-06-29T05:20:52.824373Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=2560 target=8192
+2026-06-29T05:20:52.825751Z  INFO herdr::api::server: api server listening path=/Users/atiwatseenark/.config/herdr/herdr.sock
+2026-06-29T05:20:52.829303Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-06-29T05:20:52.833024Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=46458
+2026-06-29T05:20:52.833487Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-06-29T05:20:52.833801Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-06-29T05:20:52.858768Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T05:20:52.860641Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/Volumes/HadesGodBlue/CodeSook/plane-webhook
+2026-06-29T05:20:52.860792Z  INFO herdr::server::headless: client protocol socket listening path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-29T05:20:52.860815Z  INFO herdr::server::headless: herdr server started api_socket=/Users/atiwatseenark/.config/herdr/herdr.sock client_socket=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-29T05:20:52.860836Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=46457
+2026-06-29T05:20:52.984797Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.7.1"
+2026-06-29T05:20:52.984823Z  INFO herdr::update: new stable build available at https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-macos-aarch64
+2026-06-29T05:20:52.985895Z  INFO herdr::update: auto-update check: 0.7.1 available, waiting for explicit install
+2026-06-29T05:20:52.986426Z  INFO herdr::server::headless: client connected client_id=2 cols=182 rows=50 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-29T05:21:03.088974Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-06-29T05:21:03.091634Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-06-29T05:33:35.652125Z  INFO herdr::server::headless: client connected client_id=4 cols=182 rows=50 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-29T05:45:27.550419Z  INFO herdr::app::actions: copied selection to clipboard
+2026-06-29T05:45:27.720777Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-06-29T05:49:54.707162Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-06-29T05:49:54.709686Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-07-01T08:46:34.976457Z  INFO herdr::server::headless: client connected client_id=6 cols=206 rows=50 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-01T08:46:41.501509Z  INFO herdr::server::headless: client detach requested via keybind client_id=6
+2026-07-01T08:46:41.502574Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-07-01T14:22:07.468147Z  WARN herdr::detect::manifest_update: agent detection manifest update failed for agent agent="grok" error=fetch failed: failed to fetch https://herdr.dev/agent-detection/grok.toml
+2026-07-01T14:23:28.611620Z  WARN herdr::detect::manifest_update: agent detection manifest update failed for agent agent="kiro" error=fetch failed: failed to fetch https://herdr.dev/agent-detection/kiro.toml
+2026-07-03T05:20:57.002853Z  WARN herdr::detect::manifest_update: agent detection manifest update failed: failed to fetch https://herdr.dev/agent-detection/index.toml
+2026-07-11T21:57:54.853871Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-07-11T21:57:54.855367Z  INFO herdr::api::server: api server listening path=/Users/atiwatseenark/.config/herdr/herdr.sock
+2026-07-11T21:57:54.860071Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-11T21:57:54.865357Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=51674
+2026-07-11T21:57:54.866486Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-07-11T21:57:54.866537Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-11T21:57:54.896831Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-11T21:57:54.899662Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/Users/atiwatseenark/Documents/obsidian_vault
+2026-07-11T21:57:54.900077Z  INFO herdr::server::headless: client protocol socket listening path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-11T21:57:54.900098Z  INFO herdr::server::headless: herdr server started api_socket=/Users/atiwatseenark/.config/herdr/herdr.sock client_socket=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-11T21:57:54.900126Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=51673
+2026-07-11T21:57:54.902626Z  INFO herdr::server::headless: client connected client_id=2 cols=130 rows=33 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-11T21:57:55.200358Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-11T21:57:55.209964Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.7.3"
+2026-07-11T21:57:55.209994Z  INFO herdr::update: new stable build available at https://github.com/ogulcancelik/herdr/releases/download/v0.7.3/herdr-macos-aarch64
+2026-07-11T21:57:55.211027Z  INFO herdr::update: auto-update check: 0.7.3 available, waiting for explicit install
+2026-07-11T21:58:06.977351Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=32 cols=106 scrollback_limit_bytes=10000000
+2026-07-11T21:58:06.990191Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=52552
+2026-07-11T21:58:06.991168Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w8" pane_id=2
+2026-07-11T21:58:06.991199Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w8"
+2026-07-11T21:58:06.991246Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t1"
+2026-07-11T21:58:12.009212Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-07-11T22:01:08.695098Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-11T22:01:56.929938Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w7"
+2026-07-11T22:01:56.929980Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-07-11T22:02:01.931377Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-07-11T22:02:03.730101Z  INFO herdr::server::headless: client resize client_id=2 cols=131 rows=33 cell_width_px=0 cell_height_px=0
+2026-07-11T22:02:03.835861Z  INFO herdr::server::headless: client resize client_id=2 cols=145 rows=33 cell_width_px=0 cell_height_px=0
+2026-07-11T22:02:03.945321Z  INFO herdr::server::headless: client resize client_id=2 cols=152 rows=33 cell_width_px=0 cell_height_px=0
+2026-07-11T22:02:23.194045Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w8"
+2026-07-11T22:02:23.194150Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t1"
+2026-07-11T22:02:28.198096Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-07-11T22:02:31.405229Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w7"
+2026-07-11T22:02:31.405254Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-07-11T22:02:36.411377Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-07-11T22:03:17.952565Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-11T22:03:20.677568Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w8"
+2026-07-11T22:03:20.677862Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t1"
+2026-07-11T22:03:25.686933Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-07-11T22:06:54.575580Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-11T22:08:21.153299Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-07-11T22:08:21.156004Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-11T22:27:55.021771Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-11T22:57:55.067650Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-11T23:27:55.173963Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-11T23:57:55.058073Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T00:27:55.876634Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T00:57:55.194170Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T01:27:55.132353Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T01:38:13.472427Z  INFO herdr::server::headless: client connected client_id=4 cols=130 rows=34 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-12T01:44:11.840350Z  INFO herdr::server::headless: client resize client_id=4 cols=130 rows=33 cell_width_px=0 cell_height_px=0
+2026-07-12T01:44:11.946458Z  INFO herdr::server::headless: client resize client_id=4 cols=130 rows=34 cell_width_px=0 cell_height_px=0
+2026-07-12T01:44:17.525893Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-07-12T01:44:17.528755Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-07-12T01:57:55.108462Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T02:27:55.192237Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T02:57:55.083728Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T03:27:55.170222Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T03:57:55.115151Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T04:27:55.074914Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T04:57:55.227575Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T05:27:58.214457Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T05:29:17.505912Z  INFO herdr::server::headless: client connected client_id=6 cols=130 rows=33 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-12T05:29:36.874407Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w7"
+2026-07-12T05:29:36.874539Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-07-12T05:29:39.785418Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w8"
+2026-07-12T05:29:39.785658Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t1"
+2026-07-12T05:29:44.801155Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-07-12T05:30:37.179723Z  INFO herdr::server::headless: client detach requested via keybind client_id=6
+2026-07-12T05:30:37.187728Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-07-12T05:57:55.253817Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T06:27:55.151063Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T06:57:55.260391Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T07:27:55.264496Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T07:57:55.241409Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T08:27:55.172217Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T08:57:55.297831Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T09:27:55.198306Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T09:57:55.189644Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T10:27:55.215921Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T10:57:55.126328Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T11:27:55.227963Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T11:57:55.294590Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T12:27:55.238917Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T12:57:58.402889Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T13:27:55.270322Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T13:57:55.182239Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T14:27:55.255195Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T14:57:55.233197Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T15:27:55.382867Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T15:57:55.368179Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T16:27:55.289483Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T16:57:55.324051Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T17:27:55.273767Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T17:57:55.239028Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T18:27:55.180937Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T18:57:55.314169Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T19:27:55.334711Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T19:57:55.236292Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T20:27:55.363969Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T20:57:55.314818Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T21:27:55.284155Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T21:57:55.396274Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T22:27:55.227212Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T22:57:55.384261Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T23:27:55.523751Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-12T23:57:55.692209Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T00:27:55.427779Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T00:57:55.346198Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T01:27:55.344904Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T01:57:55.389578Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T02:27:55.382114Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T02:50:57.716093Z  INFO herdr::server::headless: client connected client_id=8 cols=182 rows=50 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-13T02:57:55.621169Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T03:21:20.125760Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w7"
+2026-07-13T03:21:20.126694Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-07-13T03:21:25.139017Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=2
+2026-07-13T03:25:02.860096Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:25:02.860180Z  INFO herdr::pane: pane session terminated pane=1 pid=51674 signal=Hangup
+2026-07-13T03:25:07.727143Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:25:07.734183Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=72794
+2026-07-13T03:25:07.735446Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t2"
+2026-07-13T03:25:07.735469Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t2" pane_id=3
+2026-07-13T03:25:10.305699Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:25:10.305805Z  INFO herdr::pane: pane session terminated pane=3 pid=72794 signal=Hangup
+2026-07-13T03:25:15.320433Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:27:32.029637Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:27:32.033527Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=74628
+2026-07-13T03:27:32.033711Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t3"
+2026-07-13T03:27:32.033729Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t3" pane_id=4
+2026-07-13T03:27:37.046397Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:27:55.413231Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T03:28:36.474153Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-13T03:30:22.375381Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:30:22.375678Z  INFO herdr::pane: pane session terminated pane=4 pid=74628 signal=Hangup
+2026-07-13T03:30:25.598149Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:30:25.604995Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=77964
+2026-07-13T03:30:25.605170Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t4"
+2026-07-13T03:30:25.605191Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t4" pane_id=5
+2026-07-13T03:30:30.622998Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:30:30.967899Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:30:30.968105Z  INFO herdr::pane: pane session terminated pane=5 pid=77964 signal=Hangup
+2026-07-13T03:30:34.207137Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:30:34.222811Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=78019
+2026-07-13T03:30:34.225024Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w9" pane_id=6
+2026-07-13T03:30:34.225137Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w9"
+2026-07-13T03:30:34.225238Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w9" tab_id="w9:t1"
+2026-07-13T03:30:36.370767Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=6 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:30:36.370893Z  INFO herdr::pane: pane session terminated pane=6 pid=78019 signal=Hangup
+2026-07-13T03:30:41.386815Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:30:49.989009Z  INFO herdr::server::headless: client detach requested via keybind client_id=8
+2026-07-13T03:30:49.991786Z  INFO herdr::server::headless: client disconnected client_id=8
+2026-07-13T03:30:51.800474Z  INFO herdr::server::headless: client connected client_id=10 cols=182 rows=50 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-13T03:30:53.877433Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:30:53.885980Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=78804
+2026-07-13T03:30:53.886320Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t5"
+2026-07-13T03:30:53.886343Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t5" pane_id=7
+2026-07-13T03:30:58.917197Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:30:59.095194Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=7 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:30:59.095287Z  INFO herdr::pane: pane session terminated pane=7 pid=78804 signal=Hangup
+2026-07-13T03:31:04.109028Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:31:05.501499Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:31:05.520889Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=78923
+2026-07-13T03:31:05.521851Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t6"
+2026-07-13T03:31:05.521903Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t6" pane_id=8
+2026-07-13T03:31:10.582484Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:31:42.065446Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:31:42.076453Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=79587
+2026-07-13T03:31:42.077138Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t7"
+2026-07-13T03:31:42.077172Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t7" pane_id=9
+2026-07-13T03:31:44.647993Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:31:44.648089Z  INFO herdr::pane: pane session terminated pane=9 pid=79587 signal=Hangup
+2026-07-13T03:31:48.673875Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=8 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:31:48.674051Z  INFO herdr::pane: pane session terminated pane=8 pid=78923 signal=Hangup
+2026-07-13T03:31:53.699103Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:32:20.320734Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:32:20.320948Z  INFO herdr::pane: pane session terminated pane=2 pid=52552 signal=Hangup
+2026-07-13T03:32:20.322560Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=10 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:32:20.327376Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=10 pid=80124
+2026-07-13T03:32:20.327640Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="wA" pane_id=10
+2026-07-13T03:32:20.327654Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="wA"
+2026-07-13T03:32:20.327671Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wA" tab_id="wA:t1"
+2026-07-13T03:32:23.554407Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=10 status="ExitStatus { code: 0, signal: None }"
+2026-07-13T03:32:23.554615Z  INFO herdr::pane: pane session terminated pane=10 pid=80124 signal=Hangup
+2026-07-13T03:32:23.554953Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=11 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:32:23.562880Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=11 pid=80167
+2026-07-13T03:32:23.563239Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="wB" pane_id=11
+2026-07-13T03:32:23.563264Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="wB"
+2026-07-13T03:32:23.563283Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wB" tab_id="wB:t1"
+2026-07-13T03:32:28.578755Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:32:45.383936Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="wB"
+2026-07-13T03:32:45.384277Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=12 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:32:45.399513Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=12 pid=80847
+2026-07-13T03:32:45.400459Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="wC" pane_id=12
+2026-07-13T03:32:45.400506Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="wC"
+2026-07-13T03:32:45.400606Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wC" tab_id="wC:t1"
+2026-07-13T03:32:45.958776Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=11 status="ExitStatus { code: 1, signal: None }"
+2026-07-13T03:32:45.982064Z  INFO herdr::pane: pane session terminated pane=11 pid=80167 signal=Hangup
+2026-07-13T03:32:45.982503Z  WARN herdr::app::actions: PaneDied for unknown pane pane=11
+2026-07-13T03:32:50.412407Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:32:51.953004Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="wC"
+2026-07-13T03:32:51.954030Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=13 rows=49 cols=158 scrollback_limit_bytes=10000000
+2026-07-13T03:32:51.961895Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=13 pid=80951
+2026-07-13T03:32:51.963530Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="wD" pane_id=13
+2026-07-13T03:32:51.963598Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="wD"
+2026-07-13T03:32:51.963632Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wD" tab_id="wD:t1"
+2026-07-13T03:32:52.523481Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=12 status="ExitStatus { code: 1, signal: None }"
+2026-07-13T03:32:52.547385Z  INFO herdr::pane: pane session terminated pane=12 pid=80847 signal=Hangup
+2026-07-13T03:32:52.547570Z  WARN herdr::app::actions: PaneDied for unknown pane pane=12
+2026-07-13T03:32:56.981217Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:32:57.861537Z  INFO herdr::server::headless: client detach requested via keybind client_id=10
+2026-07-13T03:32:57.862830Z  INFO herdr::server::headless: client disconnected client_id=10
+2026-07-13T03:33:43.975996Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:close" method="workspace.close" changes_ui=true
+2026-07-13T03:33:43.979616Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="error" request_id="cli:workspace:close" method="workspace.close"
+2026-07-13T03:33:51.474392Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:close" method="workspace.close" changes_ui=true
+2026-07-13T03:33:51.474581Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="error" request_id="cli:workspace:close" method="workspace.close"
+2026-07-13T03:34:13.866510Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:close" method="workspace.close" changes_ui=true
+2026-07-13T03:34:13.866897Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="error" request_id="cli:workspace:close" method="workspace.close"
+2026-07-13T03:34:16.264085Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:close" method="workspace.close" changes_ui=true
+2026-07-13T03:34:16.264557Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="wD"
+2026-07-13T03:34:16.269688Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=13 status="ExitStatus { code: 1, signal: None }"
+2026-07-13T03:34:16.288281Z  INFO herdr::pane: pane session terminated pane=13 pid=80951 signal=Hangup
+2026-07-13T03:34:16.288701Z  WARN herdr::app::actions: PaneDied for unknown pane pane=13
+2026-07-13T03:34:16.289160Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:workspace:close" method="workspace.close"
+2026-07-13T03:34:21.294555Z  INFO herdr::logging: session cleared event="persist.clear" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json
+2026-07-13T03:54:00.899492Z  INFO herdr::server::headless: client connected client_id=12 cols=182 rows=50 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-13T03:54:00.899952Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=14 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-13T03:54:00.911166Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=14 pid=4669
+2026-07-13T03:54:00.911760Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="wE" pane_id=14
+2026-07-13T03:54:00.911790Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="wE"
+2026-07-13T03:54:00.911859Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wE" tab_id="wE:t1"
+2026-07-13T03:54:05.933818Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json workspaces=1
+2026-07-13T03:57:55.319324Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T04:27:55.565451Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-13T04:29:13.682648Z  INFO herdr::server::headless: client detach requested via keybind client_id=12
+2026-07-13T04:29:13.685096Z  INFO herdr::server::headless: client disconnected client_id=12
+2026-07-13T04:29:25.466478Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:close" method="workspace.close" changes_ui=true
+2026-07-13T04:29:25.466936Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="wE"
+2026-07-13T04:29:25.470581Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=14 status="ExitStatus { code: 1, signal: None }"
+2026-07-13T04:29:25.490434Z  INFO herdr::pane: pane session terminated pane=14 pid=4669 signal=Hangup
+2026-07-13T04:29:25.490782Z  WARN herdr::app::actions: PaneDied for unknown pane pane=14
+2026-07-13T04:29:25.490823Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:workspace:close" method="workspace.close"
+2026-07-13T04:29:30.496313Z  INFO herdr::logging: session cleared event="persist.clear" subsystem="persist" outcome="ok" path=/Users/atiwatseenark/.config/herdr/session.json

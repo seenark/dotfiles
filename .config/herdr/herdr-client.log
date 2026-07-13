@@ -1,0 +1,135 @@
+2026-06-08T06:29:27.490912Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=48239
+2026-06-08T06:29:27.491027Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-08T06:29:27.706761Z  INFO herdr::client: handshake succeeded version=12 encoding=SemanticFrame
+2026-06-08T06:31:24.038120Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=48239
+2026-06-08T06:31:34.239606Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=48436
+2026-06-08T06:31:34.239660Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-08T06:31:34.343479Z  INFO herdr::client: handshake succeeded version=12 encoding=SemanticFrame
+2026-06-08T06:31:40.702347Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:31:40.702498Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:31:40.702520Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:31:57.876227Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:31:57.876416Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:31:57.876448Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:32:55.688548Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:32:55.688717Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T06:32:55.688737Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:12.934786Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:12.934959Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:12.934983Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:22.807634Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:22.807812Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:22.807825Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:39.695628Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:39.695780Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:13:39.695804Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.296436Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.297288Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.297304Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.461252Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.461336Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.461344Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.656005Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.656202Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.656221Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.856953Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.857879Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:13.858031Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:14.028882Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:14.029220Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:14.029251Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:14.192300Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:14.192801Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:14.192828Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:17.286228Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:17.286439Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:17.286500Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:18.788778Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:18.789105Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:18.789126Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:51.355163Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:51.355276Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:51.355291Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:57.343143Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:57.343361Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:57.343381Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:59.695087Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:59.695485Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:24:59.695511Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-08T07:25:02.651989Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=48436
+2026-06-26T15:43:05.344020Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=83999
+2026-06-26T15:43:05.344275Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-26T15:43:05.597596Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-26T16:00:20.298996Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=83999
+2026-06-26T16:06:09.286713Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=95077
+2026-06-26T16:06:09.286905Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-26T16:06:09.296282Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-26T16:06:30.886709Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=95077
+2026-06-26T16:08:40.244632Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=96049
+2026-06-26T16:08:40.244710Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-26T16:08:40.257727Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-26T16:17:42.286746Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=96049
+2026-06-27T02:14:40.824778Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=73488
+2026-06-27T02:14:40.824964Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-27T02:14:40.840403Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-27T02:26:36.863140Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=73488
+2026-06-27T02:51:45.605533Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=97755
+2026-06-27T02:51:45.605761Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-27T02:51:45.668053Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-27T02:54:10.418311Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=97755
+2026-06-27T03:11:28.059441Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=11970
+2026-06-27T03:11:28.059716Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-27T03:11:28.060342Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-27T03:22:56.458425Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=17345
+2026-06-27T03:22:56.458644Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-27T03:22:56.477892Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-27T03:23:36.999804Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=17345
+2026-06-27T03:38:00.705198Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=24182
+2026-06-27T03:38:00.705416Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-27T03:38:00.767370Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-27T03:58:09.173952Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=24182
+2026-06-27T15:31:32.228342Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=10465
+2026-06-27T15:31:32.228546Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-27T15:31:32.304604Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-27T15:41:02.873128Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=10465
+2026-06-29T04:34:10.788591Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=11970
+2026-06-29T04:34:17.058279Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=13846
+2026-06-29T04:34:17.058347Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-29T04:34:17.150429Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-29T04:35:07.781894Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=13846
+2026-06-29T05:20:52.873293Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=46456
+2026-06-29T05:20:52.873539Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-29T05:20:52.986226Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-29T05:21:03.089527Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=46456
+2026-06-29T05:33:35.443936Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=60584
+2026-06-29T05:33:35.444151Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-06-29T05:33:35.652137Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-29T05:49:54.708334Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=60584
+2026-07-01T08:46:34.941785Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=69981
+2026-07-01T08:46:34.941992Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-01T08:46:34.976455Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-01T08:46:41.501790Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=69981
+2026-07-11T21:57:54.901254Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=51672
+2026-07-11T21:57:54.901374Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-11T21:57:54.902507Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-11T22:08:21.154790Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=51672
+2026-07-12T01:38:13.398224Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=46764
+2026-07-12T01:38:13.398390Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-12T01:38:13.472112Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-12T01:44:17.526476Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=46764
+2026-07-12T05:29:17.491443Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=50648
+2026-07-12T05:29:17.491692Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-12T05:29:17.505457Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-12T05:30:37.180318Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=50648
+2026-07-13T02:50:57.702398Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=34652
+2026-07-13T02:50:57.702605Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-13T02:50:57.714712Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-13T03:30:49.989442Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=34652
+2026-07-13T03:30:51.737339Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=78800
+2026-07-13T03:30:51.737384Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-13T03:30:51.800147Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-13T03:32:57.861921Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=78800
+2026-07-13T03:54:00.770039Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=4668
+2026-07-13T03:54:00.770087Z  INFO herdr::client: connecting to server path=/Users/atiwatseenark/.config/herdr/herdr-client.sock
+2026-07-13T03:54:00.899378Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-13T04:29:13.683035Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=4668
