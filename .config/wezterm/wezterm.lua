@@ -20,71 +20,75 @@ SetKeyMaps(config, act)
 
 -- font
 config.font = wezterm.font_with_fallback({
-	"MonaspiceNe Nerd Font",
-	"MonaspiceRn Nerd Font",
-	"MonaspiceKr Nerd Font",
-	"MonaspiceXe Nerd Font",
-	"MonaspaceAr Nerd Font",
-	"JetBrains Mono",
-	"Fira Code",
-	"DengXian",
+	"Ioskeley Mono",
+	-- "MonaspiceNe Nerd Font",
+	-- "MonaspiceRn Nerd Font",
+	-- "MonaspiceKr Nerd Font",
+	-- "MonaspiceXe Nerd Font",
+	-- "MonaspaceAr Nerd Font",
+	-- "JetBrains Mono",
+	-- "Fira Code",
+	-- "DengXian",
+	"Duck",
+	"Duck2",
+	"Penquin1",
 })
 config.font_size = 20
-config.font_rules = {
-	-- Normal
-	{
-		italic = false,
-		intensity = "Normal", -- Normal, Bold, Half
-		font = wezterm.font({
-			-- family = "Monaspace Neon",
-			family = "MonaspiceNe Nerd Font",
-			weight = "Light", -- "Thin" "ExtraLight" "Light" "DemiLight" "Book" "Regular" "Medium" "DemiBold" "Bold" "ExtraBold" "Black" "ExtraBlack"
-		}),
-	},
-	{
-		intensity = "Bold",
-		italic = true,
-		font = wezterm.font({
-			family = "MonaspiceXe Nerd Font",
-			weight = "Bold",
-			style = "Italic",
-		}),
-	},
-	{
-		italic = true,
-		intensity = "Half",
-		font = wezterm.font({
-			family = "MonaspiceXe Nerd Font",
-			weight = "DemiBold",
-			style = "Italic",
-		}),
-	},
-	{
-		italic = true,
-		intensity = "Normal",
-		font = wezterm.font({
-			family = "MonaspiceRn Nerd Font",
-			style = "Italic",
-		}),
-	},
-	{
-		italic = false,
-		intensity = "Half",
-		font = wezterm.font({
-			family = "MonaspiceAr Nerd Font",
-		}),
-	},
-	{
-		italic = false,
-		intensity = "Bold",
-		font = wezterm.font({
-			family = "MonaspiceKr Nerd Font",
-			style = "Italic",
-			weight = "Bold",
-			-- stretch = "Expanded",
-		}),
-	},
-}
+-- config.font_rules = {
+-- 	-- Normal
+-- 	{
+-- 		italic = false,
+-- 		intensity = "Normal", -- Normal, Bold, Half
+-- 		font = wezterm.font({
+-- 			-- family = "Monaspace Neon",
+-- 			family = "MonaspiceNe Nerd Font",
+-- 			weight = "Light", -- "Thin" "ExtraLight" "Light" "DemiLight" "Book" "Regular" "Medium" "DemiBold" "Bold" "ExtraBold" "Black" "ExtraBlack"
+-- 		}),
+-- 	},
+-- 	{
+-- 		intensity = "Bold",
+-- 		italic = true,
+-- 		font = wezterm.font({
+-- 			family = "MonaspiceXe Nerd Font",
+-- 			weight = "Bold",
+-- 			style = "Italic",
+-- 		}),
+-- 	},
+-- 	{
+-- 		italic = true,
+-- 		intensity = "Half",
+-- 		font = wezterm.font({
+-- 			family = "MonaspiceXe Nerd Font",
+-- 			weight = "DemiBold",
+-- 			style = "Italic",
+-- 		}),
+-- 	},
+-- 	{
+-- 		italic = true,
+-- 		intensity = "Normal",
+-- 		font = wezterm.font({
+-- 			family = "MonaspiceRn Nerd Font",
+-- 			style = "Italic",
+-- 		}),
+-- 	},
+-- 	{
+-- 		italic = false,
+-- 		intensity = "Half",
+-- 		font = wezterm.font({
+-- 			family = "MonaspiceAr Nerd Font",
+-- 		}),
+-- 	},
+-- 	{
+-- 		italic = false,
+-- 		intensity = "Bold",
+-- 		font = wezterm.font({
+-- 			family = "MonaspiceKr Nerd Font",
+-- 			style = "Italic",
+-- 			weight = "Bold",
+-- 			-- stretch = "Expanded",
+-- 		}),
+-- 	},
+-- }
 -- color scheme and background
 local setColorSchemeAndBackground = require("backgroundAndColorScheme")
 setColorSchemeAndBackground(config, wezterm)

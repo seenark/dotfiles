@@ -1,0 +1,9 @@
+{
+     "enabled": true,
+     "multiplexer": "herdr",
+     "maxConcurrency": 2,
+     "isolation": "git-worktree",
+     "autoClose": false,
+     "autoMerge": false,
+     "completionDelivery": "notify"
+   }

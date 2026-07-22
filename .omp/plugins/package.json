@@ -4,7 +4,6 @@
     "dependencies": {
         "@codesook/omp-prompt-border-style": "^1.0.3",
         "@ryan_nookpi/pi-extension-headroom": "^0.1.2",
-        "pi-rtk-optimizer": "^0.8.2",
-        "superpowers": "https://github.com/obra/superpowers"
+        "pi-rtk-optimizer": "^0.8.2"
     }
 }
