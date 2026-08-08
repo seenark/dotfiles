@@ -1,15 +1,15 @@
 setupVersion: 1
 modelRoles: 
-  plan: openai-codex/gpt-5.6-terra
-  default: openai-codex/gpt-5.6-luna:medium
-  smol: openai-codex/gpt-5.5:off
-  task: openai-codex/gpt-5.6-luna:low
+  plan: openai-codex/gpt-5.6-luna:max
+  smol: openai-codex/gpt-5.6-luna:off
+  task: openai-codex/gpt-5.6-luna:max
   commit: openai-codex/gpt-5.4:off
   tiny: openai-codex/gpt-5.4
   designer: openai-codex/gpt-5.6-luna
-  slow: openai-codex/gpt-5.6-terra
-  advisor: openai-codex/gpt-5.6-terra
+  slow: openai-codex/gpt-5.6-sol
+  advisor: openai-codex/gpt-5.6-luna:max
   vision: openai-codex/gpt-5.6-luna
+  default: openai-codex/gpt-5.6-luna:max
 startup: 
   quiet: true
 searxng: 
@@ -60,8 +60,7 @@ edit:
 plan: 
   defaultOnStartup: true
 dev: 
-  autoqa: 
-    consent: denied
+  autoqaConsent: denied
 defaultThinkingLevel: auto
 cycleOrder: 
   - smol
