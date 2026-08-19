@@ -79,7 +79,13 @@ source (/opt/homebrew/bin/starship init fish --print-full-init | psub)
 # ╭─ Neovim ───────────────────────────────────────────────────────────╮
 
 function nl
-    env NVIM_APPNAME=nvim8 nvim
+    set -l path $argv[1]
+
+    if test -z "$path"
+        set path .
+    end
+
+    env NVIM_APPNAME=nvim8 nvim "$path"
 end
 
 function nll
@@ -129,3 +135,7 @@ mise activate fish | source
 fish_add_path ~/.local/bin
 
 # ╰─ Specify ──────────────────────────────────────────────────────────╯
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :

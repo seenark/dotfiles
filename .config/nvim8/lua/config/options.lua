@@ -13,7 +13,9 @@ opt.signcolumn = "yes:3"
 
 -- lsp
 vim.diagnostic.config({
-    float = {
-        border = "rounded",
-    },
+  float = {
+    border = "rounded",
+  },
 })
+
+vim.g.lazyvim_python_lsp = "pyright"
