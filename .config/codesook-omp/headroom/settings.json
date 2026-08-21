@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "allowRemote": true,
+  "baseUrl": "https://headroom.codesook.dev",
+  "autoStart": false,
+  "command": "headroom",
+  "minContextTokens": 20000,
+  "minMessageChars": 2000,
+  "timeoutMs": 30000
+}

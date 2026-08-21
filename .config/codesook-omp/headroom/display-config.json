@@ -1,0 +1,12 @@
+{
+  "glyphDirectory": "~/.config/codesook-omp/headroom",
+  "status": {
+    "off": "{icon} off",
+    "remote-blocked": "{icon} Headroom remote blocked",
+    "starting": "{icon} Headroom starting",
+    "offline": "{icon} Headroom not running",
+    "idle": "{icon} Headroom idle",
+    "online": "{icon} Headroom",
+    "compressed": "{icon} 💾 {compressionPercent}% ({tokensSaved} saved)"
+  }
+}

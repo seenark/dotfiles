@@ -2,8 +2,8 @@
     "name": "omp-plugins",
     "private": true,
     "dependencies": {
+        "@codesook/omp-headroom": "github:seenark/omp-headroom",
         "@codesook/omp-prompt-border-style": "^1.0.3",
-        "@ryan_nookpi/pi-extension-headroom": "^0.1.2",
         "pi-rtk-optimizer": "^0.8.2"
     }
 }
