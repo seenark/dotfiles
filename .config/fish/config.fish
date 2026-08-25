@@ -17,8 +17,7 @@ status is-interactive; and begin
     abbr --add -- hostsfile 'sudo NVIM_APPNAME=nvim-lazy7 nvim /etc/hosts'
     abbr --add -- ls 'eza -al --icons --group-directories-first --git'
     abbr --add -- nixgc 'nix-store --gc'
-    abbr --add -- pm pnpm
-    abbr --add -- spf superfile
+    abbr --add -- nl nvim
     abbr --add -- tree 'eza -T -L 2 -I '\''node_modules|*.pyc'\'''
     abbr --add -- tree3 'eza -T -L 3 -I '\''node_modules|*.pyc'\'''
     abbr --add -- tree4 'eza -T -L 4 -I '\''node_modules|*.pyc'\'''
@@ -78,15 +77,15 @@ source (/opt/homebrew/bin/starship init fish --print-full-init | psub)
 
 # ╭─ Neovim ───────────────────────────────────────────────────────────╮
 
-function nl
-    set -l path $argv[1]
-
-    if test -z "$path"
-        set path .
-    end
-
-    env NVIM_APPNAME=nvim8 nvim "$path"
-end
+# function nl
+#     set -l path $argv[1]
+#
+#     if test -z "$path"
+#         set path .
+#     end
+#
+#     env NVIM_APPNAME=nvim8 nvim "$path"
+# end
 
 function nll
     env NVIM_APPNAME=nvim8 /Users/atiwatseenark/.local/share/mise/installs/neovim/latest/bin/nvim

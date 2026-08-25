@@ -1,15 +1,15 @@
 setupVersion: 2
 modelRoles: 
   plan: openai-codex/gpt-5.6-luna:max
-  smol: openai-codex/gpt-5.5:off
-  task: openai-codex/gpt-5.6-luna:low
+  smol: openai-codex/gpt-5.6-luna:medium
   commit: openai-codex/gpt-5.4:off
   tiny: openai-codex/gpt-5.4
   designer: openai-codex/gpt-5.6-luna
-  slow: openai-codex/gpt-5.6-terra
-  advisor: openai-codex/gpt-5.6-sol:max
+  slow: openai-codex/gpt-5.6-sol:auto
   vision: openai-codex/gpt-5.6-luna
   default: openai-codex/gpt-5.6-luna:max
+  task: openai-codex/gpt-5.6-luna:max
+  advisor: openai-codex/gpt-5.6-sol:xhigh
 startup: 
   quiet: true
 searxng: 
@@ -31,13 +31,15 @@ statusLine:
   transparent: true
   leftSegments: 
     - mode
-    - git
+    - model
     - context_pct
-    - cost
-    - time
+    - git
   rightSegments: 
     - subagents
-    - model
+    - time
+  contextLine: percentage
+  compactThinkingLevel: false
+  showHookStatus: true
 tui: 
   textSizing: false
   hyperlinks: auto

@@ -16,5 +16,15 @@
         "frameMs": 80
       }
     }
+  },
+  "contextRail": {
+    "enabled": true,
+    "placement": "inside",
+    "visibility": "always",
+    "pointer": "visible",
+    "labels": "auto",
+    "labelPosition": "left",
+    "showLabelGlyph": false,
+    "glyphDirectory": "~/.config/codesook-omp/context-rail"
   }
 }
