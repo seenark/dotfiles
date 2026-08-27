@@ -9,3 +9,17 @@
 .pi/agent/sessions
 .pi/context-mode/sessions
 .config/opencode/opencode-notifier-state.json
+
+# OMP learning profile runtime state
+/.omp/profiles/learning/gpu_cache.json
+/.omp/profiles/learning/logs/
+/.omp/profiles/learning/run/
+/.omp/profiles/learning/skill-backups/
+/.omp/profiles/learning/agent/cache/
+/.omp/profiles/learning/agent/sessions/
+/.omp/profiles/learning/agent/terminal-sessions/
+/.omp/profiles/learning/agent/*.db*
+/.omp/profiles/learning/agent/config.yml.lock
+/.omp/profiles/learning/agent/last-changelog-version
+/.omp/profiles/learning/agent/models.yml
+/.omp/profiles/learning/agent/models.json

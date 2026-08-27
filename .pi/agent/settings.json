@@ -1,9 +1,9 @@
 {
-  "lastChangelogVersion": "0.76.0",
+  "lastChangelogVersion": "0.84.2",
   "quietStartup": true,
-  "defaultProvider": "minimax",
-  "defaultModel": "MiniMax-M2.7-highspeed",
-  "defaultThinkingLevel": "medium",
+  "defaultProvider": "oom-local",
+  "defaultModel": "gpt-5.6-luna",
+  "defaultThinkingLevel": "off",
   "packages": [
     "npm:pi-subagents",
     "npm:pi-web-access",

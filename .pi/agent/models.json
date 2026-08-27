@@ -1,0 +1,16 @@
+{
+  "providers": {
+    "oom-local": {
+      "baseUrl": "http://192.168.1.195:8317/v1",
+      "api": "openai-completions",
+      "apiKey": "sk-a03afc9bb838b23c153001854669cb1034bec63151cbcb1a",
+      "models": [
+        {
+          "id": "gpt-5.6-luna",
+          "name": "gpt-5.6-luna",
+          "reasoning": true
+        }
+      ]
+    }
+  }
+}
