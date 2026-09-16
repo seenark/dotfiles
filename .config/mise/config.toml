@@ -31,7 +31,6 @@ neovim = "latest"
 "npm:markdownlint-cli2" = "latest"
 "npm:hunkdiff" = "latest"
 "npm:lavish-axi" = "latest"
-herdr = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];

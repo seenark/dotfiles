@@ -1,5 +1,5 @@
 setupVersion: 2
-modelRoles: 
+modelRoles:
   plan: openai-codex/gpt-5.6-luna:max
   commit: openai-codex/gpt-5.4:off
   tiny: openai-codex/gpt-5.4
@@ -8,63 +8,67 @@ modelRoles:
   vision: openai-codex/gpt-5.6-luna
   default: openai-codex/gpt-5.6-luna:max
   task: openai-codex/gpt-5.6-luna:max
-  advisor: openai-codex/gpt-5.6-sol:xhigh
-  smol: openai-codex/gpt-5.6-luna:max
-startup: 
+  advisor: openai-codex/gpt-5.6-sol:high
+  smol: openai-codex/gpt-5.6-luna:medium
+startup:
   quiet: true
-searxng: 
+searxng:
   endpoint: https://searxng.codesook.dev
-memory: 
+memory:
   backend: hindsight
-hindsight: 
+hindsight:
   apiUrl: https://hindsight.codesook.dev
   apiToken: this_is_api_key
   bankId: null
   scoping: per-project
-theme: 
+theme:
   dark: catppuccin-mocha
   light: light-catppuccin
-statusLine: 
+statusLine:
   separator: powerline
   preset: custom
   sessionAccent: true
   transparent: true
-  leftSegments: 
+  leftSegments:
     - mode
+    - git
     - model
     - context_pct
-    - git
-  rightSegments: 
+    - token_total 
+    - cost
+    - token_rate
+
+  rightSegments:
     - subagents
     - time
   contextLine: percentage
   compactThinkingLevel: false
   showHookStatus: true
-tui: 
+tui:
   textSizing: false
   hyperlinks: auto
   tight: false
-display: 
+display:
   showTokenUsage: true
   shimmer: kitt
   cacheMissMarker: true
 showHardwareCursor: true
-task: 
+task:
   showResolvedModelBadge: true
   eager: preferred
-tools: 
+tools:
   approvalMode: yolo
-autolearn: 
+autolearn:
   enabled: true
   autoContinue: false
-edit: 
+edit:
   mode: hashline
-plan: 
+plan:
   defaultOnStartup: true
-dev: 
+dev:
   autoqaConsent: denied
 defaultThinkingLevel: auto
-cycleOrder: 
+cycleOrder:
   - smol
   - default
   - task

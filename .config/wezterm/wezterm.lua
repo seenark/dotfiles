@@ -20,6 +20,7 @@ SetKeyMaps(config, act)
 
 -- font
 config.font = wezterm.font_with_fallback({
+	"IoskeleyMonoTerm Nerd Font Mono",
 	"Ioskeley Mono",
 	-- "MonaspiceNe Nerd Font",
 	-- "MonaspiceRn Nerd Font",
