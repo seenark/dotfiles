@@ -23,3 +23,5 @@
 /.omp/profiles/learning/agent/last-changelog-version
 /.omp/profiles/learning/agent/models.yml
 /.omp/profiles/learning/agent/models.json
+
+.config/codesook-omp/headroom/proxy-token

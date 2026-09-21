@@ -17,8 +17,7 @@
         "activity": {
           "frameMs": 70
         }
-      },
-      "frameMs": 70
+      }
     },
     "contextRail": {
       "enabled": true,
@@ -117,9 +116,9 @@
       "allowRemote": true,
       "autoStart": false,
       "command": "headroom",
-      "minContextTokens": 20000,
+      "minContextTokens": 12000,
       "minMessageChars": 2000,
-      "timeoutMs": 30000,
+      "timeoutMs": 60000,
       "proxyTokenFile": "/Users/atiwatseenark/.config/codesook-omp/headroom/proxy-token"
     }
   }

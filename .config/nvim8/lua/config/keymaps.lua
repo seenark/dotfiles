@@ -6,6 +6,7 @@ require("config.keymaps.general")
 require("config.keymaps.buffer-aka-tab")
 require("config.keymaps.inlay-hints")
 require("config.keymaps.lsp")
+require("config.keymaps.remove-keys")
 
 -- require("config.keymaps.crates")
 -- require("config.keymaps.codeium")
