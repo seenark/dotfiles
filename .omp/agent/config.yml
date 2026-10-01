@@ -1,15 +1,15 @@
 setupVersion: 2
 modelRoles:
-  plan: openai-codex/gpt-5.6-luna:max
-  commit: openai-codex/gpt-5.4:off
-  tiny: openai-codex/gpt-5.4
-  designer: openai-codex/gpt-5.6-luna
-  slow: openai-codex/gpt-5.6-sol:auto
-  vision: openai-codex/gpt-5.6-luna
-  default: openai-codex/gpt-5.6-luna:max
-  task: openai-codex/gpt-5.6-luna:max
-  advisor: openai-codex/gpt-5.6-sol:high
-  smol: openai-codex/gpt-5.6-luna:medium
+  plan: openai-codex/gpt-6.1-sol:xhigh
+  commit: openai-codex/gpt-6-luna:off
+  designer: openai-codex/gpt-6-sol:auto
+  slow: openai-codex/gpt-6.1-sol:xhigh
+  vision: openai-codex/gpt-6-luna:auto
+  default: openai-codex/gpt-6.1-sol:xhigh
+  task: openai-codex/gpt-6.1-sol:high
+  advisor: openai-codex/gpt-6.1-sol:max
+  smol: openai-codex/gpt-6-luna:medium
+  tiny: openai-codex/gpt-6-luna:medium
 startup:
   quiet: true
 searxng:
@@ -34,10 +34,9 @@ statusLine:
     - git
     - model
     - context_pct
-    - token_total 
+    - token_total
     - cost
     - token_rate
-
   rightSegments:
     - subagents
     - time
@@ -56,6 +55,7 @@ showHardwareCursor: true
 task:
   showResolvedModelBadge: true
   eager: preferred
+  maxRecursionDepth: -1
 tools:
   approvalMode: yolo
 autolearn:
@@ -73,3 +73,5 @@ cycleOrder:
   - default
   - task
   - commit
+codexResets:
+  autoRedeem: "no"

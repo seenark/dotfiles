@@ -5,6 +5,9 @@
 local opt = vim.opt
 
 opt.clipboard = ""
+-- เอาไว้ copy ข้าม ssh ทำใให้ space+y ก็เข้าไปที่ cssh client ด้วย
+vim.g.clipboard = "osc52"
+
 opt.scrolloff = 8
 opt.iskeyword:append("-")
 opt.iskeyword:append("$")

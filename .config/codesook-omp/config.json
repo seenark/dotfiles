@@ -12,10 +12,10 @@
       },
       "spinnerGlyphs": {
         "status": {
-          "frameMs": 70
+          "frameMs": 80
         },
         "activity": {
-          "frameMs": 70
+          "frameMs": 80
         }
       }
     },
@@ -76,7 +76,7 @@
         "headroom"
       ],
       "widgetPlacement": "belowEditor",
-      "horizontalSeparator": " ▶",
+      "horizontalSeparator": " ▶ ",
       "verticalGapRows": 0,
       "ponytail": {
         "visible": true,
