@@ -1,8 +1,3 @@
-   app.model.selectTemporary: ctrl+m
+   app.model.selectTemporary: ctrl+,
    app.plan.toggle: ctrl+n
    app.clipboard.pasteImage: shift+ctrl+v
-   # app:
-   #   model:
-   #     selectTemporary: ctrl+m
-   #   plan:
-   #     toggle: ctrl+shift+p

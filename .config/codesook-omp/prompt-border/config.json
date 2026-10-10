@@ -1,0 +1,54 @@
+{
+  "promptBorder": {
+    "style": "round",
+    "layout": "full"
+  },
+  "contextRail": {
+    "enabled": true,
+    "placement": "above",
+    "visibility": "always",
+    "mode": "custom",
+    "speculation": {
+      "framesFile": "speculation.txt",
+      "meaning": "spec"
+    },
+    "pointer": {
+      "framesFile": "pointer.txt",
+      "meaning": "now",
+      "visibility": "visible"
+    },
+    "compaction": {
+      "framesFile": "compaction.txt",
+      "meaning": "compact"
+    },
+    "maximum": {
+      "framesFile": "maximum.txt",
+      "meaning": "max"
+    },
+    "custom": {
+      "meaningPlacement": "beside",
+      "items": [
+        {
+          "role": "speculation",
+          "template": "{frame}"
+        },
+        {
+          "role": "pointer",
+          "template": "{frame}{percent}"
+        },
+        {
+          "role": "compaction",
+          "template": "{frame}compact"
+        },
+        {
+          "role": "maximum",
+          "template": "{frame} {window}"
+        }
+      ]
+    },
+    "labels": "auto",
+    "labelPosition": "left",
+    "showLabelGlyph": false,
+    "glyphDirectory": "~/.config/codesook-omp/context-rail"
+  }
+}

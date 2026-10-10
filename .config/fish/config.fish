@@ -32,6 +32,8 @@ status is-interactive; and begin
     abbr --add -- claudemcp 'cd ~/Library/Application\ Support/Claude/'
     abbr --add -- vscode_spam_while_holding 'defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false'
     abbr --add -- disable_mouse_reports "printf '\e[?1000l\e[?1002l\e[?1003l\e[?1006l'"
+    abbr --add -- get_random_key_32 'openssl rand -base64 32'
+    abbr --add -- get_random_key_16 'openssl rand -base64 16'
 
 end
 
