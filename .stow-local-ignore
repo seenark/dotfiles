@@ -23,8 +23,3 @@ x-circle.svg
 .config/codesook-omp/prompt-border-right-glyphs.txt
 .config/codesook-omp/prompt-border-status-spinner-glyphs.txt
 
-.config/herdr/herdr-client.log
-.config/herdr/herdr-server.log
-.config/herdr/release-notes.json
-.config/herdr/herdr-client.sock
-.config/herdr/herdr.sock
