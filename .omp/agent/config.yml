@@ -1,14 +1,14 @@
 setupVersion: 2
 modelRoles:
-  plan: openai-codex/gpt-6.1-sol:xhigh
-  commit: openai-codex/gpt-6-luna:off
-  designer: openai-codex/gpt-6-sol:auto
-  slow: openai-codex/gpt-6.1-sol:xhigh
+  plan: anthropic/claude-opus-5-5:high
+  commit: openai-codex/gpt-6-luna:low
+  designer: anthropic/claude-opus-5-5:high
+  slow: anthropic/claude-opus-5-5:high
   vision: openai-codex/gpt-6-luna:auto
-  default: openai-codex/gpt-6.1-sol:xhigh
-  task: openai-codex/gpt-6.1-sol:high
-  advisor: openai-codex/gpt-6.1-sol:max
-  smol: openai-codex/gpt-6-luna:medium
+  default: anthropic/claude-sonnet-5-5:medium
+  task: anthropic/claude-sonnet-5-5:high
+  advisor: openai-codex/gpt-6.1-sol:xhigh
+  smol: anthropic/claude-sonnet-5-5:high
   tiny: openai-codex/gpt-6-luna:medium
 startup:
   quiet: true

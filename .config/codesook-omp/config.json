@@ -4,19 +4,11 @@
     "promptBorder": {
       "style": "round",
       "layout": "full",
-      "leftGlyph": {
-        "frameMs": 70
-      },
-      "rightGlyph": {
-        "frameMs": 70
-      },
+      "leftGlyph": {},
+      "rightGlyph": {},
       "spinnerGlyphs": {
-        "status": {
-          "frameMs": 80
-        },
-        "activity": {
-          "frameMs": 80
-        }
+        "status": {},
+        "activity": {}
       }
     },
     "contextRail": {
@@ -73,21 +65,25 @@
       "order": [
         "ponytail",
         "caveman",
-        "headroom"
+        "headroom",
+        "rtk",
+        "codegraph",
+        "beads"
       ],
       "widgetPlacement": "belowEditor",
       "horizontalSeparator": " ▶ ",
       "verticalGapRows": 0,
-      "ponytail": {
-        "visible": true,
-        "nativeVisible": false,
-        "template": "{activity} {glyph} ponytail: {modeIcon}{mode}",
-        "glyphDirectory": "~/.config/codesook-omp/ponytail"
-      }
+      "style": "powerline"
+    },
+    "ponytail": {
+      "visible": true,
+      "nativeVisible": false,
+      "template": "{activity} {glyph} ponytail: {modeIcon}{mode}",
+      "glyphDirectory": "~/.config/codesook-omp/ponytail"
     },
     "caveman": {
       "visible": true,
-      "template": "{activity} {glyph} caveman: {level}",
+      "template": "{activity} {glyph} {mode}",
       "glyphDirectory": "~/.config/codesook-omp/caveman/glyphs",
       "nativeVisible": false
     },
@@ -102,13 +98,29 @@
         "offline": "{glyph} Headroom not running",
         "idle": "{glyph} Headroom idle",
         "online": "{glyph} Headroom",
-        "compressed": "{glyph} 💾 {compressionPercent}% ({tokensSaved} saved)"
+        "unavailable": "{glyph} Headroom unavailable ({reason})",
+        "compressed": "{glyph} 💾 {compressionPercent}% ({tokensSaved} saved)",
+        "loading": "{glyph} Headroom loading"
       }
+    },
+    "rtk": {
+      "visible": true,
+      "glyphDirectory": "~/.config/codesook-omp/rtk",
+      "template": "{glyph} rtk 💾 {percent}% ({tokensSaved} saved)"
+    },
+    "codegraph": {
+      "visibility": "ready"
+    },
+    "beads": {
+      "visibility": "ready"
     }
   },
   "behavior": {
     "caveman": {
-      "defaultLevel": "full"
+      "defaultMode": "caveman"
+    },
+    "ponytail": {
+      "defaultMode": "full"
     },
     "headroom": {
       "enabled": true,
@@ -116,10 +128,20 @@
       "allowRemote": true,
       "autoStart": false,
       "command": "headroom",
-      "minContextTokens": 12000,
-      "minMessageChars": 2000,
+      "minContextTokens": 8000,
+      "minMessageChars": 1000,
       "timeoutMs": 60000,
       "proxyTokenFile": "/Users/atiwatseenark/.config/codesook-omp/headroom/proxy-token"
+    },
+    "codegraph": {
+      "policy": "auto"
+    },
+    "beads": {
+      "policy": "auto"
+    },
+    "rtk": {
+      "enabled": true,
+      "retentionDays": 7
     }
   }
 }

@@ -1,1 +1,10 @@
-+FULL
+fps=4
+____
+
+F___
+
+FU__
+
+FUL_
+
+FULL

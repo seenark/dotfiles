@@ -1,9 +1,7 @@
 {
-    "name": "omp-plugins",
-    "private": true,
-    "dependencies": {
-        "@dietrichgebert/ponytail": "github:DietrichGebert/ponytail",
-        "omp-plugins": "github:seenark/omp-plugins",
-        "pi-rtk-optimizer": "^0.8.2"
-    }
+  "name": "omp-plugins",
+  "private": true,
+  "dependencies": {
+    "omp-plugins": "github:seenark/omp-plugins"
+  }
 }

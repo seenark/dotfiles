@@ -1,9 +1,6 @@
 [tools]
 
-node = "22.20"
-# "npm:typescript" = "latest"
-# "npm:corepack" = "latest"
-gleam = "latest"
+node = "26.11"
 elixir = "latest"
 erlang = "latest"
 rebar = "latest"                                # rebar must install erlang # "npm:biome" = "latest";
@@ -25,12 +22,13 @@ rust = "latest"
 "npm:wscat" = "latest"
 neovim = "latest"
 "npm:petiglyph" = "latest"
-"github:seenark/codesook-omp" = "latest"
 "github:seenark/ascii-animation" = "latest"
 "npm:markdownlint-cli2" = "latest"
 "npm:hunkdiff" = "latest"
 "npm:lavish-axi" = "latest"
 "npm:@colbymchenry/codegraph" = "latest"
+"aqua:gastownhall/beads" = "latest"
+"github:seenark/sshx-rs" = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
