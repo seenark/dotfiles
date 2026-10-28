@@ -73,7 +73,7 @@ fish_add_path /opt/homebrew/opt/libpq/bin
 
 # ╭─ Starship ─────────────────────────────────────────────────────────╮
 
-source (/opt/homebrew/bin/starship init fish --print-full-init | psub)
+source (~/.local/share/mise/installs/starship/latest/starship init fish --print-full-init | psub)
 
 # ╰─ Starship ─────────────────────────────────────────────────────────╯
 
