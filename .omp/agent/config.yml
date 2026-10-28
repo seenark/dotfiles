@@ -10,6 +10,8 @@ modelRoles:
   advisor: openai-codex/gpt-6.1-sol:xhigh
   smol: anthropic/claude-sonnet-5-5:high
   tiny: openai-codex/gpt-6-luna:medium
+  pstack-panel-a: anthropic/claude-opus-5-5:medium
+  pstack-panel-b: openai-codex/gpt-6.1-sol:medium
 startup:
   quiet: true
 searxng:
@@ -56,6 +58,8 @@ task:
   showResolvedModelBadge: true
   eager: preferred
   maxRecursionDepth: -1
+  isolation:
+    enabled: true
 tools:
   approvalMode: yolo
 autolearn:
@@ -64,7 +68,8 @@ autolearn:
 edit:
   mode: hashline
 plan:
-  defaultOnStartup: true
+  defaultOnStartup: false
+  enabled: true
 dev:
   autoqaConsent: denied
 defaultThinkingLevel: auto
@@ -75,3 +80,7 @@ cycleOrder:
   - commit
 codexResets:
   autoRedeem: "no"
+retry:
+  fallbackChains:
+    pstack-panel-a: []
+    pstack-panel-b: []

@@ -2,6 +2,8 @@ function SetKeyMaps(config, act)
 	config.native_macos_fullscreen_mode = true
 	config.leader = { key = "a", mods = "CTRL" }
 	config.keys = {
+		-- omp uses Ctrl+Shift+C to copy the prompt; Cmd+C still copies the terminal selection
+		{ key = "c", mods = "CTRL|SHIFT", action = act.DisableDefaultAssignment },
 		{
 			key = "n",
 			mods = "SHIFT|CTRL",

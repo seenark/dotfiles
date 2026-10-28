@@ -68,17 +68,20 @@
         "headroom",
         "rtk",
         "codegraph",
-        "beads"
+        "beads",
+        "pstack",
+        "process-monitor"
       ],
       "widgetPlacement": "belowEditor",
       "horizontalSeparator": " ▶ ",
       "verticalGapRows": 0,
-      "style": "powerline"
+      "style": "rounded",
+      "palette": "theme"
     },
     "ponytail": {
       "visible": true,
       "nativeVisible": false,
-      "template": "{activity} {glyph} ponytail: {modeIcon}{mode}",
+      "template": "{activity} {glyph} ponytail",
       "glyphDirectory": "~/.config/codesook-omp/ponytail"
     },
     "caveman": {
@@ -99,14 +102,14 @@
         "idle": "{glyph} Headroom idle",
         "online": "{glyph} Headroom",
         "unavailable": "{glyph} Headroom unavailable ({reason})",
-        "compressed": "{glyph} 💾 {compressionPercent}% ({tokensSaved} saved)",
+        "compressed": "{glyph} Headroom {tokensSaved} saved",
         "loading": "{glyph} Headroom loading"
       }
     },
     "rtk": {
       "visible": true,
       "glyphDirectory": "~/.config/codesook-omp/rtk",
-      "template": "{glyph} rtk 💾 {percent}% ({tokensSaved} saved)"
+      "template": "{glyph} rtk {tokensSaved} saved · {commands} cmds"
     },
     "codegraph": {
       "visibility": "ready"
@@ -142,6 +145,13 @@
     "rtk": {
       "enabled": true,
       "retentionDays": 7
+    },
+    "pstack": {
+      "suspendCaveman": true,
+      "suspendPonytail": true,
+      "maxPanelSize": 5,
+      "guardStrictness": "block-and-warn",
+      "defaultThinking": "medium"
     }
   }
 }

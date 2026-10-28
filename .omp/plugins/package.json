@@ -2,6 +2,7 @@
   "name": "omp-plugins",
   "private": true,
   "dependencies": {
+    "@codesook/omp-pstack": "github:seenark/omp-pstack",
     "omp-plugins": "github:seenark/omp-plugins"
   }
 }

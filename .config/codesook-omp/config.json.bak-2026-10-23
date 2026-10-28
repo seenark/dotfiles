@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "display": {
+    "promptBorder": {
+      "style": "round",
+      "layout": "full",
+      "leftGlyph": {},
+      "rightGlyph": {},
+      "spinnerGlyphs": {
+        "status": {},
+        "activity": {}
+      }
+    },
+    "contextRail": {
+      "enabled": true,
+      "placement": "above",
+      "visibility": "always",
+      "mode": "custom",
+      "speculation": {
+        "framesFile": "speculation.txt",
+        "meaning": "spec"
+      },
+      "pointer": {
+        "framesFile": "pointer.txt",
+        "meaning": "now",
+        "visibility": "visible"
+      },
+      "compaction": {
+        "framesFile": "compaction.txt",
+        "meaning": "compact"
+      },
+      "maximum": {
+        "framesFile": "maximum.txt",
+        "meaning": "max"
+      },
+      "custom": {
+        "meaningPlacement": "beside",
+        "items": [
+          {
+            "role": "speculation",
+            "template": "{frame}"
+          },
+          {
+            "role": "pointer",
+            "template": "{frame}{percent}"
+          },
+          {
+            "role": "compaction",
+            "template": "{frame}compact"
+          },
+          {
+            "role": "maximum",
+            "template": "{frame} {window}"
+          }
+        ]
+      },
+      "labels": "auto",
+      "labelPosition": "center",
+      "showLabelGlyph": false,
+      "glyphDirectory": "~/.config/codesook-omp/context-rail"
+    },
+    "sharedDisplay": {
+      "enabled": true,
+      "layout": "horizontal",
+      "order": [
+        "ponytail",
+        "caveman",
+        "headroom",
+        "rtk",
+        "codegraph",
+        "beads"
+      ],
+      "widgetPlacement": "belowEditor",
+      "horizontalSeparator": " ▶ ",
+      "verticalGapRows": 0,
+      "style": "powerline"
+    },
+    "ponytail": {
+      "visible": true,
+      "nativeVisible": false,
+      "template": "{activity} {glyph} ponytail: {modeIcon}{mode}",
+      "glyphDirectory": "~/.config/codesook-omp/ponytail"
+    },
+    "caveman": {
+      "visible": true,
+      "template": "{activity} {glyph} {mode}",
+      "glyphDirectory": "~/.config/codesook-omp/caveman/glyphs",
+      "nativeVisible": false
+    },
+    "headroom": {
+      "visible": true,
+      "glyphDirectory": "~/.config/codesook-omp/headroom",
+      "template": "{status}",
+      "status": {
+        "off": "{glyph} off",
+        "remote-blocked": "{glyph} Headroom remote blocked",
+        "starting": "{glyph} Headroom starting",
+        "offline": "{glyph} Headroom not running",
+        "idle": "{glyph} Headroom idle",
+        "online": "{glyph} Headroom",
+        "unavailable": "{glyph} Headroom unavailable ({reason})",
+        "compressed": "{glyph} 💾 {compressionPercent}% ({tokensSaved} saved)",
+        "loading": "{glyph} Headroom loading"
+      }
+    },
+    "rtk": {
+      "visible": true,
+      "glyphDirectory": "~/.config/codesook-omp/rtk",
+      "template": "{glyph} rtk 💾 {percent}% ({tokensSaved} saved)"
+    },
+    "codegraph": {
+      "visibility": "ready"
+    },
+    "beads": {
+      "visibility": "ready"
+    }
+  },
+  "behavior": {
+    "caveman": {
+      "defaultMode": "caveman"
+    },
+    "ponytail": {
+      "defaultMode": "full"
+    },
+    "headroom": {
+      "enabled": true,
+      "baseUrl": "https://headroom.codesook.dev",
+      "allowRemote": true,
+      "autoStart": false,
+      "command": "headroom",
+      "minContextTokens": 8000,
+      "minMessageChars": 1000,
+      "timeoutMs": 60000,
+      "proxyTokenFile": "/Users/atiwatseenark/.config/codesook-omp/headroom/proxy-token"
+    },
+    "codegraph": {
+      "policy": "auto"
+    },
+    "beads": {
+      "policy": "auto"
+    },
+    "rtk": {
+      "enabled": true,
+      "retentionDays": 7
+    }
+  }
+}

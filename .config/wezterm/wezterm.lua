@@ -17,6 +17,8 @@ config.default_prog = { "/opt/homebrew/bin/fish", "-l" }
 
 local SetKeyMaps = require("keymap")
 SetKeyMaps(config, act)
+-- distinguish Ctrl+M from Enter and Ctrl+Shift+C from Ctrl+C (used by omp)
+config.enable_kitty_keyboard = true
 
 -- font
 config.font = wezterm.font_with_fallback({
