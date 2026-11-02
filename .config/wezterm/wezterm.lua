@@ -12,8 +12,8 @@ end
 local setTopRightStatus = require("topRightStatus")
 setTopRightStatus(wezterm)
 
--- Spawn a fish shell in login mode
-config.default_prog = { "/opt/homebrew/bin/fish", "-l" }
+-- Spawn zsh in login mode (zsh trial; fish: { "/opt/homebrew/bin/fish", "-l" })
+config.default_prog = { "/bin/zsh", "-l" }
 
 local SetKeyMaps = require("keymap")
 SetKeyMaps(config, act)

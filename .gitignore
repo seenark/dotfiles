@@ -25,3 +25,8 @@
 /.omp/profiles/learning/agent/models.json
 
 .config/codesook-omp/headroom/proxy-token
+
+/.scratch/
+.config/zsh/.zcompdump*
+# /etc/zshrc puts HISTFILE in $ZDOTDIR, i.e. inside this public repo
+.config/zsh/.zsh_history

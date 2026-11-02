@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -u
+shopt -s nullglob
+
+workers=4
+dirs=(*/)
+[ ${#dirs[@]} -eq 0 ] && exit 0
+
+printf '%s\0' "${dirs[@]}" | xargs -0 -n1 -P"$workers" sh -c '
+    dir="$1"
+    name="${dir%/}"
+
+    if test -f "$name.zip"; then
+        echo "Skip: $name.zip"
+        exit 0
+    fi
+
+    echo "Zipping: $dir"
+    zip -rq "$name.zip" "$dir" -x "*.DS_Store" "__MACOSX/*"
+' _

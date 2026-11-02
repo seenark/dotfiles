@@ -5,6 +5,10 @@
       "type": "stdio",
       "command": "codegraph",
       "args": ["serve", "--mcp"]
+    },
+    "drawdy": {
+      "type": "http",
+      "url": "https://mcp.drawdy.io/mcp"
     }
   }
 }

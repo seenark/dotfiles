@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -u
+shopt -s nullglob
+
+for dir in */; do
+  name=${dir%/}
+
+  if [ -f "$name.zip" ]; then
+    echo "Removing: $dir"
+    rm -rf -- "$dir"
+  fi
+done
