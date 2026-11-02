@@ -27,3 +27,4 @@
 .config/codesook-omp/headroom/proxy-token
 
 /.scratch/
+.config/zsh/.zcompdump*
