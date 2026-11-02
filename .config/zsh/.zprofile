@@ -12,4 +12,5 @@ export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
 # OrbStack: command-line tools and integration
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
-path=($HOME/.local/bin $path $HOME/.lmstudio/bin)
+# ~/.bun/bin (omp) and libpq came from fish's universal fish_user_paths, which zsh never sees
+path=($HOME/.local/bin $HOME/.bun/bin $path /opt/homebrew/opt/libpq/bin $HOME/.lmstudio/bin)
