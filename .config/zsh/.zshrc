@@ -1,5 +1,21 @@
+# Init-output cache: `_init_cache cmd args...` sets REPLY to a cached copy of the command's output; callers `source $REPLY`
+# at top level (not inside the helper) so the init scripts' typeset/local stay global. Key = resolved binary path (carries
+# the version, so upgrades invalidate) + args; files in $_init_deps also invalidate. Force refresh: rm -rf ~/.cache/zsh-init
+_init_cache() {
+  local bin=${commands[$1]:A} out dep stale
+  # missing binary: run it anyway so the old "command not found" error still surfaces; nothing is cached or sourced
+  if [[ -z $bin ]]; then REPLY=/dev/null; "$@"; return 1; fi
+  local key=${bin}_${(j:_:)@[2,-1]}
+  REPLY=${XDG_CACHE_HOME:-$HOME/.cache}/zsh-init/${key//[^[:alnum:]._-]/_}
+  [[ -s $REPLY ]] || stale=1
+  for dep in $_init_deps; do [[ $dep -nt $REPLY ]] && stale=1; done
+  (( stale )) || return 0
+  out=$("$@") || { REPLY=/dev/null; return 1 }
+  mkdir -p ${REPLY:h} && print -r -- $out >| $REPLY.$$ && mv -f $REPLY.$$ $REPLY
+}
+
 # mise first: its tools (sheldon, starship, atuin, zoxide, carapace) must be on PATH below
-eval "$(mise activate zsh)"
+_init_cache mise activate zsh; source $REPLY
 
 # vi mode must precede sheldon: zsh-abbr binds space with a bare `bindkey` (= current main keymap), so main must already be viins
 bindkey -v
@@ -40,19 +56,23 @@ zle -N edit-and-run
 bindkey -M vicmd v edit-and-run
 
 # abbr (eager) before compinit; autosuggestions + fast-syntax-highlighting are zsh-defer'd
-eval "$(sheldon source)"
+# sheldon: also invalidated by edits to its config or lock (`sheldon lock`)
+_init_deps=(${SHELDON_CONFIG_FILE:-${SHELDON_CONFIG_DIR:-${XDG_CONFIG_HOME:-$HOME/.config}/sheldon}/plugins.toml})
+_init_deps+=(${SHELDON_DATA_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/sheldon}/${_init_deps[1]:t:r}.lock)
+_init_cache sheldon source; unset _init_deps; source $REPLY
 
 setopt NO_NOMATCH
 
 autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense'
-source <(carapace _carapace zsh)
+_init_cache carapace _carapace zsh; source $REPLY
 
-eval "$(starship init zsh)"
-eval "$(atuin init zsh)"
+# --print-full-init: plain `init zsh` only prints a stub that spawns starship again
+_init_cache starship init zsh --print-full-init; source $REPLY
+_init_cache atuin init zsh; source $REPLY
 bindkey -M vicmd '^R' atuin-search-vicmd
-eval "$(zoxide init zsh)"
+_init_cache zoxide init zsh; source $REPLY
 
 export EDITOR=nvim
 export VISUAL=nvim
