@@ -1,9 +1,10 @@
 # mise first: its tools (sheldon, starship, atuin, zoxide, carapace) must be on PATH below
 eval "$(mise activate zsh)"
 
-# --- ticket 02: sheldon source goes here ---
+# --- ticket 03: vi-mode block goes here (must precede sheldon: zsh-abbr binds space with a bare `bindkey`) ---
 
-# --- ticket 03: vi-mode block goes here (must precede plugins and atuin) ---
+# abbr (eager) before compinit; autosuggestions + fast-syntax-highlighting are zsh-defer'd
+eval "$(sheldon source)"
 
 setopt NO_NOMATCH
 
@@ -46,8 +47,17 @@ function nvims() {
 
 bindkey -s ^n "nvims\n"
 
-# --- abbreviation definitions go here ---
+# session scope: re-source safe, nothing persisted to zsh-abbr's user file; --force because nl/ls/tree shadow real commands
+abbr --session --force --quieter nl=nvim
+abbr --session --force --quieter ls='eza -al --icons --group-directories-first --git'
+abbr --session --force --quieter ..='cd ..'
+abbr --session --force --quieter ...='cd ../..'
+abbr --session --force --quieter tree="eza -T -L 2 -I 'node_modules|*.pyc'"
+abbr --session --force --quieter nvimtemp="nvim +'enew | file [Scratch] | setlocal buftype=nofile bufhidden=wipe noswapfile'"
+abbr --session --force --quieter zshreload='exec zsh'
 
 for f in ~/.zshrc ~/.zprofile; do
-  [[ -f $f && ! -L $f ]] && print -u2 "warning: stray $f exists; move its lines into \$ZDOTDIR ($ZDOTDIR) and delete it"
+  if [[ -f $f && ! -L $f ]]; then
+    print -u2 "warning: stray $f exists; move its lines into \$ZDOTDIR ($ZDOTDIR) and delete it"
+  fi
 done
