@@ -1,7 +1,43 @@
 # mise first: its tools (sheldon, starship, atuin, zoxide, carapace) must be on PATH below
 eval "$(mise activate zsh)"
 
-# --- ticket 03: vi-mode block goes here (must precede sheldon: zsh-abbr binds space with a bare `bindkey`) ---
+# vi mode must precede sheldon: zsh-abbr binds space with a bare `bindkey` (= current main keymap), so main must already be viins
+bindkey -v
+KEYTIMEOUT=1
+
+bindkey -M viins '^A' beginning-of-line
+bindkey -M viins '^E' end-of-line
+bindkey -M viins '^W' backward-kill-word
+bindkey -M viins '^U' kill-whole-line
+
+# cursor: beam in insert, block in normal; defined before starship init, which wraps zle-keymap-select
+autoload -Uz add-zsh-hook
+_cursor_beam() { print -n '\e[6 q' }
+zle-keymap-select() { [[ $KEYMAP == vicmd ]] && print -n '\e[2 q' || _cursor_beam }
+zle -N zle-keymap-select
+zle -N zle-line-init _cursor_beam
+add-zsh-hook preexec _cursor_beam
+
+autoload -Uz select-quoted select-bracketed surround edit-command-line
+zle -N select-quoted
+zle -N select-bracketed
+for m in visual viopp; do
+  for c in {a,i}{\',\",\`}; do bindkey -M $m $c select-quoted; done
+  for c in {a,i}${(s..)^:-'()[]{}<>bB'}; do bindkey -M $m $c select-bracketed; done
+done
+zle -N delete-surround surround
+zle -N add-surround surround
+zle -N change-surround surround
+bindkey -M vicmd cs change-surround
+bindkey -M vicmd ds delete-surround
+bindkey -M vicmd ys add-surround
+bindkey -M visual S add-surround
+
+# builtin edit-command-line only replaces the buffer; accept-line makes `:wq` run it (gives up charwise `v` visual; `V` remains)
+zle -N edit-command-line
+edit-and-run() { zle edit-command-line && zle accept-line }
+zle -N edit-and-run
+bindkey -M vicmd v edit-and-run
 
 # abbr (eager) before compinit; autosuggestions + fast-syntax-highlighting are zsh-defer'd
 eval "$(sheldon source)"
@@ -15,6 +51,7 @@ source <(carapace _carapace zsh)
 
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
+bindkey -M vicmd '^R' atuin-search-vicmd
 eval "$(zoxide init zsh)"
 
 export EDITOR=nvim
