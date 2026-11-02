@@ -58,6 +58,7 @@ brew "nmap" # Network mapping use to scan ip and ports
 brew "tw93/tap/mole"
 brew "rtk" # Rust Token Killer (reduce use of token for AI Coding Agents)
 brew "skillshare" # (Go) Agent Skill manager
+brew "openssl@3" # runtime lib for mise-installed sheldon (prebuilt binary links /opt/homebrew/opt/openssl@3)
 
 # ╭─ fancy ──────────────────────────────────────────────────────────────╮
 # brew "chafa"
