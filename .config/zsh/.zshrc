@@ -15,7 +15,8 @@ _init_cache() {
 }
 
 # mise first: its tools (sheldon, starship, atuin, zoxide, carapace) must be on PATH below
-_init_cache mise activate zsh; source $REPLY
+# not cached: its output embeds the caller's literal PATH, which a cache would freeze
+eval "$(mise activate zsh)"
 
 # vi mode must precede sheldon: zsh-abbr binds space with a bare `bindkey` (= current main keymap), so main must already be viins
 bindkey -v
