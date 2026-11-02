@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Menu and prompts go to stderr so stdout is only the key.
+{
+  echo "Key length in bytes:"
+  echo "  1) 16"
+  echo "  2) 32"
+  echo "  3) 64"
+  echo "  4) custom"
+} >&2
+printf 'Choice: ' >&2
+read -r choice || { echo "genkey: no input" >&2; exit 1; }
+
+case "$choice" in
+  1|16) bytes=16 ;;
+  2|32) bytes=32 ;;
+  3|64) bytes=64 ;;
+  4|custom)
+    printf 'Bytes: ' >&2
+    read -r bytes || { echo "genkey: no input" >&2; exit 1; }
+    if [[ ! $bytes =~ ^[1-9][0-9]*$ ]]; then
+      echo "genkey: custom length must be a positive integer" >&2
+      exit 1
+    fi
+    ;;
+  *) echo "genkey: invalid choice: $choice" >&2; exit 1 ;;
+esac
+
+# openssl wraps base64 at 64 chars; join so output is exactly one line.
+openssl rand -base64 "$bytes" | tr -d '\n'
+echo

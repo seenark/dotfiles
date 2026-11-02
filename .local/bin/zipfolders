@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -u
+shopt -s nullglob
+
+for dir in */; do
+  name=${dir%/}
+  output="$name.zip"
+
+  if [ -e "$output" ]; then
+    echo "Skip: $output already exists"
+    continue
+  fi
+
+  echo "Zipping: $dir -> $output"
+  zip -r "$output" "$dir" -x "*.DS_Store" "__MACOSX/*"
+done
