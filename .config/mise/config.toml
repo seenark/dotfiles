@@ -23,6 +23,7 @@ rtk = "latest"
 atuin = "latest"
 carapace = "latest"
 gitui = "latest"
+sheldon = "latest"
 # "npm:pnpm" = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
