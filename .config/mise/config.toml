@@ -28,6 +28,10 @@ sheldon = "latest"
 # pnpm = "latest"
 # python = ["3.10" "3.11"];
 
+[env]
+# global CLIs from `bun install -g` (e.g. omp); mise only puts the bun binary itself on PATH
+_.path = ["~/.bun/bin"]
+
 [settings]
 # disable warning but I don't know what it is
 idiomatic_version_file_enable_tools = ["python"]
